@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>校企合作治理 · 问题网络（114 题）</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="toolbar">
+    <div class="title">
+      <h1>校企合作治理 · 问题网络</h1>
+      <span class="subtitle">114 questions · force-directed graph · 7 clusters</span>
+    </div>
+    <div class="controls">
+      <button id="lang-toggle" class="btn" title="切换中/英文">EN ⇄ 中</button>
+      <button id="metrics-toggle" class="btn">指标面板</button>
+      <button id="reset-view" class="btn">重置视图</button>
+      <input id="search" type="text" placeholder="搜索关键词…">
+    </div>
+  </header>
+
+  <div class="main">
+    <aside class="sidebar" id="sidebar">
+      <div class="filter-head">筛选器 <button id="clear-filters" class="mini">清除</button></div>
+      <section class="filter-group">
+        <h3>按方</h3>
+        <div id="filter-stakeholder"></div>
+      </section>
+      <section class="filter-group">
+        <h3>理论标签</h3>
+        <div id="filter-theory"></div>
+      </section>
+      <section class="filter-group">
+        <h3>四步链条</h3>
+        <div id="filter-chain"></div>
+      </section>
+      <section class="filter-group">
+        <h3>簇</h3>
+        <div id="filter-cluster"></div>
+      </section>
+    </aside>
+
+    <div class="graph-wrap" id="graph-wrap">
+      <svg id="graph"></svg>
+      <div class="legend" id="legend"></div>
+      <div class="hint">拖拽节点 · 滚轮缩放 · 点击节点看详情 · 悬停看「为什么连」</div>
+    </div>
+
+    <aside class="detail" id="detail">
+      <div class="detail-empty">点击任意节点查看详情</div>
+    </aside>
+  </div>
+
+  <div class="metrics-overlay" id="metrics-overlay" hidden>
+    <div class="metrics-panel">
+      <div class="metrics-head">
+        <h2>网络指标</h2>
+        <button id="metrics-close" class="mini">✕</button>
+      </div>
+      <div id="metrics-body"></div>
+    </div>
+  </div>
+
+  <div class="tooltip" id="tooltip" hidden></div>
+
+  <script src="lib/d3.v7.min.js"></script>
+  <script src="graph.js"></script>
+</body>
+</html>

@@ -1,0 +1,3120 @@
+[
+  {
+    "id": "ENT-01",
+    "label": "1",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "Why is a firm willing to enter the classroom at all? What exactly is its incentive?",
+    "text_cn": "企业为什么愿意进课堂？它的 incentive 到底是什么？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [
+      "Co-teaching cluster"
+    ],
+    "misc_tags": [],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 1,
+    "degree": 9,
+    "degree_centrality": 0.079646,
+    "betweenness_centrality": 0.058786,
+    "eigenvector_centrality": 0.011768
+  },
+  {
+    "id": "ENT-02",
+    "label": "2",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "What is a firm's incentive for offering \"real projects\"? How does the return differ from other models?",
+    "text_cn": "企业给\"真实项目\"的 incentive 是什么？回报和别的模式有何不同？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [
+      "Real-project cluster"
+    ],
+    "misc_tags": [],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 1,
+    "degree": 9,
+    "degree_centrality": 0.079646,
+    "betweenness_centrality": 0.033344,
+    "eigenvector_centrality": 0.000915
+  },
+  {
+    "id": "ENT-03",
+    "label": "3",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "Why does a firm hire interns? (To screen talent? To build a presence at a prestigious school? — note: 子2's \"15-year payer who never hires\" falsifies \"screening talent\" as the only incentive)",
+    "text_cn": "企业为什么招实习生？（筛选人才？名校混脸熟？——注意：子2「15 年付费从不招人」已证伪「筛选人才」不是唯一 incentive）",
+    "theory_tags": [
+      "signaling"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [
+      "Internship cluster"
+    ],
+    "misc_tags": [],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 5,
+    "degree": 14,
+    "degree_centrality": 0.123894,
+    "betweenness_centrality": 0.010904,
+    "eigenvector_centrality": 0.001083
+  },
+  {
+    "id": "ENT-04",
+    "label": "4",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "Which year-level of interns does a firm prefer, and why? (Final-year: mature + more capable + convertible to full-time next year)",
+    "text_cn": "企业更喜欢大几的实习生，为什么？（大四：成熟+会得多+明年能转正）",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li"
+    ],
+    "citations": [],
+    "cluster_id": 2,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.027655,
+    "eigenvector_centrality": 0.014357
+  },
+  {
+    "id": "ENT-05",
+    "label": "5",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "Why is the firm's annual attrition rate as high as 70–80%?",
+    "text_cn": "企业年流失率 70–80% 为什么这么高？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [
+      "sustainability"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li"
+    ],
+    "citations": [],
+    "cluster_id": 2,
+    "degree": 9,
+    "degree_centrality": 0.079646,
+    "betweenness_centrality": 0.0,
+    "eigenvector_centrality": 0.363582
+  },
+  {
+    "id": "ENT-06",
+    "label": "6",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "Can a pre-course mobilization meeting cut attrition to 60%? (Hypothesis, to be tested)",
+    "text_cn": "课前动员会能把流失率降到 60% 吗？（假说，待验证）",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [
+      "sustainability"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li"
+    ],
+    "citations": [],
+    "cluster_id": 2,
+    "degree": 8,
+    "degree_centrality": 0.070796,
+    "betweenness_centrality": 0.0,
+    "eigenvector_centrality": 0.341656
+  },
+  {
+    "id": "ENT-07",
+    "label": "7",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "Where exactly does co-op's \"insufficient firm incentive\" (flagged by the Em & Khampirat 2026 review) get stuck, and how is it resolved?",
+    "text_cn": "COOP 的\"企业激励不足\"（Em & Khampirat 2026 综述点名）到底卡在哪、怎么解？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [
+      "Co-op cluster"
+    ],
+    "misc_tags": [],
+    "source_rec": [],
+    "citations": [
+      {
+        "key": "Em & Khampirat 2026",
+        "label": "Em & Khampirat 2026",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      }
+    ],
+    "cluster_id": 1,
+    "degree": 7,
+    "degree_centrality": 0.061947,
+    "betweenness_centrality": 0.007743,
+    "eigenvector_centrality": 0.00296
+  },
+  {
+    "id": "ENT-08",
+    "label": "8",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "When a firm runs a competition/hackathon, does it want \"immediate output\" or \"future talent\"? (branding + talent joint activity)",
+    "text_cn": "企业办比赛/黑客松要的是\"当下产出\"还是\"未来人才\"？（branding+talent joint activity）",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [
+      "Competition/Hackathon cluster"
+    ],
+    "misc_tags": [],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 3,
+    "degree": 9,
+    "degree_centrality": 0.079646,
+    "betweenness_centrality": 0.042035,
+    "eigenvector_centrality": 0.000521
+  },
+  {
+    "id": "ENT-09",
+    "label": "9",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "What is a firm seizing when it spends heavily building a star course? (Scarce top-tier talent)",
+    "text_cn": "企业砸重金建明星课，抢的是什么？（稀缺顶尖人才）",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [
+      "Star-course cluster"
+    ],
+    "misc_tags": [],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 3,
+    "degree": 7,
+    "degree_centrality": 0.061947,
+    "betweenness_centrality": 0.057364,
+    "eigenvector_centrality": 0.000512
+  },
+  {
+    "id": "ENT-10",
+    "label": "11",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "What kind of firm is suited to long-term classroom presence? (Multi-product B2C firms like Li-Ning / Anta vs. giants like Tencent who won't engage)",
+    "text_cn": "什么样的企业适合长期进课堂？（多产品 to-C 公司如李宁/安踏 vs 超级巨头腾讯不搭理你）",
+    "theory_tags": [
+      "types"
+    ],
+    "chain_step": null,
+    "crosscutting": [
+      "sustainability"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li"
+    ],
+    "citations": [],
+    "cluster_id": 3,
+    "degree": 9,
+    "degree_centrality": 0.079646,
+    "betweenness_centrality": 0.012642,
+    "eigenvector_centrality": 0.001142
+  },
+  {
+    "id": "ENT-11",
+    "label": "12",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "The cost of a firm's \"try-before-you-buy\" (term source: Coco 2000 title) — mentoring input and resource commitment (Hardie, Almeida & Ross 2018) — who bears it?",
+    "text_cn": "企业\"先试后买\"（术语出处：Coco 2000 篇名）的成本——带教投入与资源承诺（Hardie, Almeida & Ross 2018）——谁承担？",
+    "theory_tags": [
+      "signaling"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [
+      "Internship cluster"
+    ],
+    "misc_tags": [],
+    "source_rec": [],
+    "citations": [
+      {
+        "key": "Coco 2000",
+        "label": "Coco 2000",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      },
+      {
+        "key": "Hardie, Almeida & Ross 2018",
+        "label": "Hardie, Almeida & Ross 2018",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      }
+    ],
+    "cluster_id": 5,
+    "degree": 7,
+    "degree_centrality": 0.061947,
+    "betweenness_centrality": 0.000316,
+    "eigenvector_centrality": 0.000675
+  },
+  {
+    "id": "ENT-12",
+    "label": "13",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "Can fake firms / retired open-source projects substitute for real firms at resource-poor schools?",
+    "text_cn": "假企业 / 被淘汰的开源课题，能不能替代真企业给资源缺的学校用？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li"
+    ],
+    "citations": [],
+    "cluster_id": 1,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.004583,
+    "eigenvector_centrality": 0.002682
+  },
+  {
+    "id": "ENT-13",
+    "label": "14",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "What are the preconditions for a firm to partner with a school at all (how does school strength flip \"who is more eager\")?",
+    "text_cn": "企业愿意对接学校的前提条件是什么（学校强弱如何翻转\"谁更着急\"）？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/21 Prof. Song"
+    ],
+    "citations": [],
+    "cluster_id": 6,
+    "degree": 7,
+    "degree_centrality": 0.061947,
+    "betweenness_centrality": 0.0,
+    "eigenvector_centrality": 0.000393
+  },
+  {
+    "id": "ENT-14",
+    "label": "15",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "A firm's \"value perception\" and \"value itself\" are two different things — how do we reconcile them?",
+    "text_cn": "企业端\"value perceive\"和\"value 本身\"是两件事，怎么统一？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li"
+    ],
+    "citations": [],
+    "cluster_id": 4,
+    "degree": 7,
+    "degree_centrality": 0.061947,
+    "betweenness_centrality": 0.008059,
+    "eigenvector_centrality": 0.012233
+  },
+  {
+    "id": "ENT-15",
+    "label": "新①",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "Once a firm's incentives are already aligned, where does the collaboration's *efficiency* get stuck? Is the firm-side efficiency loss (matching, friction, time) a variable independent of incentive?",
+    "text_cn": "企业 incentive 已经对齐之后，合作的效率卡在哪一步？企业端的效率损失（对接、磨合、时间）是不是一个独立于 incentive 的变量？",
+    "theory_tags": [],
+    "chain_step": "efficiency",
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "framework increment"
+    ],
+    "source_rec": [
+      "Dr. Li 8/24 Efficiency ≠ Alignment"
+    ],
+    "citations": [],
+    "cluster_id": 1,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.020386,
+    "eigenvector_centrality": 0.001801
+  },
+  {
+    "id": "ENT-16",
+    "label": "新②",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "Can a firm's \"long-term collaboration intent\" be quantified? Among application count / renewal rate / mentoring input, which signal is most truthful?",
+    "text_cn": "企业\"长期合作意愿\"能不能被量化？用申请数 / 续约率 / 带教投入，哪个信号最真实？",
+    "theory_tags": [
+      "signaling"
+    ],
+    "chain_step": "impact",
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "screening Stigler",
+      "Spence"
+    ],
+    "source_rec": [
+      "Dr. Li 8/24 quantifying screening"
+    ],
+    "citations": [],
+    "cluster_id": 5,
+    "degree": 9,
+    "degree_centrality": 0.079646,
+    "betweenness_centrality": 0.004741,
+    "eigenvector_centrality": 0.000635
+  },
+  {
+    "id": "ENT-17",
+    "label": "新③",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "Who, inside the firm, attributes and defends the \"value of participation\" (the mobilization-meeting instructor / HR / alumni / former interns / the liaison themselves)? Is that account constructed ex ante, or ex post to justify renewal?",
+    "text_cn": "企业内部的\"参与价值\"由谁来归因和辩护（动员会老师 / HR / 校友 / 曾经的实习生 / 对接人本人）？这套说法是事前就有，还是事后为了续约而被构造出来的？",
+    "theory_tags": [
+      "signaling"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "\"Internships: A try before you buy arrangement\" SAM 65(2), 41–43 (end page 43 per CMU catalog; some bibliographies list 41–47 — verify against print TOC)",
+      "value reframe",
+      "H1",
+      "H2"
+    ],
+    "source_rec": [],
+    "citations": [
+      {
+        "key": "Coco 2000",
+        "label": "Coco 2000",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      }
+    ],
+    "cluster_id": 5,
+    "degree": 8,
+    "degree_centrality": 0.070796,
+    "betweenness_centrality": 0.00079,
+    "eigenvector_centrality": 0.000544
+  },
+  {
+    "id": "ENT-18",
+    "label": "新④",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "What are the components of a firm's transaction costs for one university collaboration (search / contracting / mentoring / monitoring / exit)? Which is largest, and why?",
+    "text_cn": "企业参与一次校企合作的\"交易成本\"由哪几部分构成（搜寻/签约/带教/监督/退出）？哪一部分最大，为什么？",
+    "theory_tags": [],
+    "chain_step": "efficiency",
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      ", IJWIL 19(2), 155–168",
+      "TCE Williamson",
+      "⚠ weak anchor: that paper studies firms' resource input and mentoring from the *intern's* perspective, not the firm's transaction-cost structure"
+    ],
+    "source_rec": [],
+    "citations": [
+      {
+        "key": "Hardie, Almeida & Ross 2018",
+        "label": "Hardie, Almeida & Ross 2018",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      }
+    ],
+    "cluster_id": 5,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.037137,
+    "eigenvector_centrality": 0.000382
+  },
+  {
+    "id": "ENT-19",
+    "label": "新⑤",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "When a firm partners with multiple schools at once, are marginal costs decreasing (templatable/replicable) or increasing (re-negotiating and re-matching each school)? What variable determines the direction?",
+    "text_cn": "一家企业同时对接多所学校时，边际成本是递减（模板化可复制）还是递增（每校重谈重磨合）？什么变量决定方向？",
+    "theory_tags": [],
+    "chain_step": "efficiency",
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "economies of scale"
+    ],
+    "source_rec": [
+      "Prof. Song 8/21 city-level platform"
+    ],
+    "citations": [],
+    "cluster_id": 6,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.024494,
+    "eigenvector_centrality": 0.000294
+  },
+  {
+    "id": "ENT-20",
+    "label": "新⑥",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "After a firm participates, which of its own metrics changed (new-hire quality / recruiting cost / innovation output / internal technical solutions)? Does the firm itself measure these — and can it?",
+    "text_cn": "企业参与后，它自己的哪个指标发生了变化（新员工质量 / 招聘成本 / 创新产出 / 内部技术方案）？这些指标企业自己测不测、测得到吗？",
+    "theory_tags": [],
+    "chain_step": "impact",
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "screening",
+      "learning"
+    ],
+    "source_rec": [
+      "Jason 8/21 learning process"
+    ],
+    "citations": [],
+    "cluster_id": 2,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.039349,
+    "eigenvector_centrality": 0.004462
+  },
+  {
+    "id": "ENT-21",
+    "label": "新⑦",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "When a firm doesn't return in year 2, is it really \"no value\", or \"value existed but got crowded out\" (budget / staffing / liaison turnover)? How to tell the difference?",
+    "text_cn": "企业第二年不来，是真的\"没价值\"，还是\"价值有但被挤掉了\"（预算/人事/换对接人）？怎么区分？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [
+      "sustainability"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Dr. Li 8/24 revealed preference"
+    ],
+    "citations": [],
+    "cluster_id": 2,
+    "degree": 15,
+    "degree_centrality": 0.132743,
+    "betweenness_centrality": 0.04409,
+    "eigenvector_centrality": 0.374505
+  },
+  {
+    "id": "ENT-22",
+    "label": "新⑧",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "Jason says value only shows after 2–3 years — is that his personal experience (an outlier), or a replicable regularity? How does the *time structure* of value realization vary by firm type and collaboration model?",
+    "text_cn": "Jason 说价值 2-3 年后才显现——这是他个人经历（outlier），还是可复制的一般规律？价值显现的**时间结构**会随企业类型、合作模式怎么变？",
+    "theory_tags": [
+      "types"
+    ],
+    "chain_step": "impact",
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "mechanism = learning",
+      "screening"
+    ],
+    "source_rec": [
+      "Jason 8/21"
+    ],
+    "citations": [],
+    "cluster_id": 3,
+    "degree": 11,
+    "degree_centrality": 0.097345,
+    "betweenness_centrality": 0.0,
+    "eigenvector_centrality": 0.001647
+  },
+  {
+    "id": "ENT-23",
+    "label": "新⑩",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "\"Renewing firms report gaining value after 2–3 years\" — is this a real learning/screening effect, or **survivorship bias** (firms that gained nothing already exited; the ones left were always the ones that gained)? What design separates the two?",
+    "text_cn": "\"续约企业报告 2-3 年后获得价值\"——这是真实的学习/筛选效应，还是**幸存者偏差**（没得到价值的企业早已退出，剩下的本就是得到价值那批）？用什么设计能把两者分开？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [
+      "sustainability",
+      "methodology"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [
+      "Subagent-identified methodological issue",
+      "related to 新⑦",
+      "新⑨"
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 2,
+    "degree": 10,
+    "degree_centrality": 0.088496,
+    "betweenness_centrality": 0.04725,
+    "eigenvector_centrality": 0.115068
+  },
+  {
+    "id": "ENT-24",
+    "label": "新⑨",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "Is the reason a firm leaves in year 1 the same as in years 2–3? (Year 1 = expectation mismatch; years 2–3 = value never materialized)",
+    "text_cn": "企业第 1 年流失 vs 第 2-3 年流失，原因一样吗？（第 1 年=预期不匹配，第 2-3 年=价值没兑现）",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [
+      "sustainability"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [
+      "CIVL2114 three-year roster 48→27→11",
+      "survival analysis"
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 2,
+    "degree": 11,
+    "degree_centrality": 0.097345,
+    "betweenness_centrality": 0.000316,
+    "eigenvector_centrality": 0.234057
+  },
+  {
+    "id": "ENT-25",
+    "label": "14a",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "Which firm type needs a long cycle (observing a student 2–3 months before judging), and which only needs a short one (immediate output / brand exposure)? Is there a stable matching between firm type and time scale?",
+    "text_cn": "哪种企业需要长周期（观察学生 2-3 个月才敢下判断）、哪种只要短周期（当下产出/品牌曝光）？企业类型和时间尺度之间有没有稳定的匹配关系？",
+    "theory_tags": [
+      "types"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "H5 six incentive types × time scale"
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 3,
+    "degree": 12,
+    "degree_centrality": 0.106195,
+    "betweenness_centrality": 0.007269,
+    "eigenvector_centrality": 0.001846
+  },
+  {
+    "id": "ENT-26",
+    "label": "14c",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "Is a firm's willingness to keep investing in a collaboration **inverse-U shaped** against collaboration length — too short to form a reliable judgment, too long and the willingness decays once the student is fully read? Does this \"just-right\" point really exist, or is it monotonically decreasing (longer always → less willing)?",
+    "text_cn": "企业的继续投入意愿对合作时长，是不是**倒 U 形**——太短形不成可靠判断，太长把学生看清楚之后意愿反而衰减？这个\"刚刚好\"的点真实存在吗，还是单调递减（越长越不想投）？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "One of"
+    ],
+    "source_rec": [
+      "Dr. Li's core questions: semester vs. summer"
+    ],
+    "citations": [],
+    "cluster_id": 6,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.04409,
+    "eigenvector_centrality": 0.001373
+  },
+  {
+    "id": "ENT-27",
+    "label": "①",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "Does the premise that a student's short-term labor is \"≈ zero value\" to the firm actually hold? Kemp, using social exchange theory, says students do bring organizational value, and the benefit exceeds the mentoring cost. Is the firm's incentive for participating \"observing future talent\", or does it also include \"using student output now\"? When do the two conflict?",
+    "text_cn": "学生短期劳动对企业\"≈0 价值\"这个前提到底成不成立？Kemp 用社会交换理论说学生能给组织带来价值、收益还大于带教成本。企业参与的 incentive 究竟是\"观察未来人才\"，还是也包括\"当下就用学生产出\"？两者什么时候打架？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      ", Advances in Health Sciences Education 26(3), 1075–1093, DOI",
+      "social exchange theory"
+    ],
+    "source_rec": [],
+    "citations": [
+      {
+        "key": null,
+        "label": "DOI 10.1007/s10459-021-10038-x",
+        "doi": "10.1007/s10459-021-10038-x",
+        "url": null,
+        "unverified": false
+      },
+      {
+        "key": "Kemp et al. 2021",
+        "label": "Kemp et al. 2021",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      }
+    ],
+    "cluster_id": 5,
+    "degree": 8,
+    "degree_centrality": 0.070796,
+    "betweenness_centrality": 0.025601,
+    "eigenvector_centrality": 0.000554
+  },
+  {
+    "id": "ENT-28",
+    "label": "②",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "Beyond screening talent, a firm hires interns also to \"share training costs\". Are \"sharing costs\" and \"screening talent\" two sides of the same coin, or two motives that can conflict? When a firm holds several motives at once, which one actually decides whether it renews?",
+    "text_cn": "企业招实习生，除了筛选人才，还有\"分摊培训成本\"这个动机。\"分摊成本\"和\"筛选人才\"是同一件事的两面，还是两个会打架的动机？一家企业同时揣着几个动机时，最后是哪个在决定它续不续约？",
+    "theory_tags": [
+      "types"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      ", Frontiers in Education 11:1794804 review flags this",
+      "⚠ **attribution unverified**: the review attributes \"shared training costs\" to , but (Archnet-IJAR 17(3), 518–535, DOI ) is a Delphi study of architecture WIL that lists mentoring cost as a *barrier*, not \"shared training costs\" as a *benefit* — the attribution cannot be traced, and must be re-traced or removed before formal citation"
+    ],
+    "source_rec": [],
+    "citations": [
+      {
+        "key": null,
+        "label": "DOI 10.1108/ARCH-01-2023-0001",
+        "doi": "10.1108/ARCH-01-2023-0001",
+        "url": null,
+        "unverified": true
+      },
+      {
+        "key": "Em & Khampirat 2026",
+        "label": "Em & Khampirat 2026",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      },
+      {
+        "key": "Briant et al. 2023",
+        "label": "Briant et al. 2023",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      }
+    ],
+    "cluster_id": 3,
+    "degree": 13,
+    "degree_centrality": 0.115044,
+    "betweenness_centrality": 0.020228,
+    "eigenvector_centrality": 0.001561
+  },
+  {
+    "id": "ENT-29",
+    "label": "③",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "A firm spends no cash — just \"judge rights + offer rights\" — and 86% of students flock to it. How far can this kind of \"non-cash incentive\" substitute for cash? Is there a point cash can't substitute?",
+    "text_cn": "企业不花现金，光靠\"评委权 + offer 权\"就能让 86% 的学生趋之若鹜。这种\"非现金激励\"能替代现金到什么程度？有没有一个点是现金替代不了的？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      ", IEEE Software 32(5), 60–67",
+      ", IEEE Software 36(1), 15–22",
+      "hackathon gap"
+    ],
+    "source_rec": [],
+    "citations": [
+      {
+        "key": "Komssi et al. 2015",
+        "label": "Komssi et al. 2015",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      },
+      {
+        "key": "Pe-Than, Nolte et al. 2019",
+        "label": "Pe-Than, Nolte et al. 2019",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      }
+    ],
+    "cluster_id": 1,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.056732,
+    "eigenvector_centrality": 0.000248
+  },
+  {
+    "id": "ENT-30",
+    "label": "④",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "Firms that sponsor competitions expecting to \"hire on the spot\" are usually disappointed; returns are all tied to long-term recruiting. What determines whether a firm \"can afford to wait for long-term returns\"? What short-sighted moves does a firm that can't wait make?",
+    "text_cn": "赞助竞赛的企业，指望\"当场招满人\"的往往失望，回报都绑在长期招聘上。企业\"能不能等得起长期回报\"由什么决定？等不起的企业会做出什么短视动作？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "WKU national sales competition ROI, Journal of Selling",
+      "13",
+      "17 returns positive but tied to long-term"
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 3,
+    "degree": 7,
+    "degree_centrality": 0.061947,
+    "betweenness_centrality": 0.080436,
+    "eigenvector_centrality": 0.000346
+  },
+  {
+    "id": "ENT-31",
+    "label": "⑤",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "Is it the firm that \"wants\" talent, or the school that \"has to\" seek firms after government funding declines? Which end is the true source of demand — and could that decide the entire direction of mechanism design?",
+    "text_cn": "企业进课堂，到底是企业\"想要\"人才，还是学校在政府拨款下降之后\"不得不\"去找企业？需求的真正源头在哪一端，会不会反过来决定整个机制设计的方向？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      ", Academic Capitalism",
+      "Framework premise"
+    ],
+    "source_rec": [],
+    "citations": [
+      {
+        "key": "Slaughter & Leslie 1997",
+        "label": "Slaughter & Leslie 1997",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      }
+    ],
+    "cluster_id": 6,
+    "degree": 7,
+    "degree_centrality": 0.061947,
+    "betweenness_centrality": 0.032238,
+    "eigenvector_centrality": 0.00392
+  },
+  {
+    "id": "ENT-32",
+    "label": "⑥",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "\"The firm\" is an abstraction — the actual collaborator is a specific person: HR, a technical lead, or an alumnus. Is this person's individual incentive (recruiting KPI / solving a technical problem / giving back to the alma mater) the same as the firm's incentive? What happens when they diverge?",
+    "text_cn": "企业是抽象的，来合作的其实是企业里具体的某个人——HR、技术负责人、还是校友。这个人的个人 incentive（招聘 KPI / 解决技术难题 / 回馈母校），跟企业的 incentive 是一回事吗？两者不一致时，合作会发生什么？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "Purdue \"On the Case\" report",
+      "firm judge = alumnus"
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 2,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.051359,
+    "eigenvector_centrality": 0.007443
+  },
+  {
+    "id": "ENT-33",
+    "label": "⑦",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "Firms treat internships as a \"retention\" investment — cultivating people who understand their culture, expecting them to stay after graduation; but students treat internships as a \"stepping stone\" and leave on graduation. In which collaboration form can this \"retention\" incentive actually be realized? In first/second-year teaching collaborations \"retention\" doesn't hold at all — what does the firm want there?",
+    "text_cn": "企业把实习当\"留人\"投资——培养理解自己文化的人、指望毕业留下；可学生把实习当\"跳板\"，毕业就跑。这个\"留人\" incentive，在哪种合作形式里才可能兑现？大一大二的教学合作里\"留人\"根本不成立，企业图的是什么？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "Firm attrition attribution",
+      "low student retention"
+    ],
+    "source_rec": [],
+    "citations": [
+      {
+        "key": "Higher Education Exploration 2020",
+        "label": "Higher Education Exploration 2020",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      }
+    ],
+    "cluster_id": 3,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.027655,
+    "eigenvector_centrality": 0.001715
+  },
+  {
+    "id": "ENT-34",
+    "label": "⑧",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "The literature's first remedy for firm attrition is \"government incentives\" — tax breaks, employer branding, integrity/CSR certification. What is the relationship between these external incentives and the firm's intrinsic motive of \"screening talent\"? Could external incentives actually crowd out the intrinsic motive?",
+    "text_cn": "文献给企业流失开的药方第一条是\"政府激励\"——减税、雇主品牌、诚信/社会责任认证。政府给的这些外部激励，跟企业\"筛选人才\"这个内生动机是什么关系？外部激励会不会反而把内生动机挤掉？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "Firm attrition attribution",
+      "government incentives"
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 3,
+    "degree": 9,
+    "degree_centrality": 0.079646,
+    "betweenness_centrality": 0.057048,
+    "eigenvector_centrality": 0.012147
+  },
+  {
+    "id": "ENT-35",
+    "label": "⑨",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "A firm is \"not in a hurry\" in internships but \"very much in a hurry\" in star courses — is this flip the same firm varying by collaboration model, or are \"eager firms\" and \"non-eager firms\" two different populations to begin with?",
+    "text_cn": "企业在实习里\"不着急\"、在明星课里\"特别着急\"——这个\"着急\"的翻转，是同一家企业随合作模式变，还是\"着急的企业\"和\"不着急的企业\"本来就是两拨不同的人？",
+    "theory_tags": [
+      "types"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "salience",
+      "Stakeholder notes"
+    ],
+    "source_rec": [],
+    "citations": [
+      {
+        "key": "Mitchell 1997",
+        "label": "Mitchell 1997",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      }
+    ],
+    "cluster_id": 3,
+    "degree": 13,
+    "degree_centrality": 0.115044,
+    "betweenness_centrality": 0.048198,
+    "eigenvector_centrality": 0.000973
+  },
+  {
+    "id": "ENT-36",
+    "label": "⑩",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "Firm participation rests on \"exchange\" — what's given and what's received must balance, and imbalance triggers exit. How does the firm weigh this? What degree of \"unrealized benefit\" triggers exit?",
+    "text_cn": "企业参与是基于\"交换\"——给出去的和得到的要平衡，失衡就退出。企业心里这杆秤怎么称的？什么程度的\"收益没兑现\"会触发它退出？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "Exchange-imbalance frame",
+      "Emerald WIL barriers"
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 5,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.060051,
+    "eigenvector_centrality": 0.000125
+  },
+  {
+    "id": "ENT-37",
+    "label": "⑪",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "Inside a firm, does a university collaboration hang on a specific *person*, or on a specific *budget item / post / KPI*? When the liaison changes, does a person-attached collaboration break, while a budget/post-attached one survives the person?",
+    "text_cn": "校企合作在企业内部，是挂在某个人身上，还是挂在某个预算科目 / 岗位 / KPI 身上？换对接人的时候，挂在人身上的合作是不是就断了、挂在预算/岗位上的就不随人走？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [
+      "governance"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [
+      "Firm attrition attribution",
+      "change of unit head",
+      ", (31), 29–34 (note: the journal name was once mis-recorded locally as \"Zhejiang Forum\")"
+    ],
+    "source_rec": [],
+    "citations": [
+      {
+        "key": "Jiao Minghai 2017",
+        "label": "Jiao Minghai 2017",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      },
+      {
+        "key": "Vocational Education Forum 2017",
+        "label": "Vocational Education Forum 2017",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      }
+    ],
+    "cluster_id": 2,
+    "degree": 7,
+    "degree_centrality": 0.061947,
+    "betweenness_centrality": 0.049305,
+    "eigenvector_centrality": 0.015108
+  },
+  {
+    "id": "ENT-38",
+    "label": "子1",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "A firm \"triages\" projects into class-2 (genuinely cares but lacks resources to push forward) and hands them to students — what decides the boundary between this and outsourcing / cutting outright? Who inside the firm does the triage?",
+    "text_cn": "企业把项目\"分诊\"成 class-2（真 care 但没资源推进）交给学生，与外包/直接砍掉之间，边界由什么决定？谁在企业内部做这个分诊？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "to-be-verified list E1"
+    ],
+    "source_rec": [
+      "Jason class-2 frame"
+    ],
+    "citations": [],
+    "cluster_id": 1,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.078698,
+    "eigenvector_centrality": 0.001221
+  },
+  {
+    "id": "ENT-39",
+    "label": "子2",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "A firm pays $60k/year for 15 years to sponsor a capstone, has almost never hired from it, yet keeps coming — what exactly is it buying? For a \"long-term payer who never hires\", does the incentive fall outside recruiting (staff development / CSR / network)?",
+    "text_cn": "一家企业 15 年每年掏 6 万美元赞助 capstone、几乎没招到学生、却持续来——它买的到底是什么？\"长期付费却不招人\"的企业，incentive 是不是落在招聘之外（员工发展 / CSR / 关系网络）？",
+    "theory_tags": [
+      "types"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "Boston Scientific case",
+      "to-be-verified list E2"
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 3,
+    "degree": 12,
+    "degree_centrality": 0.106195,
+    "betweenness_centrality": 0.007585,
+    "eigenvector_centrality": 0.002444
+  },
+  {
+    "id": "ENT-40",
+    "label": "子3",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "Is \"try-before-you-buy\" reversed between SMEs and large firms: SMEs are even less able to hire (should screen more) but even less able to wait (higher discount rate) — how is that tension resolved?",
+    "text_cn": "中小企业 vs 大企业的\"先试后买\"是否方向相反：中小企业更招不到人（更该筛）但更等不起（贴现率高），这个张力怎么化解？",
+    "theory_tags": [
+      "types"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "⚠ claim un-traced: EJ929321 is actually \"challenges of university–workplace partnerships\", off-topic for \"SME vs. large firm\"; kept as a **hypothesis** for now",
+      "firm attrition attribution"
+    ],
+    "source_rec": [],
+    "citations": [
+      {
+        "key": "Choy & Delahaye 2011",
+        "label": "Choy & Delahaye 2011",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      }
+    ],
+    "cluster_id": 3,
+    "degree": 8,
+    "degree_centrality": 0.070796,
+    "betweenness_centrality": 0.010114,
+    "eigenvector_centrality": 0.000747
+  },
+  {
+    "id": "ENT-41",
+    "label": "子4",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "Is a firm entering the classroom \"screening ready-made talent\" or \"shaping future talent specifications\"? When it writes competency standards into course outcomes (68%), is it buying \"selecting people\" or \"defining what qualifies\" — are these two incentives the same or different?",
+    "text_cn": "企业进课堂是\"筛选现成人才\"还是\"塑造未来人才规格\"？当它把胜任力标准写进课程 outcome（68%），它买的是\"挑人\"还是\"定义合格\"——这两个 incentive 是同一个还是两回事？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "UIDP 68%",
+      "Slaughter"
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 3,
+    "degree": 7,
+    "degree_centrality": 0.061947,
+    "betweenness_centrality": 0.006479,
+    "eigenvector_centrality": 0.000767
+  },
+  {
+    "id": "ENT-42",
+    "label": "子5",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "Is the temporal mismatch between a firm's decision cycle (liaison tenure / budget year) and the student-training cycle (2–4 years) a more fundamental explanation of attrition than \"insufficient incentives\"?",
+    "text_cn": "企业决策周期（对接人任期/预算年度）vs 学生培养周期（2-4 年）的时间错配，是否比\"激励不足\"更根本地解释流失？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [
+      "sustainability"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [
+      "Firm attrition attribution",
+      "learning process"
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 2,
+    "degree": 9,
+    "degree_centrality": 0.079646,
+    "betweenness_centrality": 0.000474,
+    "eigenvector_centrality": 0.228523
+  },
+  {
+    "id": "ENT-43",
+    "label": "子6",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "Is the signal a firm observes in \"try-before-you-buy\" actually \"ability\", or \"attitude / cultural fit / discipline\"? If it is observing trainability and willingness to work overtime (not ability), where is the boundary of screening theory (Stigler/Spence)?",
+    "text_cn": "企业\"先试后买\"观察到的信号，到底是\"能力\"还是\"态度 / 文化契合 / 纪律\"？如果它观察的是可塑性、加班意愿（而非能力），筛选理论（Stigler/Spence）的适用边界在哪？",
+    "theory_tags": [
+      "signaling"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      ", JPE 70(5-2), 94–105 \"Information in the Labor Market\" (locally once mislabeled \"monograph\")",
+      ", QJE 87(3), 355–374",
+      "the \"students unwilling to work overtime\" factor"
+    ],
+    "source_rec": [],
+    "citations": [
+      {
+        "key": "Stigler 1962",
+        "label": "Stigler 1962",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      },
+      {
+        "key": "Spence 1973",
+        "label": "Spence 1973",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      }
+    ],
+    "cluster_id": 5,
+    "degree": 7,
+    "degree_centrality": 0.061947,
+    "betweenness_centrality": 0.00079,
+    "eigenvector_centrality": 0.000656
+  },
+  {
+    "id": "ENT-44",
+    "label": "子7",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "Does the internal budget-item attribution of the collaboration (recruiting vs. brand vs. CSR vs. staff development) decide its survival — recorded under \"recruiting\" it carries a hard KPI, under \"CSR\" it's the first to be cut?",
+    "text_cn": "企业内部的预算科目归属（招聘 vs 品牌 vs CSR vs 员工发展），是不是决定了合作存续——记在\"招聘\"下就有硬 KPI、记在\"CSR\"下就被优先砍？",
+    "theory_tags": [
+      "types",
+      "principal_agent"
+    ],
+    "chain_step": null,
+    "crosscutting": [
+      "governance"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [
+      "H5",
+      "firm attrition attribution"
+    ],
+    "source_rec": [],
+    "citations": [
+      {
+        "key": "Em & Khampirat 2026",
+        "label": "Em & Khampirat 2026",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      }
+    ],
+    "cluster_id": 6,
+    "degree": 12,
+    "degree_centrality": 0.106195,
+    "betweenness_centrality": 0.017699,
+    "eigenvector_centrality": 0.01358
+  },
+  {
+    "id": "ENT-45",
+    "label": "子8",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "When an alumnus serves as the liaison, the firm's incentive slides from \"organizational interest\" to \"personal alma mater sentiment\" — does this make the collaboration more fragile (breaks when the alumnus leaves) or more durable (emotional bond resists budget pressure)?",
+    "text_cn": "校友身份当对接人，让企业激励从\"组织利益\"滑向\"个人母校情结\"——这使合作更脆弱（校友一走即断）还是更稳固（情感绑定抗拒预算压力）？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [
+      "sustainability"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [
+      "Purdue",
+      "\"change of unit head\""
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 2,
+    "degree": 7,
+    "degree_centrality": 0.061947,
+    "betweenness_centrality": 0.0,
+    "eigenvector_centrality": 0.210494
+  },
+  {
+    "id": "ENT-46",
+    "label": "研①",
+    "section": "enterprise",
+    "subsection": null,
+    "stakeholder": "enterprise",
+    "text_en": "After AI can handle entry-level / codifiable tasks, does a firm entering the classroom want \"to screen out people AI will replace\" or \"to find people who can use AI\"? How much has AI rewritten the firm's incentive for entering the classroom (screening talent / seeking ideas)?",
+    "text_cn": "AI 能完成初级/可编码任务之后，企业进课堂要的到底是「筛掉会被 AI 替代的人」，还是「找会用 AI 的人」？企业进课堂的 incentive（筛人才/要点子）被 AI 改写了多少？",
+    "theory_tags": [
+      "types"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "AI variable"
+    ],
+    "source_rec": [
+      "8/30 deep-research"
+    ],
+    "citations": [],
+    "cluster_id": 3,
+    "degree": 12,
+    "degree_centrality": 0.106195,
+    "betweenness_centrality": 0.004899,
+    "eigenvector_centrality": 0.001688
+  },
+  {
+    "id": "INS-01",
+    "label": "1",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "Why is the school short of money? (Only national teaching funding, once a year)",
+    "text_cn": "学校为什么没钱？（只能靠国家教学经费，一年一次）",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li"
+    ],
+    "citations": [],
+    "cluster_id": 6,
+    "degree": 9,
+    "degree_centrality": 0.079646,
+    "betweenness_centrality": 0.049305,
+    "eigenvector_centrality": 0.0083
+  },
+  {
+    "id": "INS-02",
+    "label": "3",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "What is the institution's incentive? (reputation/risk)",
+    "text_cn": "学校的 incentive 是什么？（声誉/风险）",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "Framework",
+      "source TBD —"
+    ],
+    "source_rec": [
+      "Ferrari's own framing"
+    ],
+    "citations": [],
+    "cluster_id": 0,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.023388,
+    "eigenvector_centrality": 0.004994
+  },
+  {
+    "id": "INS-03",
+    "label": "5",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "How does an ordinary university connect to firms willing to collaborate long-term? (Strong schools can run star courses — what about ordinary ones?)",
+    "text_cn": "普通高校怎么对接到愿意长期合作的企业？（强校能开明星课，普通校呢）",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Ferrari"
+    ],
+    "citations": [],
+    "cluster_id": 1,
+    "degree": 7,
+    "degree_centrality": 0.061947,
+    "betweenness_centrality": 0.091972,
+    "eigenvector_centrality": 0.003883
+  },
+  {
+    "id": "INS-04",
+    "label": "6",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "How does the institution avoid being captured by firms (preserving autonomy, keeping students from becoming free labor)? (Zukin & Papadantonakis 2017, Research in the Sociology of Work 31, 157–181 · co-optation ritual)",
+    "text_cn": "学校怎么避免被企业捕获（保住院校自主、学生不被当免费劳动力）？（Zukin & Papadantonakis 2017, Research in the Sociology of Work 31, 157-181 · co-optation ritual）",
+    "theory_tags": [
+      "mechanism_design"
+    ],
+    "chain_step": null,
+    "crosscutting": [
+      "governance"
+    ],
+    "cluster_mode": [
+      "Star-course cluster"
+    ],
+    "misc_tags": [],
+    "source_rec": [],
+    "citations": [
+      {
+        "key": "Zukin & Papadantonakis 2017",
+        "label": "Zukin & Papadantonakis 2017",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      }
+    ],
+    "cluster_id": 4,
+    "degree": 8,
+    "degree_centrality": 0.070796,
+    "betweenness_centrality": 0.001896,
+    "eigenvector_centrality": 0.004322
+  },
+  {
+    "id": "INS-05",
+    "label": "7",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "Why is the institutional system \"locked at the compliance layer\" (rules exist but no governance)?",
+    "text_cn": "院系制度为什么\"锁定在合规层\"（有制度却无治理）？",
+    "theory_tags": [
+      "principal_agent"
+    ],
+    "chain_step": null,
+    "crosscutting": [
+      "governance"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [
+      "Step 2 memo"
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 0,
+    "degree": 10,
+    "degree_centrality": 0.088496,
+    "betweenness_centrality": 0.000632,
+    "eigenvector_centrality": 0.047293
+  },
+  {
+    "id": "INS-06",
+    "label": "8",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "What do the governance differences across the four schools (HKU / CUHK / HKUST / PolyU) reveal?",
+    "text_cn": "四校（港大/港中大/港科/港理工）的治理差异暴露了什么？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [
+      "governance"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [
+      "Three-school benchmark"
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 0,
+    "degree": 7,
+    "degree_centrality": 0.061947,
+    "betweenness_centrality": 0.002845,
+    "eigenvector_centrality": 0.009526
+  },
+  {
+    "id": "INS-07",
+    "label": "9",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "Who decides whether a collaboration \"succeeded\"? School / student / instructor / firm use different yardsticks.",
+    "text_cn": "校企合作的\"成功\"谁说了算？学校/学生/老师/企业的标准不一样。",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li"
+    ],
+    "citations": [],
+    "cluster_id": 6,
+    "degree": 10,
+    "degree_centrality": 0.088496,
+    "betweenness_centrality": 0.148072,
+    "eigenvector_centrality": 0.000557
+  },
+  {
+    "id": "INS-08",
+    "label": "10",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "Will a firm return next year after a one-off successful course? One-off = the instructor scrambles half a year in advance every semester.",
+    "text_cn": "一次性成功的课，明年企业还回来吗？一次性 = 每学期老师提前半年折腾。",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [
+      "sustainability"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li"
+    ],
+    "citations": [],
+    "cluster_id": 2,
+    "degree": 13,
+    "degree_centrality": 0.115044,
+    "betweenness_centrality": 0.000316,
+    "eigenvector_centrality": 0.377086
+  },
+  {
+    "id": "INS-09",
+    "label": "新①",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "The institution is \"locked at the compliance layer\" — rules exist (0-credit internships, accreditation requirements) but no governance (no one manages firm attrition). Why doesn't the institution dare move from \"compliance\" to \"governance\"? What is blocking it?",
+    "text_cn": "院系\"锁定在合规层\"——有制度（0 学分实习、认证要求）却无治理（没人管企业流失）。院系为什么不敢从\"合规\"走到\"治理\"？卡住它的是什么？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [
+      "governance"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [
+      "Step 2 memo",
+      "Slaughter"
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 0,
+    "degree": 8,
+    "degree_centrality": 0.070796,
+    "betweenness_centrality": 0.015645,
+    "eigenvector_centrality": 0.012865
+  },
+  {
+    "id": "INS-10",
+    "label": "新②",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "In star courses the firm is \"too eager\" — what does the institution rely on to keep autonomy? The literature (Slaughter/Zukin) only sounds alarms and gives no classroom-level mechanism — so where does the institution's \"anti-capture\" counterforce actually come from?",
+    "text_cn": "明星课里企业\"太着急\"，院系靠什么保住自主？文献（Slaughter/Zukin）只敲警钟、没给课堂级机制——那院系\"防捕获\"的反制力到底来自哪？",
+    "theory_tags": [
+      "mechanism_design"
+    ],
+    "chain_step": null,
+    "crosscutting": [
+      "governance"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [
+      ", Academic Capitalism and the New Economy (note: the 1997 book is Slaughter & **Leslie**; locally Lit_Review_08 once conflated \"",
+      "2004\")",
+      "Lit_Review_08 two-way governance"
+    ],
+    "source_rec": [],
+    "citations": [
+      {
+        "key": "Slaughter & Rhoades 2004",
+        "label": "Slaughter & Rhoades 2004",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      },
+      {
+        "key": "Slaughter & Rhoades 1997",
+        "label": "Slaughter & Rhoades 1997",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      }
+    ],
+    "cluster_id": 4,
+    "degree": 7,
+    "degree_centrality": 0.061947,
+    "betweenness_centrality": 0.014381,
+    "eigenvector_centrality": 0.003571
+  },
+  {
+    "id": "INS-11",
+    "label": "研①",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "From the institution's KE policy as \"strategic slogan\" to \"instructor behavior\", what transmission links lie in between (promotion weight / performance / funding / dean pressure)? At which link is the chain most likely to break?",
+    "text_cn": "院系的 KE 政策从「战略口号」到「教师行为」，中间经过哪些传导环节（晋升权重/绩效/经费/院长压力）？在哪一环最可能断？",
+    "theory_tags": [
+      "principal_agent"
+    ],
+    "chain_step": null,
+    "crosscutting": [
+      "governance"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [
+      "four-school cross-section"
+    ],
+    "source_rec": [
+      "8/30 deep-research"
+    ],
+    "citations": [],
+    "cluster_id": 0,
+    "degree": 12,
+    "degree_centrality": 0.106195,
+    "betweenness_centrality": 0.000711,
+    "eigenvector_centrality": 0.058992
+  },
+  {
+    "id": "INS-12",
+    "label": "研②",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "UGC's KE metric is \"knowledge-transfer income\" (research commercialization), not \"education-side enterprise collaboration\". Is the policy signal itself skewed — it rewards research monetization but does not assess \"firms teaching in the classroom\"? Is this metric skew the upstream source of \"the institution's urgency not reaching education\"?",
+    "text_cn": "UGC 的 KE 考核口径是「知识转移收入」（科研商业化），不是「教育端校企合作」。政策信号本身是否就偏了——它激励科研变现，却不考核「企业进课堂教学生」？这个口径偏差，是否就是「院系 urgency 传导不到教育端」的源头？",
+    "theory_tags": [
+      "principal_agent"
+    ],
+    "chain_step": null,
+    "crosscutting": [
+      "governance"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [
+      "UGC KT metric vs. education side"
+    ],
+    "source_rec": [
+      "8/30 deep-research"
+    ],
+    "citations": [],
+    "cluster_id": 0,
+    "degree": 10,
+    "degree_centrality": 0.088496,
+    "betweenness_centrality": 7.9e-05,
+    "eigenvector_centrality": 0.048254
+  },
+  {
+    "id": "INS-13",
+    "label": "治①",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "How are the five parties' (Instructor / TA / Student / Enterprise / Institution) incentives aligned to pull in one direction?",
+    "text_cn": "五方（老师/助教/学生/企业/院系）的 incentive 怎么对齐、往一处使？",
+    "theory_tags": [
+      "mechanism_design"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/24 Dr. Li — highest frequency"
+    ],
+    "citations": [],
+    "cluster_id": 4,
+    "degree": 15,
+    "degree_centrality": 0.132743,
+    "betweenness_centrality": 0.019279,
+    "eigenvector_centrality": 0.015418
+  },
+  {
+    "id": "INS-14",
+    "label": "治②",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "Who pays whom (funding heterogeneity: South Africa unfunded vs. Ireland subsidized)",
+    "text_cn": "钱谁给谁（funding 异构：南非无资助 vs 爱尔兰有补贴）",
+    "theory_tags": [
+      "mechanism_design"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [
+      "Co-op cluster"
+    ],
+    "misc_tags": [
+      "— core"
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 4,
+    "degree": 10,
+    "degree_centrality": 0.088496,
+    "betweenness_centrality": 0.009956,
+    "eigenvector_centrality": 0.00822
+  },
+  {
+    "id": "INS-15",
+    "label": "治③",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "Who controls assessment (firms writing 68% of outcomes = the extreme form)",
+    "text_cn": "考核谁说了算（企业写 outcome 68% = 极端形态）",
+    "theory_tags": [
+      "mechanism_design"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [
+      "Star-course cluster"
+    ],
+    "misc_tags": [
+      "— core"
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 4,
+    "degree": 8,
+    "degree_centrality": 0.070796,
+    "betweenness_centrality": 0.001422,
+    "eigenvector_centrality": 0.008441
+  },
+  {
+    "id": "INS-16",
+    "label": "治④",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "What does the student produce that counts as \"the real thing\" (not homework)",
+    "text_cn": "学生做出什么才算\"真东西\"（不是作业）",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [
+      "Real-project cluster"
+    ],
+    "misc_tags": [
+      "— core"
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 1,
+    "degree": 7,
+    "degree_centrality": 0.061947,
+    "betweenness_centrality": 0.002686,
+    "eigenvector_centrality": 0.001494
+  },
+  {
+    "id": "INS-17",
+    "label": "治⑤",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "What is each stakeholder's actual \"currency\" under different models (money vs. signal vs. reputation)?",
+    "text_cn": "每个 stakeholder 在不同模式下真正在乎的\"货币\"是什么（钱 vs 信号 vs 声誉）？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "Lit_Review_08"
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 6,
+    "degree": 7,
+    "degree_centrality": 0.061947,
+    "betweenness_centrality": 0.024178,
+    "eigenvector_centrality": 0.001163
+  },
+  {
+    "id": "INS-18",
+    "label": "治⑥",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "How to give each stakeholder \"the attribute it lacks\" (firm lacks urgency / student lacks power)?",
+    "text_cn": "怎么给每个 stakeholder \"补它缺的属性\"（企业缺 urgency / 学生缺 power）？",
+    "theory_tags": [
+      "mechanism_design"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "Stakeholder notes"
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 4,
+    "degree": 10,
+    "degree_centrality": 0.088496,
+    "betweenness_centrality": 0.001422,
+    "eigenvector_centrality": 0.012522
+  },
+  {
+    "id": "INS-19",
+    "label": "治⑦",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "How is value creation defined, and value capture realized — \"the wool comes off the pig's back\" (i.e., the bill is footed by a third party, not by the one who produces the value)?",
+    "text_cn": "价值 creation 怎么定义、价值 capture 怎么实现（\"羊毛出在猪身上\"）？",
+    "theory_tags": [
+      "mechanism_design"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li — highest frequency"
+    ],
+    "citations": [],
+    "cluster_id": 4,
+    "degree": 13,
+    "degree_centrality": 0.115044,
+    "betweenness_centrality": 0.004267,
+    "eigenvector_centrality": 0.017899
+  },
+  {
+    "id": "INS-20",
+    "label": "治⑧",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "Governance is two-way: invite in (firm too cold) + guard against capture (firm too hot) — how does one mechanism stay stable at both ends?",
+    "text_cn": "治理是双向的：请进来（企业过冷）+ 防捕获（企业过热），同一机制怎么两端都稳？",
+    "theory_tags": [
+      "mechanism_design"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "Lit_Review_08"
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 4,
+    "degree": 12,
+    "degree_centrality": 0.106195,
+    "betweenness_centrality": 0.007743,
+    "eigenvector_centrality": 0.014557
+  },
+  {
+    "id": "INS-21",
+    "label": "治⑨",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "Why has the mechanism-design lens never shone on *teaching* collaborations that bring enterprises into the classroom? (= the gap itself)",
+    "text_cn": "机制设计镜头为什么从没照过\"企业进课堂\"的教学合作？（= gap 本身）",
+    "theory_tags": [
+      "mechanism_design"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "Lit_Review_08"
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 4,
+    "degree": 8,
+    "degree_centrality": 0.070796,
+    "betweenness_centrality": 0.000158,
+    "eigenvector_centrality": 0.012422
+  },
+  {
+    "id": "INS-22",
+    "label": "治⑪",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "Who is \"least able to walk away\" from this collaboration (elasticity / tax incidence)? The party with lower elasticity bears more of the cost.",
+    "text_cn": "谁最\"离不开\"这次合作（弹性/税负归宿）？谁弹性低谁多承担成本。",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "source TBD —"
+    ],
+    "source_rec": [
+      "Ferrari's framework",
+      "Ferrari's own framing"
+    ],
+    "citations": [],
+    "cluster_id": 0,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.023862,
+    "eigenvector_centrality": 0.002248
+  },
+  {
+    "id": "INS-23",
+    "label": "治⑫",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "How is \"try-before-you-buy\" (term source Coco 2000; mechanism = screening Stigler 1962 / signaling Spence 1973) translated into a course mechanism?",
+    "text_cn": "\"先试后买\"（术语源 Coco 2000；机制=筛选 Stigler 1962 / 信号 Spence 1973）怎么翻译成课程机制？",
+    "theory_tags": [
+      "signaling"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [
+      "Internship cluster"
+    ],
+    "misc_tags": [],
+    "source_rec": [],
+    "citations": [
+      {
+        "key": "Coco 2000",
+        "label": "Coco 2000",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      },
+      {
+        "key": "Stigler 1962",
+        "label": "Stigler 1962",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      },
+      {
+        "key": "Spence 1973",
+        "label": "Spence 1973",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      }
+    ],
+    "cluster_id": 5,
+    "degree": 8,
+    "degree_centrality": 0.070796,
+    "betweenness_centrality": 0.0,
+    "eigenvector_centrality": 0.00325
+  },
+  {
+    "id": "INS-24",
+    "label": "治⑬",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "How is stakeholder salience (power / legitimacy / urgency) quantified across the five parties?",
+    "text_cn": "stakeholder salience（power/legitimacy/urgency）怎么量化到五方？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "Stakeholder notes"
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 0,
+    "degree": 7,
+    "degree_centrality": 0.061947,
+    "betweenness_centrality": 0.015645,
+    "eigenvector_centrality": 0.006456
+  },
+  {
+    "id": "INS-25",
+    "label": "治⑭",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "Instrumentation: how is the planning / management / enhancement of enterprise-engaged courses automated?",
+    "text_cn": "工具化：校企合作课程的 planning / management / enhancement 怎么自动化？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li"
+    ],
+    "citations": [],
+    "cluster_id": 0,
+    "degree": 5,
+    "degree_centrality": 0.044248,
+    "betweenness_centrality": 0.073009,
+    "eigenvector_centrality": 0.001686
+  },
+  {
+    "id": "INS-26",
+    "label": "研③",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "AI may for the first time quantify \"relationship maintenance / tacit labor\" — but once a metric is used for decisions it corrupts (Campbell's Law). Does \"AI quantifying tacit labor\" make enterprise collaboration measurable (slowing its marginalization), or does it manufacture a more easily manipulated metric?",
+    "text_cn": "AI 第一次可能把「关系维护/隐性劳动」量化出来——但指标一旦被用于决策就会腐化（Campbell's Law）。「AI 量化隐性劳动」到底让校企合作从不可测变可测（减缓边缘化），还是制造一个更容易被操纵的指标？",
+    "theory_tags": [
+      "principal_agent"
+    ],
+    "chain_step": null,
+    "crosscutting": [
+      "governance",
+      "methodology"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [
+      "AI variable",
+      "Campbell"
+    ],
+    "source_rec": [
+      "8/30 deep-research"
+    ],
+    "citations": [],
+    "cluster_id": 0,
+    "degree": 7,
+    "degree_centrality": 0.061947,
+    "betweenness_centrality": 0.0,
+    "eigenvector_centrality": 0.036846
+  },
+  {
+    "id": "INS-27",
+    "label": "研④",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "A firm's ROI on enterprise collaboration is negative in the first two years (Swiss apprenticeship: −20% / −5%), turning positive only in years 3–4. Who bears / subsidizes this \"loss period\"? If nobody subsidizes it, why should a firm renew before ROI turns positive?",
+    "text_cn": "企业参与校企合作前两年 ROI 为负（瑞士学徒：−20% / −5%），第 3-4 年才转正。谁承担/补贴这个「亏损期」？如果没人补贴，企业为什么该在 ROI 转正前续约？",
+    "theory_tags": [
+      "mechanism_design"
+    ],
+    "chain_step": null,
+    "crosscutting": [
+      "governance",
+      "sustainability"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [
+      "Swiss ROI curve bher",
+      "TRAES"
+    ],
+    "source_rec": [
+      "8/30 deep-research"
+    ],
+    "citations": [],
+    "cluster_id": 4,
+    "degree": 8,
+    "degree_centrality": 0.070796,
+    "betweenness_centrality": 0.000158,
+    "eigenvector_centrality": 0.008119
+  },
+  {
+    "id": "INS-28",
+    "label": "研⑤",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "In Canada's SWPP, 76% of firms \"would not have hired a student\" without the subsidy. Is the subsidy a \"starter\" or a \"permanent crutch\"? Once the subsidy exits, what intrinsic incentive keeps the firm?",
+    "text_cn": "加拿大 SWPP 里 76% 的企业「本不会雇学生」，靠补贴才进场。补贴是「启动器」还是「永久拐杖」？补贴退出后，企业靠什么内在 incentive 留下来？",
+    "theory_tags": [
+      "mechanism_design"
+    ],
+    "chain_step": null,
+    "crosscutting": [
+      "sustainability"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [
+      "SWPP 24% would hire without subsidy ictc-ctic"
+    ],
+    "source_rec": [
+      "8/30 deep-research"
+    ],
+    "citations": [],
+    "cluster_id": 4,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.0,
+    "eigenvector_centrality": 0.008891
+  },
+  {
+    "id": "INS-29",
+    "label": "研⑥",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "Of the value enterprise collaboration produces (students learning + firms gaining productivity + schools gaining reputation), who is the residual claimant? If no party is accountable for \"whether value actually materializes\", why should it persist?",
+    "text_cn": "校企合作产生的价值（学生学到东西 + 企业拿到生产力 + 学校拿到声誉），谁是这个价值的剩余索取者（residual claimant）？如果没有任何一方对「价值是否真实产生」负责，价值为什么应该持续？",
+    "theory_tags": [
+      "mechanism_design"
+    ],
+    "chain_step": null,
+    "crosscutting": [
+      "governance"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [
+      "STORM economist view"
+    ],
+    "source_rec": [
+      "8/30 deep-research"
+    ],
+    "citations": [],
+    "cluster_id": 4,
+    "degree": 11,
+    "degree_centrality": 0.097345,
+    "betweenness_centrality": 0.00885,
+    "eigenvector_centrality": 0.011399
+  },
+  {
+    "id": "INS-30",
+    "label": "研⑦",
+    "section": "institution",
+    "subsection": null,
+    "stakeholder": "institution",
+    "text_en": "When \"the wool comes off the pig's back\" (value capture is footed by a third party, not by the party producing the value), who has the incentive to maximize the value itself? Is this the economic root of \"one-off-ness\"?",
+    "text_cn": "当「羊毛出在猪身上」（value capture 由第三方买单，而非产生价值的一方）时，谁有 incentive 去最大化价值本身？这是否就是「一次性」的经济学根源？",
+    "theory_tags": [
+      "mechanism_design"
+    ],
+    "chain_step": null,
+    "crosscutting": [
+      "governance"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [
+      "deepening of 治⑦",
+      "residual claimant"
+    ],
+    "source_rec": [
+      "8/30 deep-research"
+    ],
+    "citations": [],
+    "cluster_id": 4,
+    "degree": 11,
+    "degree_centrality": 0.097345,
+    "betweenness_centrality": 0.021018,
+    "eigenvector_centrality": 0.011923
+  },
+  {
+    "id": "TCH-01",
+    "label": "1",
+    "section": "instructor",
+    "subsection": null,
+    "stakeholder": "instructor",
+    "text_en": "Why is the instructor willing to bridge? (incentive = promotion?)",
+    "text_cn": "老师为什么愿意搭桥（incentive = 评职称？）",
+    "theory_tags": [
+      "principal_agent"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/21 Ferrari"
+    ],
+    "citations": [],
+    "cluster_id": 0,
+    "degree": 18,
+    "degree_centrality": 0.159292,
+    "betweenness_centrality": 0.052939,
+    "eigenvector_centrality": 0.078794
+  },
+  {
+    "id": "TCH-02",
+    "label": "2",
+    "section": "instructor",
+    "subsection": null,
+    "stakeholder": "instructor",
+    "text_en": "How does the \"promotion\" incentive get wired into mechanism design?",
+    "text_cn": "评职称这个 incentive 怎么接进机制设计？",
+    "theory_tags": [
+      "principal_agent"
+    ],
+    "chain_step": null,
+    "crosscutting": [
+      "governance"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/21 Ferrari"
+    ],
+    "citations": [],
+    "cluster_id": 0,
+    "degree": 19,
+    "degree_centrality": 0.168142,
+    "betweenness_centrality": 0.038717,
+    "eigenvector_centrality": 0.070703
+  },
+  {
+    "id": "TCH-03",
+    "label": "3",
+    "section": "instructor",
+    "subsection": null,
+    "stakeholder": "instructor",
+    "text_en": "PBL can't be done by one instructor — who pays the extra instructors (external experts)?",
+    "text_cn": "PBL 一个老师做不起来，额外老师（外请专家）的工资谁出？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li"
+    ],
+    "citations": [],
+    "cluster_id": 1,
+    "degree": 7,
+    "degree_centrality": 0.061947,
+    "betweenness_centrality": 0.016751,
+    "eigenvector_centrality": 0.001171
+  },
+  {
+    "id": "TCH-04",
+    "label": "4",
+    "section": "instructor",
+    "subsection": null,
+    "stakeholder": "instructor",
+    "text_en": "Instructors lack entrepreneurship/industry experience — how to fill it? (joint teaching with industry experts, Wu & Chen)",
+    "text_cn": "老师缺创业/产业经验，怎么补？（企业专家联合授课 Wu & Chen）",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [
+      "Co-teaching cluster"
+    ],
+    "misc_tags": [],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 1,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.006005,
+    "eigenvector_centrality": 0.008451
+  },
+  {
+    "id": "TCH-05",
+    "label": "5",
+    "section": "instructor",
+    "subsection": null,
+    "stakeholder": "instructor",
+    "text_en": "How is the role \"instructor = knowledge broker\" theorized?",
+    "text_cn": "\"教师=知识经纪人 knowledge broker\"这个角色怎么理论化？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [
+      "Competition cluster"
+    ],
+    "misc_tags": [
+      "⚠ concept to be sourced: the term \"knowledge broker\" for teachers is a real concept (cf. , \"Teacher educators as knowledge brokers,\" Professional Development in Education, DOI ), but its application to *industry-facing* instructors is not yet theorized — previously mis-attributed to Benson & Chau, whose actual paper is a SCM case competition"
+    ],
+    "source_rec": [],
+    "citations": [
+      {
+        "key": null,
+        "label": "DOI 10.1080/19415257.2024.2360461",
+        "doi": "10.1080/19415257.2024.2360461",
+        "url": null,
+        "unverified": true
+      },
+      {
+        "key": "Knight 2024",
+        "label": "Knight 2024",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      }
+    ],
+    "cluster_id": 6,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.061947,
+    "eigenvector_centrality": 0.001989
+  },
+  {
+    "id": "TCH-06",
+    "label": "6",
+    "section": "instructor",
+    "subsection": null,
+    "stakeholder": "instructor",
+    "text_en": "Instructors get a new batch of students every year but don't themselves change — how to keep teaching quality from slipping?",
+    "text_cn": "老师每年换一批学生，他自己不换，怎么保持教学质量不滑坡？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [
+      "sustainability"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li"
+    ],
+    "citations": [],
+    "cluster_id": 2,
+    "degree": 13,
+    "degree_centrality": 0.115044,
+    "betweenness_centrality": 0.029867,
+    "eigenvector_centrality": 0.34597
+  },
+  {
+    "id": "TCH-07",
+    "label": "7",
+    "section": "instructor",
+    "subsection": null,
+    "stakeholder": "instructor",
+    "text_en": "Does the instructor bear responsibility for firm attrition? Who is accountable for retention?",
+    "text_cn": "老师要不要担\"企业流失\"的责任？谁对留存负责？",
+    "theory_tags": [
+      "principal_agent"
+    ],
+    "chain_step": null,
+    "crosscutting": [
+      "sustainability"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [
+      "source TBD —"
+    ],
+    "source_rec": [
+      "Rec",
+      "Ferrari's own framing"
+    ],
+    "citations": [],
+    "cluster_id": 0,
+    "degree": 8,
+    "degree_centrality": 0.070796,
+    "betweenness_centrality": 0.0,
+    "eigenvector_centrality": 0.039365
+  },
+  {
+    "id": "TCH-08",
+    "label": "新①",
+    "section": "instructor",
+    "subsection": null,
+    "stakeholder": "instructor",
+    "text_en": "The instructor's bridging incentive is promotion, but does \"enterprise-in-the-classroom\" actually count in promotion review? If promotion doesn't recognize it at all, what keeps the instructor going?",
+    "text_cn": "老师搭桥的 incentive 是评职称，但\"企业进课堂\"在职称评价里到底算不算数？如果评职称根本不认这个，老师靠什么撑下去？",
+    "theory_tags": [
+      "principal_agent"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "Framework",
+      "four forces"
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 0,
+    "degree": 10,
+    "degree_centrality": 0.088496,
+    "betweenness_centrality": 0.0,
+    "eigenvector_centrality": 0.063226
+  },
+  {
+    "id": "TCH-09",
+    "label": "新②",
+    "section": "instructor",
+    "subsection": null,
+    "stakeholder": "instructor",
+    "text_en": "Instructors lack industry experience, and the literature's remedy is \"bringing in industry experts to co-teach\". Between \"the instructor gaining experience themselves\" and \"bringing in experts\", which is cheaper and which is sustainable? Which will the instructor choose?",
+    "text_cn": "老师缺产业经验，文献给的办法是\"引进企业专家联合授课\"。\"老师自己补经验\"和\"引进专家\"相比，哪个成本低、哪个可持续？老师会选哪条？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      ", Course Design for College Entrepreneurship Education, Frontiers in Psychology 10, 1016",
+      "includes six industry experts co-teaching"
+    ],
+    "source_rec": [],
+    "citations": [
+      {
+        "key": "Wu & Chen 2019",
+        "label": "Wu & Chen 2019",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      }
+    ],
+    "cluster_id": 1,
+    "degree": 7,
+    "degree_centrality": 0.061947,
+    "betweenness_centrality": 0.045512,
+    "eigenvector_centrality": 0.006974
+  },
+  {
+    "id": "TCH-10",
+    "label": "研①",
+    "section": "instructor",
+    "subsection": null,
+    "stakeholder": "instructor",
+    "text_en": "AI makes research output (papers / code / experiments) faster and more measurable — does it accelerate the crowding-out of the unmeasurable \"enterprise collaboration\" anchor by the measurable \"research\" anchor (Holmström multi-task)? Where does instructor time flow even more in the AI age?",
+    "text_cn": "AI 让科研产出（论文/代码/实验）更快更可测，是否加速了「科研」这根可测锚对「校企合作」这根不可测锚的挤出（Holmström 多任务）？AI 时代教师的时间更往哪流？",
+    "theory_tags": [
+      "principal_agent"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "AI variable"
+    ],
+    "source_rec": [
+      "8/30 deep-research"
+    ],
+    "citations": [],
+    "cluster_id": 0,
+    "degree": 10,
+    "degree_centrality": 0.088496,
+    "betweenness_centrality": 0.0,
+    "eigenvector_centrality": 0.053886
+  },
+  {
+    "id": "TCH-11",
+    "label": "研②",
+    "section": "instructor",
+    "subsection": null,
+    "stakeholder": "instructor",
+    "text_en": "Besides promotion, what other incentives drive the instructor to bridge (intrinsic motivation / peer recognition / funding / time cost / academic reputation)? What are their relative weights? What method (revealed preference / conjoint) extracts true weights rather than self-reported ones?",
+    "text_cn": "教师 bridge 的激励，除评职称外还有哪些（内在动机/同伴认可/经费/时间成本/学术声誉）？各占多少权重？用什么方法（revealed preference / conjoint）逼出真实权重，而非自报权重？",
+    "theory_tags": [
+      "principal_agent"
+    ],
+    "chain_step": null,
+    "crosscutting": [
+      "methodology"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [
+      "STORM scholar view"
+    ],
+    "source_rec": [
+      "8/30 deep-research"
+    ],
+    "citations": [],
+    "cluster_id": 0,
+    "degree": 7,
+    "degree_centrality": 0.061947,
+    "betweenness_centrality": 0.0,
+    "eigenvector_centrality": 0.040041
+  },
+  {
+    "id": "TCH-12",
+    "label": "研③",
+    "section": "instructor",
+    "subsection": null,
+    "stakeholder": "instructor",
+    "text_en": "Between \"measurable incentives\" (promotion) and \"unmeasurable incentives\" (intrinsic motivation / peer recognition), which dominates the instructor's decision to do enterprise collaboration? Do the weights differ between business (promotion-sensitive) and engineering (personal-feel-sensitive) disciplines?",
+    "text_cn": "「可测量激励」（评职称）与「不可测量激励」（内在动机/同伴认可），在教师决定是否做校企合作时谁占主导？商科（对晋升敏感）与工科（对个人感受敏感）的权重是否不同？",
+    "theory_tags": [
+      "types"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "STORM scholar view",
+      "discipline difference"
+    ],
+    "source_rec": [
+      "8/30 deep-research"
+    ],
+    "citations": [],
+    "cluster_id": 3,
+    "degree": 8,
+    "degree_centrality": 0.070796,
+    "betweenness_centrality": 0.0,
+    "eigenvector_centrality": 0.001576
+  },
+  {
+    "id": "TCH-13",
+    "label": "课①",
+    "section": "instructor",
+    "subsection": null,
+    "stakeholder": "instructor",
+    "text_en": "For university-industry co-teaching PBL, does a long cycle (semester) or a short cycle (summer, 2–3 weeks) fit?",
+    "text_cn": "校企共同做 PBL，适合长周期（semester）还是短周期（summer 2-3 周）？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li — one of the core questions"
+    ],
+    "citations": [],
+    "cluster_id": 1,
+    "degree": 7,
+    "degree_centrality": 0.061947,
+    "betweenness_centrality": 0.013432,
+    "eigenvector_centrality": 0.017156
+  },
+  {
+    "id": "TCH-14",
+    "label": "课②",
+    "section": "instructor",
+    "subsection": null,
+    "stakeholder": "instructor",
+    "text_en": "What topics to introduce at first/second/third year respectively? (no-threshold → mildly professional → deeply professional → capstone interfacing the workplace)",
+    "text_cn": "大一大二大三分别引入什么课题？（无门槛→轻度专业→深度专业→毕设对接职场）",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li"
+    ],
+    "citations": [],
+    "cluster_id": 1,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.03129,
+    "eigenvector_centrality": 0.006618
+  },
+  {
+    "id": "TCH-15",
+    "label": "课③",
+    "section": "instructor",
+    "subsection": null,
+    "stakeholder": "instructor",
+    "text_en": "Why can't a first-year topic be domain-specific (can't do it without calculus/statistics)?",
+    "text_cn": "大一课题为什么不能 domain-specific（微积分/统计没学过就不会做）？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li"
+    ],
+    "citations": [],
+    "cluster_id": 1,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.019595,
+    "eigenvector_centrality": 0.006039
+  },
+  {
+    "id": "TCH-16",
+    "label": "课④",
+    "section": "instructor",
+    "subsection": null,
+    "stakeholder": "instructor",
+    "text_en": "How does the capstone interface \"entry-level professional\" real projects?",
+    "text_cn": "毕业设计怎么对接\"职场新人级\"真实项目？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li"
+    ],
+    "citations": [],
+    "cluster_id": 1,
+    "degree": 7,
+    "degree_centrality": 0.061947,
+    "betweenness_centrality": 0.014223,
+    "eigenvector_centrality": 0.000587
+  },
+  {
+    "id": "TCH-17",
+    "label": "课⑤",
+    "section": "instructor",
+    "subsection": null,
+    "stakeholder": "instructor",
+    "text_en": "How to do a circular topic (smart home → classroom → e-commerce, one cycle every 5 years)?",
+    "text_cn": "circular topic（smart home→classroom→e-commerce，5 年一圈）怎么做？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [
+      "sustainability"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li"
+    ],
+    "citations": [],
+    "cluster_id": 2,
+    "degree": 12,
+    "degree_centrality": 0.106195,
+    "betweenness_centrality": 0.001106,
+    "eigenvector_centrality": 0.370608
+  },
+  {
+    "id": "TCH-18",
+    "label": "课⑥",
+    "section": "instructor",
+    "subsection": null,
+    "stakeholder": "instructor",
+    "text_en": "In university-industry co-teaching, how to make the student's \"homework\" valuable to the firm (rather than just homework)?",
+    "text_cn": "校企共教怎么让学生的\"作业\"对企业有价值（而非只是作业）？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li"
+    ],
+    "citations": [],
+    "cluster_id": 1,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.019912,
+    "eigenvector_centrality": 0.001193
+  },
+  {
+    "id": "TCH-19",
+    "label": "课⑦",
+    "section": "instructor",
+    "subsection": null,
+    "stakeholder": "instructor",
+    "text_en": "How to solve the privacy problem of real projects (firms won't give real data)?",
+    "text_cn": "真实项目的隐私问题怎么解（企业不给真数据）？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li"
+    ],
+    "citations": [],
+    "cluster_id": 1,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.000474,
+    "eigenvector_centrality": 0.002471
+  },
+  {
+    "id": "TCH-20",
+    "label": "课⑧",
+    "section": "instructor",
+    "subsection": null,
+    "stakeholder": "instructor",
+    "text_en": "Hackathons/competitions have no instructor (only results, no education) — what is the course's unique value?",
+    "text_cn": "黑客松/比赛没有老师教（只有结果没教育），课的独特价值是什么？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li"
+    ],
+    "citations": [],
+    "cluster_id": 4,
+    "degree": 7,
+    "degree_centrality": 0.061947,
+    "betweenness_centrality": 0.078382,
+    "eigenvector_centrality": 0.007321
+  },
+  {
+    "id": "TCH-21",
+    "label": "课⑨",
+    "section": "instructor",
+    "subsection": null,
+    "stakeholder": "instructor",
+    "text_en": "Course \"one price\" (anyone who pays tuition can attend) vs. internship \"screening system\" (compete for resources) — where does the scalability difference lie?",
+    "text_cn": "课程\"一口价\"（交了学费人人能上）vs 实习\"筛选制\"（竞争拿资源），scalability 差在哪？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li"
+    ],
+    "citations": [],
+    "cluster_id": 6,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.027023,
+    "eigenvector_centrality": 0.001144
+  },
+  {
+    "id": "TCH-22",
+    "label": "课⑩",
+    "section": "instructor",
+    "subsection": null,
+    "stakeholder": "instructor",
+    "text_en": "In grade-level topic design, how does the firm give \"broad problems\" (a mother-baby company doing \"going out\" this year / \"teething\" next year)?",
+    "text_cn": "分年级课题设计，企业端的\"宽泛问题\"（母婴公司今年外出/明年磨牙）怎么给？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li"
+    ],
+    "citations": [],
+    "cluster_id": 2,
+    "degree": 8,
+    "degree_centrality": 0.070796,
+    "betweenness_centrality": 0.018647,
+    "eigenvector_centrality": 0.02588
+  },
+  {
+    "id": "TA-01",
+    "label": "1",
+    "section": "ta",
+    "subsection": null,
+    "stakeholder": "ta",
+    "text_en": "The TA is the \"load-bearing wall of grunt work\" — what is their incentive/cost, and who manages it?",
+    "text_cn": "助教是\"杂活承重墙\"，他的 incentive/cost 是什么、谁管？",
+    "theory_tags": [
+      "principal_agent"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "Framework",
+      "source TBD —"
+    ],
+    "source_rec": [
+      "Ferrari's own framing"
+    ],
+    "citations": [],
+    "cluster_id": 0,
+    "degree": 10,
+    "degree_centrality": 0.088496,
+    "betweenness_centrality": 0.003793,
+    "eigenvector_centrality": 0.051314
+  },
+  {
+    "id": "TA-02",
+    "label": "2",
+    "section": "ta",
+    "subsection": null,
+    "stakeholder": "ta",
+    "text_en": "How is the TA's salience (low power / high urgency) made visible inside the mechanism?",
+    "text_cn": "助教的 salience（权力低/紧迫高）怎么在机制里被看见？",
+    "theory_tags": [
+      "principal_agent"
+    ],
+    "chain_step": null,
+    "crosscutting": [
+      "governance"
+    ],
+    "cluster_mode": [],
+    "misc_tags": [
+      "Stakeholder notes"
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 0,
+    "degree": 10,
+    "degree_centrality": 0.088496,
+    "betweenness_centrality": 0.00237,
+    "eigenvector_centrality": 0.051512
+  },
+  {
+    "id": "TA-03",
+    "label": "新①",
+    "section": "ta",
+    "subsection": null,
+    "stakeholder": "ta",
+    "text_en": "The TA is the one stakeholder entirely absent from the literature. In enterprise-engaged courses, what does the TA actually carry (liaising with firms? supervising students? grading)? Who compensates their cost?",
+    "text_cn": "五方里助教是文献完全缺席的一方。校企合作课程里，助教实际扛了什么（对接企业？带学生？改作业？）？他的成本谁补？",
+    "theory_tags": [
+      "principal_agent"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "Stakeholder notes",
+      "literature gap"
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 0,
+    "degree": 11,
+    "degree_centrality": 0.097345,
+    "betweenness_centrality": 0.002845,
+    "eigenvector_centrality": 0.0552
+  },
+  {
+    "id": "TA-04",
+    "label": "新②",
+    "section": "ta",
+    "subsection": null,
+    "stakeholder": "ta",
+    "text_en": "The TA's salience is *demanding* — urgency only, no power, no legitimacy. Is this \"most overworked yet least heard\" party the first point where enterprise-engaged teaching collapses?",
+    "text_cn": "助教的 salience 是 demanding——只有 urgency、没 power 没 legitimacy。\"最累但最没话语权\"这一方，会不会是校企合作最容易塌的那一环？",
+    "theory_tags": [
+      "principal_agent"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [],
+    "citations": [
+      {
+        "key": "Mitchell 1997",
+        "label": "Mitchell 1997",
+        "doi": null,
+        "url": null,
+        "unverified": false
+      }
+    ],
+    "cluster_id": 0,
+    "degree": 9,
+    "degree_centrality": 0.079646,
+    "betweenness_centrality": 0.011378,
+    "eigenvector_centrality": 0.028762
+  },
+  {
+    "id": "STU-01",
+    "label": "1",
+    "section": "student",
+    "subsection": null,
+    "stakeholder": "student",
+    "text_en": "Why do students take loss-making internships (short-term labor ≈ zero value, in exchange for long-term return)?",
+    "text_cn": "学生为什么倒贴实习（短期劳动≈0 价值，换长期回报）？",
+    "theory_tags": [
+      "signaling"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [
+      "Internship cluster"
+    ],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Ferrari"
+    ],
+    "citations": [],
+    "cluster_id": 5,
+    "degree": 13,
+    "degree_centrality": 0.115044,
+    "betweenness_centrality": 0.034608,
+    "eigenvector_centrality": 0.001474
+  },
+  {
+    "id": "STU-02",
+    "label": "2",
+    "section": "student",
+    "subsection": null,
+    "stakeholder": "student",
+    "text_en": "Can first/second-year students get internships through effort? (Almost not, unless restaurant waiting)",
+    "text_cn": "大一大二学生能靠努力找到实习吗？（几乎不能，除非餐厅服务员）",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li"
+    ],
+    "citations": [],
+    "cluster_id": 5,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.064317,
+    "eigenvector_centrality": 0.006639
+  },
+  {
+    "id": "STU-03",
+    "label": "3",
+    "section": "student",
+    "subsection": null,
+    "stakeholder": "student",
+    "text_en": "What students produce is the same every year (repetition = no value) — how to make each year create new value?",
+    "text_cn": "学生做的东西每年都一样（重复=无价值），怎么让每年创造新价值？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li"
+    ],
+    "citations": [],
+    "cluster_id": 2,
+    "degree": 13,
+    "degree_centrality": 0.115044,
+    "betweenness_centrality": 0.050885,
+    "eigenvector_centrality": 0.050625
+  },
+  {
+    "id": "STU-04",
+    "label": "5",
+    "section": "student",
+    "subsection": null,
+    "stakeholder": "student",
+    "text_en": "What should students learn to avoid being replaced by AI? (= exploratory work)",
+    "text_cn": "学生要学什么才不被 AI 取代？（= 探索性工作）",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li"
+    ],
+    "citations": [],
+    "cluster_id": 0,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.053097,
+    "eigenvector_centrality": 0.002669
+  },
+  {
+    "id": "STU-05",
+    "label": "7",
+    "section": "student",
+    "subsection": null,
+    "stakeholder": "student",
+    "text_en": "86.4% of hackathon students come for \"challenge + being seen\", not prizes — what is a student's \"currency\", really?",
+    "text_cn": "黑客松学生 86.4% 因\"挑战+被看见\"而来、非奖品——学生的\"货币\"到底是什么？",
+    "theory_tags": [
+      "signaling"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [
+      "Hackathon cluster"
+    ],
+    "misc_tags": [],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 5,
+    "degree": 7,
+    "degree_centrality": 0.061947,
+    "betweenness_centrality": 0.000158,
+    "eigenvector_centrality": 0.000451
+  },
+  {
+    "id": "STU-06",
+    "label": "8",
+    "section": "student",
+    "subsection": null,
+    "stakeholder": "student",
+    "text_en": "Motivations and satisfaction differences across project types students choose (community / internal / industry) (ASEE)",
+    "text_cn": "学生选项目类型（社区/内部/产业）的动机和满意度差异（ASEE）",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [
+      "Real-project cluster"
+    ],
+    "misc_tags": [],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 1,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.011694,
+    "eigenvector_centrality": 0.001024
+  },
+  {
+    "id": "STU-07",
+    "label": "9",
+    "section": "student",
+    "subsection": null,
+    "stakeholder": "student",
+    "text_en": "Competition → internship → graduate school, this \"pre-graduation talent-locking chain\" favors elite-school students — how to fix the fairness?",
+    "text_cn": "竞赛→实习→研究生，这条\"毕业前人才锁定链\"偏袒名校生，公平性怎么破？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [
+      "Competition cluster"
+    ],
+    "misc_tags": [],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 6,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.020544,
+    "eigenvector_centrality": 0.000479
+  },
+  {
+    "id": "STU-08",
+    "label": "10",
+    "section": "student",
+    "subsection": null,
+    "stakeholder": "student",
+    "text_en": "A student who has \"only done homework\" enters a firm — why can't they solve real problems?",
+    "text_cn": "学生\"只做过作业\"就进企业，为什么解决不了真问题？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li"
+    ],
+    "citations": [],
+    "cluster_id": 1,
+    "degree": 8,
+    "degree_centrality": 0.070796,
+    "betweenness_centrality": 0.009482,
+    "eigenvector_centrality": 0.000915
+  },
+  {
+    "id": "STU-09",
+    "label": "11",
+    "section": "student",
+    "subsection": null,
+    "stakeholder": "student",
+    "text_en": "Course vs. competition vs. internship — which is most equal for students (largest scalability)?",
+    "text_cn": "课程 vs 竞赛 vs 实习，哪个对学生最平等（scalability 最大）？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [],
+    "source_rec": [
+      "Rec 8/19 Dr. Li"
+    ],
+    "citations": [],
+    "cluster_id": 6,
+    "degree": 7,
+    "degree_centrality": 0.061947,
+    "betweenness_centrality": 0.006321,
+    "eigenvector_centrality": 0.000919
+  },
+  {
+    "id": "STU-10",
+    "label": "新①",
+    "section": "student",
+    "subsection": null,
+    "stakeholder": "student",
+    "text_en": "Students \"take a loss\" (short-term labor for long-term return), but is the \"long-term return\" the same for different students? Do first-year and final-year students want the same \"long-term return\"?",
+    "text_cn": "学生\"倒贴\"（短期劳动换长期回报），但\"长期回报\"对不同学生是不是不一样？大一学生和大四学生要的，是同一个\"长期回报\"吗？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "Framework",
+      "firm attrition attribution",
+      "retention",
+      "stepping-stone"
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 5,
+    "degree": 11,
+    "degree_centrality": 0.097345,
+    "betweenness_centrality": 0.13701,
+    "eigenvector_centrality": 0.007305
+  },
+  {
+    "id": "STU-11",
+    "label": "新②",
+    "section": "student",
+    "subsection": null,
+    "stakeholder": "student",
+    "text_en": "The competition → internship → graduate-school \"talent-locking chain\" favors elite-school students. Where does an ordinary-school student sit inside this mechanism?",
+    "text_cn": "竞赛→实习→研究生这条\"人才锁定链\"偏袒名校生。普通校的学生，在这套机制里处于什么位置？",
+    "theory_tags": [],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "USC talent-locking chain"
+    ],
+    "source_rec": [],
+    "citations": [],
+    "cluster_id": 6,
+    "degree": 6,
+    "degree_centrality": 0.053097,
+    "betweenness_centrality": 0.023546,
+    "eigenvector_centrality": 0.002144
+  },
+  {
+    "id": "STU-12",
+    "label": "研①",
+    "section": "student",
+    "subsection": null,
+    "stakeholder": "student",
+    "text_en": "Does the student's \"long-term return\" (signal value / ~20% wage premium) actually materialize? If the signal a student buys with their loss-making labor depreciates in the AI age, will the student — the demand side — exit first?",
+    "text_cn": "学生的「长期回报」（信号价值/约 20% 收入溢价）是否真实兑现？如果学生的倒贴换来的信号在 AI 时代贬值，学生这个需求端会不会先退场？",
+    "theory_tags": [
+      "signaling"
+    ],
+    "chain_step": null,
+    "crosscutting": [],
+    "cluster_mode": [],
+    "misc_tags": [
+      "STORM student view",
+      "Canada 20% premium"
+    ],
+    "source_rec": [
+      "8/30 deep-research"
+    ],
+    "citations": [],
+    "cluster_id": 5,
+    "degree": 9,
+    "degree_centrality": 0.079646,
+    "betweenness_centrality": 0.0,
+    "eigenvector_centrality": 0.000771
+  }
+]

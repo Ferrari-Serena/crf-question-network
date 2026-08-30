@@ -1,0 +1,5459 @@
+[
+  {
+    "source": "ENT-01",
+    "target": "ENT-07",
+    "weight": 0.1303,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.2135
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-01",
+    "target": "ENT-29",
+    "weight": 0.0295,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0484
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-01",
+    "target": "ENT-32",
+    "weight": 0.0514,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0843
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-01",
+    "target": "ENT-39",
+    "weight": 0.0876,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1436
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-01",
+    "target": "ENT-46",
+    "weight": 0.0864,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1416
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-01",
+    "target": "INS-03",
+    "weight": 0.0596,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0977
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-01",
+    "target": "TCH-01",
+    "weight": 0.1936,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.3172
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-01",
+    "target": "TCH-04",
+    "weight": 0.6,
+    "breakdown": {
+      "cotag": 1.0,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cluster:Co-teaching cluster"
+    ]
+  },
+  {
+    "source": "ENT-01",
+    "target": "TCH-17",
+    "weight": 0.0636,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1042
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-02",
+    "target": "ENT-12",
+    "weight": 0.11,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1802
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-02",
+    "target": "ENT-32",
+    "weight": 0.0533,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0873
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-02",
+    "target": "ENT-38",
+    "weight": 0.0398,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0652
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-02",
+    "target": "INS-16",
+    "weight": 0.5472,
+    "breakdown": {
+      "cotag": 0.8,
+      "coword": 0.1102
+    },
+    "shared_tags": [
+      "cluster:Real-project cluster"
+    ]
+  },
+  {
+    "source": "ENT-02",
+    "target": "INS-17",
+    "weight": 0.0727,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1191
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-02",
+    "target": "TCH-16",
+    "weight": 0.1448,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.2372
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-02",
+    "target": "TCH-19",
+    "weight": 0.1569,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.257
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-02",
+    "target": "STU-06",
+    "weight": 0.6,
+    "breakdown": {
+      "cotag": 1.0,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cluster:Real-project cluster"
+    ]
+  },
+  {
+    "source": "ENT-02",
+    "target": "STU-10",
+    "weight": 0.1084,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1776
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-03",
+    "target": "ENT-04",
+    "weight": 0.0695,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1139
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-03",
+    "target": "ENT-08",
+    "weight": 0.1072,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1756
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-03",
+    "target": "ENT-09",
+    "weight": 0.066,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1081
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-03",
+    "target": "ENT-11",
+    "weight": 0.2471,
+    "breakdown": {
+      "cotag": 0.4118,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:signaling",
+      "cluster:Internship cluster"
+    ]
+  },
+  {
+    "source": "ENT-03",
+    "target": "ENT-13",
+    "weight": 0.078,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1278
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-03",
+    "target": "ENT-16",
+    "weight": 0.375,
+    "breakdown": {
+      "cotag": 0.625,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:signaling"
+    ]
+  },
+  {
+    "source": "ENT-03",
+    "target": "ENT-17",
+    "weight": 0.2455,
+    "breakdown": {
+      "cotag": 0.3571,
+      "coword": 0.0511
+    },
+    "shared_tags": [
+      "theory:signaling"
+    ]
+  },
+  {
+    "source": "ENT-03",
+    "target": "ENT-31",
+    "weight": 0.0738,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1209
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-03",
+    "target": "ENT-41",
+    "weight": 0.0966,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1583
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-03",
+    "target": "ENT-43",
+    "weight": 0.1862,
+    "breakdown": {
+      "cotag": 0.2703,
+      "coword": 0.0394
+    },
+    "shared_tags": [
+      "theory:signaling"
+    ]
+  },
+  {
+    "source": "ENT-03",
+    "target": "INS-23",
+    "weight": 0.2152,
+    "breakdown": {
+      "cotag": 0.3182,
+      "coword": 0.0399
+    },
+    "shared_tags": [
+      "theory:signaling",
+      "cluster:Internship cluster"
+    ]
+  },
+  {
+    "source": "ENT-03",
+    "target": "STU-01",
+    "weight": 0.6,
+    "breakdown": {
+      "cotag": 1.0,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:signaling",
+      "cluster:Internship cluster"
+    ]
+  },
+  {
+    "source": "ENT-03",
+    "target": "STU-05",
+    "weight": 0.3333,
+    "breakdown": {
+      "cotag": 0.5556,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:signaling"
+    ]
+  },
+  {
+    "source": "ENT-03",
+    "target": "STU-12",
+    "weight": 0.375,
+    "breakdown": {
+      "cotag": 0.625,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:signaling"
+    ]
+  },
+  {
+    "source": "ENT-04",
+    "target": "ENT-24",
+    "weight": 0.0627,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1028
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-04",
+    "target": "INS-08",
+    "weight": 0.0927,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1519
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-04",
+    "target": "TCH-22",
+    "weight": 0.0962,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1577
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-04",
+    "target": "STU-03",
+    "weight": 0.0544,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0891
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-04",
+    "target": "STU-10",
+    "weight": 0.0409,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.067
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-05",
+    "target": "ENT-06",
+    "weight": 0.6728,
+    "breakdown": {
+      "cotag": 1.0,
+      "coword": 0.1193
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-05",
+    "target": "ENT-21",
+    "weight": 0.6,
+    "breakdown": {
+      "cotag": 1.0,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-05",
+    "target": "ENT-23",
+    "weight": 0.2,
+    "breakdown": {
+      "cotag": 0.3333,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-05",
+    "target": "ENT-24",
+    "weight": 0.36,
+    "breakdown": {
+      "cotag": 0.6,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-05",
+    "target": "ENT-42",
+    "weight": 0.4385,
+    "breakdown": {
+      "cotag": 0.6,
+      "coword": 0.1286
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-05",
+    "target": "ENT-45",
+    "weight": 0.3845,
+    "breakdown": {
+      "cotag": 0.6,
+      "coword": 0.0402
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-05",
+    "target": "INS-08",
+    "weight": 0.6,
+    "breakdown": {
+      "cotag": 1.0,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-05",
+    "target": "TCH-06",
+    "weight": 0.6,
+    "breakdown": {
+      "cotag": 1.0,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-05",
+    "target": "TCH-17",
+    "weight": 0.6,
+    "breakdown": {
+      "cotag": 1.0,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-06",
+    "target": "ENT-21",
+    "weight": 0.6,
+    "breakdown": {
+      "cotag": 1.0,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-06",
+    "target": "ENT-23",
+    "weight": 0.2,
+    "breakdown": {
+      "cotag": 0.3333,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-06",
+    "target": "ENT-42",
+    "weight": 0.396,
+    "breakdown": {
+      "cotag": 0.6,
+      "coword": 0.0589
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-06",
+    "target": "ENT-45",
+    "weight": 0.36,
+    "breakdown": {
+      "cotag": 0.6,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-06",
+    "target": "INS-08",
+    "weight": 0.6,
+    "breakdown": {
+      "cotag": 1.0,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-06",
+    "target": "TCH-06",
+    "weight": 0.6,
+    "breakdown": {
+      "cotag": 1.0,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-06",
+    "target": "TCH-17",
+    "weight": 0.6,
+    "breakdown": {
+      "cotag": 1.0,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-07",
+    "target": "ENT-15",
+    "weight": 0.0887,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1454
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-07",
+    "target": "ENT-28",
+    "weight": 0.1781,
+    "breakdown": {
+      "cotag": 0.2778,
+      "coword": 0.0187
+    },
+    "shared_tags": [
+      "cite:Em & Khampirat 2026"
+    ]
+  },
+  {
+    "source": "ENT-07",
+    "target": "ENT-44",
+    "weight": 0.1538,
+    "breakdown": {
+      "cotag": 0.2564,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cite:Em & Khampirat 2026"
+    ]
+  },
+  {
+    "source": "ENT-07",
+    "target": "INS-14",
+    "weight": 0.096,
+    "breakdown": {
+      "cotag": 0.16,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cluster:Co-op cluster"
+    ]
+  },
+  {
+    "source": "ENT-07",
+    "target": "TCH-02",
+    "weight": 0.0884,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1448
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-07",
+    "target": "STU-02",
+    "weight": 0.0418,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0685
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-08",
+    "target": "ENT-09",
+    "weight": 0.0748,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1225
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-08",
+    "target": "ENT-20",
+    "weight": 0.0488,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.08
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-08",
+    "target": "ENT-25",
+    "weight": 0.0729,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1194
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-08",
+    "target": "ENT-27",
+    "weight": 0.0884,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1449
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-08",
+    "target": "ENT-28",
+    "weight": 0.078,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1278
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-08",
+    "target": "ENT-34",
+    "weight": 0.0681,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1115
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-08",
+    "target": "ENT-41",
+    "weight": 0.1219,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1997
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-08",
+    "target": "TCH-04",
+    "weight": 0.0482,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.079
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-09",
+    "target": "ENT-29",
+    "weight": 0.0437,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0716
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-09",
+    "target": "ENT-35",
+    "weight": 0.0526,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0862
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-09",
+    "target": "ENT-41",
+    "weight": 0.0834,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1367
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-09",
+    "target": "INS-04",
+    "weight": 0.0889,
+    "breakdown": {
+      "cotag": 0.1481,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cluster:Star-course cluster"
+    ]
+  },
+  {
+    "source": "ENT-09",
+    "target": "INS-15",
+    "weight": 0.16,
+    "breakdown": {
+      "cotag": 0.2667,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cluster:Star-course cluster"
+    ]
+  },
+  {
+    "source": "ENT-10",
+    "target": "ENT-22",
+    "weight": 0.4057,
+    "breakdown": {
+      "cotag": 0.6667,
+      "coword": 0.0094
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-10",
+    "target": "ENT-25",
+    "weight": 0.4383,
+    "breakdown": {
+      "cotag": 0.7143,
+      "coword": 0.0159
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-10",
+    "target": "ENT-29",
+    "weight": 0.0297,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0487
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-10",
+    "target": "ENT-30",
+    "weight": 0.0496,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0813
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-10",
+    "target": "ENT-35",
+    "weight": 0.2756,
+    "breakdown": {
+      "cotag": 0.4,
+      "coword": 0.0583
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-10",
+    "target": "ENT-39",
+    "weight": 0.4214,
+    "breakdown": {
+      "cotag": 0.6667,
+      "coword": 0.0351
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-10",
+    "target": "ENT-40",
+    "weight": 0.25,
+    "breakdown": {
+      "cotag": 0.4,
+      "coword": 0.0164
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-10",
+    "target": "ENT-46",
+    "weight": 0.4599,
+    "breakdown": {
+      "cotag": 0.7143,
+      "coword": 0.0513
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-10",
+    "target": "TCH-12",
+    "weight": 0.4,
+    "breakdown": {
+      "cotag": 0.6667,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-11",
+    "target": "ENT-16",
+    "weight": 0.2669,
+    "breakdown": {
+      "cotag": 0.2778,
+      "coword": 0.1642
+    },
+    "shared_tags": [
+      "theory:signaling"
+    ]
+  },
+  {
+    "source": "ENT-11",
+    "target": "ENT-17",
+    "weight": 0.3158,
+    "breakdown": {
+      "cotag": 0.5263,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:signaling",
+      "cite:Coco 2000"
+    ]
+  },
+  {
+    "source": "ENT-11",
+    "target": "ENT-18",
+    "weight": 0.2189,
+    "breakdown": {
+      "cotag": 0.2703,
+      "coword": 0.093
+    },
+    "shared_tags": [
+      "cite:Hardie, Almeida & Ross 2018"
+    ]
+  },
+  {
+    "source": "ENT-11",
+    "target": "INS-22",
+    "weight": 0.0623,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1021
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-11",
+    "target": "INS-23",
+    "weight": 0.4306,
+    "breakdown": {
+      "cotag": 0.4444,
+      "coword": 0.2686
+    },
+    "shared_tags": [
+      "theory:signaling",
+      "cite:Coco 2000",
+      "cluster:Internship cluster"
+    ]
+  },
+  {
+    "source": "ENT-11",
+    "target": "STU-01",
+    "weight": 0.2471,
+    "breakdown": {
+      "cotag": 0.4118,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:signaling",
+      "cluster:Internship cluster"
+    ]
+  },
+  {
+    "source": "ENT-12",
+    "target": "ENT-23",
+    "weight": 0.0818,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.134
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-12",
+    "target": "ENT-29",
+    "weight": 0.0731,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1197
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-12",
+    "target": "INS-03",
+    "weight": 0.0743,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1217
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-12",
+    "target": "TCH-16",
+    "weight": 0.1154,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1891
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-12",
+    "target": "TCH-19",
+    "weight": 0.175,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.2867
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-13",
+    "target": "ENT-19",
+    "weight": 0.0741,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1214
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-13",
+    "target": "ENT-31",
+    "weight": 0.0761,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1247
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-13",
+    "target": "ENT-35",
+    "weight": 0.1085,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1779
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-13",
+    "target": "INS-01",
+    "weight": 0.1087,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1781
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-13",
+    "target": "INS-07",
+    "weight": 0.1093,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.179
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-13",
+    "target": "STU-07",
+    "weight": 0.0799,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1309
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-14",
+    "target": "ENT-21",
+    "weight": 0.0969,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1587
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-14",
+    "target": "ENT-22",
+    "weight": 0.0879,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.144
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-14",
+    "target": "ENT-27",
+    "weight": 0.1049,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1718
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-14",
+    "target": "INS-19",
+    "weight": 0.1322,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.2167
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-14",
+    "target": "INS-30",
+    "weight": 0.1566,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.2566
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-14",
+    "target": "TCH-20",
+    "weight": 0.0683,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.112
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-14",
+    "target": "STU-03",
+    "weight": 0.1155,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1892
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-15",
+    "target": "ENT-19",
+    "weight": 0.0555,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.091
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-15",
+    "target": "ENT-25",
+    "weight": 0.0466,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0764
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-15",
+    "target": "ENT-34",
+    "weight": 0.0543,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.089
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-15",
+    "target": "INS-13",
+    "weight": 0.074,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1213
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-15",
+    "target": "TCH-02",
+    "weight": 0.0673,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1103
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-16",
+    "target": "ENT-17",
+    "weight": 0.2664,
+    "breakdown": {
+      "cotag": 0.3846,
+      "coword": 0.0583
+    },
+    "shared_tags": [
+      "theory:signaling"
+    ]
+  },
+  {
+    "source": "ENT-16",
+    "target": "ENT-18",
+    "weight": 0.08,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1312
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-16",
+    "target": "ENT-43",
+    "weight": 0.1979,
+    "breakdown": {
+      "cotag": 0.2857,
+      "coword": 0.0434
+    },
+    "shared_tags": [
+      "theory:signaling"
+    ]
+  },
+  {
+    "source": "ENT-16",
+    "target": "INS-24",
+    "weight": 0.0598,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.098
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-16",
+    "target": "STU-01",
+    "weight": 0.4102,
+    "breakdown": {
+      "cotag": 0.625,
+      "coword": 0.0576
+    },
+    "shared_tags": [
+      "theory:signaling"
+    ]
+  },
+  {
+    "source": "ENT-16",
+    "target": "STU-05",
+    "weight": 0.375,
+    "breakdown": {
+      "cotag": 0.625,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:signaling"
+    ]
+  },
+  {
+    "source": "ENT-16",
+    "target": "STU-12",
+    "weight": 0.5055,
+    "breakdown": {
+      "cotag": 0.7143,
+      "coword": 0.1261
+    },
+    "shared_tags": [
+      "theory:signaling"
+    ]
+  },
+  {
+    "source": "ENT-17",
+    "target": "ENT-36",
+    "weight": 0.0335,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0548
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-17",
+    "target": "INS-23",
+    "weight": 0.25,
+    "breakdown": {
+      "cotag": 0.4167,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:signaling",
+      "cite:Coco 2000"
+    ]
+  },
+  {
+    "source": "ENT-17",
+    "target": "STU-01",
+    "weight": 0.2331,
+    "breakdown": {
+      "cotag": 0.3571,
+      "coword": 0.0308
+    },
+    "shared_tags": [
+      "theory:signaling"
+    ]
+  },
+  {
+    "source": "ENT-17",
+    "target": "STU-05",
+    "weight": 0.2143,
+    "breakdown": {
+      "cotag": 0.3571,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:signaling"
+    ]
+  },
+  {
+    "source": "ENT-17",
+    "target": "STU-12",
+    "weight": 0.2426,
+    "breakdown": {
+      "cotag": 0.3846,
+      "coword": 0.0193
+    },
+    "shared_tags": [
+      "theory:signaling"
+    ]
+  },
+  {
+    "source": "ENT-18",
+    "target": "ENT-28",
+    "weight": 0.0691,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1132
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-18",
+    "target": "ENT-36",
+    "weight": 0.0618,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1013
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-18",
+    "target": "ENT-37",
+    "weight": 0.0728,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1193
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-18",
+    "target": "STU-09",
+    "weight": 0.0616,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1009
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-19",
+    "target": "ENT-28",
+    "weight": 0.0702,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.115
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-19",
+    "target": "ENT-31",
+    "weight": 0.0621,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1017
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-19",
+    "target": "INS-01",
+    "weight": 0.0751,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.123
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-19",
+    "target": "INS-07",
+    "weight": 0.0424,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0696
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-20",
+    "target": "ENT-22",
+    "weight": 0.0818,
+    "breakdown": {
+      "cotag": 0.0769,
+      "coword": 0.0585
+    },
+    "shared_tags": [
+      "misc:screening"
+    ]
+  },
+  {
+    "source": "ENT-20",
+    "target": "ENT-27",
+    "weight": 0.0462,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0757
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-20",
+    "target": "ENT-32",
+    "weight": 0.0923,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1513
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-20",
+    "target": "ENT-44",
+    "weight": 0.0638,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1046
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-20",
+    "target": "TCH-06",
+    "weight": 0.0446,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0731
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-21",
+    "target": "ENT-23",
+    "weight": 0.2251,
+    "breakdown": {
+      "cotag": 0.3333,
+      "coword": 0.0411
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-21",
+    "target": "ENT-24",
+    "weight": 0.452,
+    "breakdown": {
+      "cotag": 0.6,
+      "coword": 0.1507
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-21",
+    "target": "ENT-37",
+    "weight": 0.0754,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1236
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-21",
+    "target": "ENT-42",
+    "weight": 0.4357,
+    "breakdown": {
+      "cotag": 0.6,
+      "coword": 0.124
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-21",
+    "target": "ENT-45",
+    "weight": 0.4076,
+    "breakdown": {
+      "cotag": 0.6,
+      "coword": 0.078
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-21",
+    "target": "INS-08",
+    "weight": 0.6688,
+    "breakdown": {
+      "cotag": 1.0,
+      "coword": 0.1128
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-21",
+    "target": "TCH-06",
+    "weight": 0.621,
+    "breakdown": {
+      "cotag": 1.0,
+      "coword": 0.0344
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-21",
+    "target": "TCH-17",
+    "weight": 0.6,
+    "breakdown": {
+      "cotag": 1.0,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-21",
+    "target": "TCH-20",
+    "weight": 0.0487,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0799
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-21",
+    "target": "TCH-22",
+    "weight": 0.0764,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1252
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-21",
+    "target": "STU-03",
+    "weight": 0.1275,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.209
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-21",
+    "target": "STU-10",
+    "weight": 0.0681,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1115
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-22",
+    "target": "ENT-25",
+    "weight": 0.547,
+    "breakdown": {
+      "cotag": 0.7692,
+      "coword": 0.14
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-22",
+    "target": "ENT-27",
+    "weight": 0.0715,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1171
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-22",
+    "target": "ENT-28",
+    "weight": 0.1853,
+    "breakdown": {
+      "cotag": 0.2941,
+      "coword": 0.0144
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-22",
+    "target": "ENT-35",
+    "weight": 0.3059,
+    "breakdown": {
+      "cotag": 0.4167,
+      "coword": 0.0916
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-22",
+    "target": "ENT-39",
+    "weight": 0.4519,
+    "breakdown": {
+      "cotag": 0.7143,
+      "coword": 0.0381
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-22",
+    "target": "ENT-40",
+    "weight": 0.25,
+    "breakdown": {
+      "cotag": 0.4167,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-22",
+    "target": "ENT-46",
+    "weight": 0.4798,
+    "breakdown": {
+      "cotag": 0.7692,
+      "coword": 0.0299
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-22",
+    "target": "TCH-12",
+    "weight": 0.4397,
+    "breakdown": {
+      "cotag": 0.7143,
+      "coword": 0.0183
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-23",
+    "target": "ENT-24",
+    "weight": 0.2204,
+    "breakdown": {
+      "cotag": 0.2727,
+      "coword": 0.093
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-23",
+    "target": "ENT-31",
+    "weight": 0.0626,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1026
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-23",
+    "target": "INS-03",
+    "weight": 0.0717,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1175
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-23",
+    "target": "INS-08",
+    "weight": 0.2175,
+    "breakdown": {
+      "cotag": 0.3333,
+      "coword": 0.0286
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-23",
+    "target": "TCH-17",
+    "weight": 0.2238,
+    "breakdown": {
+      "cotag": 0.3333,
+      "coword": 0.039
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-23",
+    "target": "TCH-19",
+    "weight": 0.0738,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.121
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-24",
+    "target": "ENT-42",
+    "weight": 0.3973,
+    "breakdown": {
+      "cotag": 0.4286,
+      "coword": 0.2297
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-24",
+    "target": "INS-08",
+    "weight": 0.4515,
+    "breakdown": {
+      "cotag": 0.6,
+      "coword": 0.1499
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-24",
+    "target": "TCH-06",
+    "weight": 0.4086,
+    "breakdown": {
+      "cotag": 0.6,
+      "coword": 0.0796
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-24",
+    "target": "TCH-14",
+    "weight": 0.0407,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0668
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-24",
+    "target": "TCH-17",
+    "weight": 0.4357,
+    "breakdown": {
+      "cotag": 0.6,
+      "coword": 0.124
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-24",
+    "target": "TCH-22",
+    "weight": 0.095,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1556
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-24",
+    "target": "STU-03",
+    "weight": 0.1519,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.249
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-25",
+    "target": "ENT-26",
+    "weight": 0.0462,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0757
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-25",
+    "target": "ENT-28",
+    "weight": 0.2065,
+    "breakdown": {
+      "cotag": 0.303,
+      "coword": 0.0405
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-25",
+    "target": "ENT-35",
+    "weight": 0.2804,
+    "breakdown": {
+      "cotag": 0.4348,
+      "coword": 0.032
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-25",
+    "target": "ENT-39",
+    "weight": 0.4703,
+    "breakdown": {
+      "cotag": 0.7692,
+      "coword": 0.0144
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-25",
+    "target": "ENT-40",
+    "weight": 0.274,
+    "breakdown": {
+      "cotag": 0.4348,
+      "coword": 0.0214
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-25",
+    "target": "ENT-46",
+    "weight": 0.5069,
+    "breakdown": {
+      "cotag": 0.8333,
+      "coword": 0.0113
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-25",
+    "target": "TCH-12",
+    "weight": 0.4908,
+    "breakdown": {
+      "cotag": 0.7692,
+      "coword": 0.0479
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-25",
+    "target": "TCH-13",
+    "weight": 0.1128,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1848
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-26",
+    "target": "ENT-43",
+    "weight": 0.0457,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0748
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-26",
+    "target": "INS-01",
+    "weight": 0.062,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1017
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-26",
+    "target": "INS-07",
+    "weight": 0.0481,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0788
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-26",
+    "target": "TCH-01",
+    "weight": 0.0474,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0777
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-26",
+    "target": "TCH-13",
+    "weight": 0.0516,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0845
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-27",
+    "target": "ENT-28",
+    "weight": 0.0957,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1568
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-27",
+    "target": "ENT-36",
+    "weight": 0.0465,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0761
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-27",
+    "target": "STU-01",
+    "weight": 0.1721,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.282
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-27",
+    "target": "STU-12",
+    "weight": 0.0888,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1456
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-28",
+    "target": "ENT-35",
+    "weight": 0.1831,
+    "breakdown": {
+      "cotag": 0.2273,
+      "coword": 0.0766
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-28",
+    "target": "ENT-39",
+    "weight": 0.2031,
+    "breakdown": {
+      "cotag": 0.2941,
+      "coword": 0.0436
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-28",
+    "target": "ENT-41",
+    "weight": 0.1095,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1794
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-28",
+    "target": "ENT-44",
+    "weight": 0.2553,
+    "breakdown": {
+      "cotag": 0.4255,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:types",
+      "cite:Em & Khampirat 2026"
+    ]
+  },
+  {
+    "source": "ENT-28",
+    "target": "ENT-46",
+    "weight": 0.2249,
+    "breakdown": {
+      "cotag": 0.303,
+      "coword": 0.0705
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-28",
+    "target": "INS-07",
+    "weight": 0.0766,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1256
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-29",
+    "target": "TCH-15",
+    "weight": 0.053,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0869
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-29",
+    "target": "STU-08",
+    "weight": 0.0379,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0621
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-30",
+    "target": "ENT-39",
+    "weight": 0.076,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1245
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-30",
+    "target": "ENT-40",
+    "weight": 0.0697,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1142
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-30",
+    "target": "INS-07",
+    "weight": 0.0472,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0773
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-30",
+    "target": "TCH-15",
+    "weight": 0.0544,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0892
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-30",
+    "target": "TCH-18",
+    "weight": 0.0404,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0663
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-30",
+    "target": "STU-10",
+    "weight": 0.0867,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1421
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-31",
+    "target": "INS-01",
+    "weight": 0.0834,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1367
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-31",
+    "target": "INS-23",
+    "weight": 0.0881,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1443
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-31",
+    "target": "TCH-02",
+    "weight": 0.0957,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1567
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-32",
+    "target": "ENT-37",
+    "weight": 0.1145,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1876
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-32",
+    "target": "ENT-44",
+    "weight": 0.0479,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0785
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-32",
+    "target": "ENT-45",
+    "weight": 0.1197,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1962
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-33",
+    "target": "ENT-34",
+    "weight": 0.0658,
+    "breakdown": {
+      "cotag": 0.0769,
+      "coword": 0.0322
+    },
+    "shared_tags": [
+      "misc:Firm attrition attribution"
+    ]
+  },
+  {
+    "source": "ENT-33",
+    "target": "ENT-35",
+    "weight": 0.0625,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1024
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-33",
+    "target": "ENT-46",
+    "weight": 0.0551,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0903
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-33",
+    "target": "TCH-07",
+    "weight": 0.1246,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.2042
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-33",
+    "target": "STU-01",
+    "weight": 0.0589,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0965
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-33",
+    "target": "STU-02",
+    "weight": 0.0976,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.16
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-34",
+    "target": "ENT-41",
+    "weight": 0.0809,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1325
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-34",
+    "target": "ENT-42",
+    "weight": 0.1885,
+    "breakdown": {
+      "cotag": 0.1667,
+      "coword": 0.145
+    },
+    "shared_tags": [
+      "misc:Firm attrition attribution"
+    ]
+  },
+  {
+    "source": "ENT-34",
+    "target": "TCH-03",
+    "weight": 0.0719,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1177
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-34",
+    "target": "TCH-09",
+    "weight": 0.0507,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0831
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-34",
+    "target": "TCH-11",
+    "weight": 0.0674,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1104
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-34",
+    "target": "TCH-12",
+    "weight": 0.1389,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.2276
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-35",
+    "target": "ENT-39",
+    "weight": 0.26,
+    "breakdown": {
+      "cotag": 0.4167,
+      "coword": 0.0164
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-35",
+    "target": "ENT-46",
+    "weight": 0.2908,
+    "breakdown": {
+      "cotag": 0.4348,
+      "coword": 0.049
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-35",
+    "target": "INS-03",
+    "weight": 0.0785,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1286
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-35",
+    "target": "INS-07",
+    "weight": 0.0693,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1136
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-35",
+    "target": "INS-25",
+    "weight": 0.0365,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0598
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-35",
+    "target": "TCH-12",
+    "weight": 0.2608,
+    "breakdown": {
+      "cotag": 0.4167,
+      "coword": 0.0177
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-36",
+    "target": "INS-20",
+    "weight": 0.0222,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0364
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-36",
+    "target": "STU-01",
+    "weight": 0.0368,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0603
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-36",
+    "target": "STU-12",
+    "weight": 0.0462,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0757
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-37",
+    "target": "ENT-42",
+    "weight": 0.086,
+    "breakdown": {
+      "cotag": 0.0333,
+      "coword": 0.1082
+    },
+    "shared_tags": [
+      "misc:Firm attrition attribution"
+    ]
+  },
+  {
+    "source": "ENT-37",
+    "target": "INS-09",
+    "weight": 0.0795,
+    "breakdown": {
+      "cotag": 0.1071,
+      "coword": 0.0249
+    },
+    "shared_tags": [
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "ENT-37",
+    "target": "INS-11",
+    "weight": 0.0744,
+    "breakdown": {
+      "cotag": 0.0811,
+      "coword": 0.0423
+    },
+    "shared_tags": [
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "ENT-37",
+    "target": "TA-02",
+    "weight": 0.0766,
+    "breakdown": {
+      "cotag": 0.0811,
+      "coword": 0.0459
+    },
+    "shared_tags": [
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "ENT-38",
+    "target": "INS-07",
+    "weight": 0.0593,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0972
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-38",
+    "target": "INS-18",
+    "weight": 0.1165,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1909
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-38",
+    "target": "TCH-02",
+    "weight": 0.0431,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0707
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-38",
+    "target": "TCH-16",
+    "weight": 0.0417,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0684
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-38",
+    "target": "STU-11",
+    "weight": 0.0435,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0713
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-39",
+    "target": "ENT-40",
+    "weight": 0.25,
+    "breakdown": {
+      "cotag": 0.4167,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-39",
+    "target": "ENT-44",
+    "weight": 0.2761,
+    "breakdown": {
+      "cotag": 0.2703,
+      "coword": 0.1867
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-39",
+    "target": "ENT-46",
+    "weight": 0.472,
+    "breakdown": {
+      "cotag": 0.7692,
+      "coword": 0.0172
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-39",
+    "target": "TCH-12",
+    "weight": 0.4286,
+    "breakdown": {
+      "cotag": 0.7143,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-39",
+    "target": "TCH-14",
+    "weight": 0.0402,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0659
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-40",
+    "target": "ENT-46",
+    "weight": 0.2768,
+    "breakdown": {
+      "cotag": 0.4348,
+      "coword": 0.0261
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-40",
+    "target": "INS-22",
+    "weight": 0.0584,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0956
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-40",
+    "target": "TCH-12",
+    "weight": 0.2774,
+    "breakdown": {
+      "cotag": 0.4167,
+      "coword": 0.0449
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-41",
+    "target": "ENT-46",
+    "weight": 0.1412,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.2313
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-41",
+    "target": "INS-09",
+    "weight": 0.1046,
+    "breakdown": {
+      "cotag": 0.1667,
+      "coword": 0.0075
+    },
+    "shared_tags": [
+      "misc:Slaughter"
+    ]
+  },
+  {
+    "source": "ENT-42",
+    "target": "INS-08",
+    "weight": 0.3941,
+    "breakdown": {
+      "cotag": 0.6,
+      "coword": 0.0559
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-42",
+    "target": "TCH-13",
+    "weight": 0.1344,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.2202
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-42",
+    "target": "TCH-17",
+    "weight": 0.4696,
+    "breakdown": {
+      "cotag": 0.6,
+      "coword": 0.1795
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-43",
+    "target": "INS-23",
+    "weight": 0.5058,
+    "breakdown": {
+      "cotag": 0.6383,
+      "coword": 0.2013
+    },
+    "shared_tags": [
+      "theory:signaling",
+      "cite:Spence 1973",
+      "cite:Stigler 1962"
+    ]
+  },
+  {
+    "source": "ENT-43",
+    "target": "STU-01",
+    "weight": 0.1622,
+    "breakdown": {
+      "cotag": 0.2703,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:signaling"
+    ]
+  },
+  {
+    "source": "ENT-43",
+    "target": "STU-05",
+    "weight": 0.1622,
+    "breakdown": {
+      "cotag": 0.2703,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:signaling"
+    ]
+  },
+  {
+    "source": "ENT-43",
+    "target": "STU-12",
+    "weight": 0.2273,
+    "breakdown": {
+      "cotag": 0.2857,
+      "coword": 0.0915
+    },
+    "shared_tags": [
+      "theory:signaling"
+    ]
+  },
+  {
+    "source": "ENT-44",
+    "target": "INS-05",
+    "weight": 0.2167,
+    "breakdown": {
+      "cotag": 0.3611,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:principal_agent",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "ENT-44",
+    "target": "INS-11",
+    "weight": 0.2167,
+    "breakdown": {
+      "cotag": 0.3611,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:principal_agent",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "ENT-44",
+    "target": "INS-12",
+    "weight": 0.2239,
+    "breakdown": {
+      "cotag": 0.3611,
+      "coword": 0.0119
+    },
+    "shared_tags": [
+      "theory:principal_agent",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "ENT-44",
+    "target": "INS-17",
+    "weight": 0.1874,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.307
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-44",
+    "target": "TCH-02",
+    "weight": 0.2229,
+    "breakdown": {
+      "cotag": 0.3714,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:principal_agent",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "ENT-44",
+    "target": "TCH-21",
+    "weight": 0.0558,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0914
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-44",
+    "target": "STU-09",
+    "weight": 0.1478,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.2421
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "ENT-45",
+    "target": "INS-08",
+    "weight": 0.36,
+    "breakdown": {
+      "cotag": 0.6,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-45",
+    "target": "TCH-06",
+    "weight": 0.36,
+    "breakdown": {
+      "cotag": 0.6,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-45",
+    "target": "TCH-17",
+    "weight": 0.36,
+    "breakdown": {
+      "cotag": 0.6,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "ENT-46",
+    "target": "TCH-12",
+    "weight": 0.4615,
+    "breakdown": {
+      "cotag": 0.7692,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:types"
+    ]
+  },
+  {
+    "source": "ENT-46",
+    "target": "STU-04",
+    "weight": 0.1114,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1825
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-01",
+    "target": "INS-17",
+    "weight": 0.0722,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1183
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-01",
+    "target": "TCH-06",
+    "weight": 0.0774,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1269
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-01",
+    "target": "TCH-13",
+    "weight": 0.0563,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0923
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-01",
+    "target": "STU-03",
+    "weight": 0.0714,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.117
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-01",
+    "target": "STU-07",
+    "weight": 0.0462,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0758
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-02",
+    "target": "INS-17",
+    "weight": 0.0796,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1304
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-02",
+    "target": "INS-22",
+    "weight": 0.3,
+    "breakdown": {
+      "cotag": 0.5,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "misc:source TBD —"
+    ]
+  },
+  {
+    "source": "INS-02",
+    "target": "TCH-01",
+    "weight": 0.0673,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1102
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-02",
+    "target": "TCH-08",
+    "weight": 0.0759,
+    "breakdown": {
+      "cotag": 0.0769,
+      "coword": 0.0488
+    },
+    "shared_tags": [
+      "misc:Framework"
+    ]
+  },
+  {
+    "source": "INS-02",
+    "target": "TA-01",
+    "weight": 0.1451,
+    "breakdown": {
+      "cotag": 0.1667,
+      "coword": 0.074
+    },
+    "shared_tags": [
+      "misc:Framework",
+      "misc:source TBD —"
+    ]
+  },
+  {
+    "source": "INS-02",
+    "target": "STU-10",
+    "weight": 0.12,
+    "breakdown": {
+      "cotag": 0.2,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "misc:Framework"
+    ]
+  },
+  {
+    "source": "INS-03",
+    "target": "INS-25",
+    "weight": 0.0398,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0652
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-03",
+    "target": "TCH-01",
+    "weight": 0.0663,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1087
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-03",
+    "target": "STU-10",
+    "weight": 0.0569,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0933
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-04",
+    "target": "INS-10",
+    "weight": 0.2479,
+    "breakdown": {
+      "cotag": 0.26,
+      "coword": 0.1505
+    },
+    "shared_tags": [
+      "theory:mechanism_design",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-04",
+    "target": "INS-13",
+    "weight": 0.2596,
+    "breakdown": {
+      "cotag": 0.3704,
+      "coword": 0.0612
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-04",
+    "target": "INS-15",
+    "weight": 0.3216,
+    "breakdown": {
+      "cotag": 0.5,
+      "coword": 0.0355
+    },
+    "shared_tags": [
+      "theory:mechanism_design",
+      "cluster:Star-course cluster"
+    ]
+  },
+  {
+    "source": "INS-04",
+    "target": "INS-27",
+    "weight": 0.2437,
+    "breakdown": {
+      "cotag": 0.4062,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:mechanism_design",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-04",
+    "target": "INS-29",
+    "weight": 0.3036,
+    "breakdown": {
+      "cotag": 0.4643,
+      "coword": 0.0409
+    },
+    "shared_tags": [
+      "theory:mechanism_design",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-04",
+    "target": "INS-30",
+    "weight": 0.269,
+    "breakdown": {
+      "cotag": 0.4483,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:mechanism_design",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-04",
+    "target": "STU-04",
+    "weight": 0.124,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.2031
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-05",
+    "target": "INS-06",
+    "weight": 0.1733,
+    "breakdown": {
+      "cotag": 0.2,
+      "coword": 0.0873
+    },
+    "shared_tags": [
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-05",
+    "target": "INS-09",
+    "weight": 0.4842,
+    "breakdown": {
+      "cotag": 0.2667,
+      "coword": 0.5312
+    },
+    "shared_tags": [
+      "cross:governance",
+      "misc:Step 2 memo"
+    ]
+  },
+  {
+    "source": "INS-05",
+    "target": "INS-11",
+    "weight": 0.52,
+    "breakdown": {
+      "cotag": 0.8667,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:principal_agent",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-05",
+    "target": "INS-12",
+    "weight": 0.52,
+    "breakdown": {
+      "cotag": 0.8667,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:principal_agent",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-05",
+    "target": "INS-26",
+    "weight": 0.4105,
+    "breakdown": {
+      "cotag": 0.6842,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:principal_agent",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-05",
+    "target": "TCH-01",
+    "weight": 0.4286,
+    "breakdown": {
+      "cotag": 0.7143,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "INS-05",
+    "target": "TCH-02",
+    "weight": 0.5571,
+    "breakdown": {
+      "cotag": 0.9286,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:principal_agent",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-05",
+    "target": "TCH-21",
+    "weight": 0.0565,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0926
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-05",
+    "target": "TA-02",
+    "weight": 0.52,
+    "breakdown": {
+      "cotag": 0.8667,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:principal_agent",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-06",
+    "target": "INS-09",
+    "weight": 0.3595,
+    "breakdown": {
+      "cotag": 0.5,
+      "coword": 0.0976
+    },
+    "shared_tags": [
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-06",
+    "target": "INS-11",
+    "weight": 0.12,
+    "breakdown": {
+      "cotag": 0.2,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-06",
+    "target": "INS-12",
+    "weight": 0.12,
+    "breakdown": {
+      "cotag": 0.2,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-06",
+    "target": "INS-29",
+    "weight": 0.1509,
+    "breakdown": {
+      "cotag": 0.2,
+      "coword": 0.0507
+    },
+    "shared_tags": [
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-06",
+    "target": "TCH-02",
+    "weight": 0.1286,
+    "breakdown": {
+      "cotag": 0.2143,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-06",
+    "target": "STU-06",
+    "weight": 0.1019,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1669
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-07",
+    "target": "INS-13",
+    "weight": 0.065,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1065
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-07",
+    "target": "INS-29",
+    "weight": 0.058,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.095
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-07",
+    "target": "TCH-05",
+    "weight": 0.0411,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0674
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-08",
+    "target": "TCH-06",
+    "weight": 0.6741,
+    "breakdown": {
+      "cotag": 1.0,
+      "coword": 0.1214
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "INS-08",
+    "target": "TCH-14",
+    "weight": 0.0337,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0552
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-08",
+    "target": "TCH-17",
+    "weight": 0.6398,
+    "breakdown": {
+      "cotag": 1.0,
+      "coword": 0.0652
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "INS-08",
+    "target": "TCH-22",
+    "weight": 0.1121,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1837
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-08",
+    "target": "STU-03",
+    "weight": 0.1227,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.201
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-09",
+    "target": "INS-11",
+    "weight": 0.1125,
+    "breakdown": {
+      "cotag": 0.1875,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-09",
+    "target": "INS-12",
+    "weight": 0.1125,
+    "breakdown": {
+      "cotag": 0.1875,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-09",
+    "target": "INS-29",
+    "weight": 0.1125,
+    "breakdown": {
+      "cotag": 0.1875,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-09",
+    "target": "TCH-02",
+    "weight": 0.12,
+    "breakdown": {
+      "cotag": 0.2,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-10",
+    "target": "INS-13",
+    "weight": 0.202,
+    "breakdown": {
+      "cotag": 0.2778,
+      "coword": 0.0579
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-10",
+    "target": "INS-20",
+    "weight": 0.1973,
+    "breakdown": {
+      "cotag": 0.2703,
+      "coword": 0.0575
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-10",
+    "target": "INS-25",
+    "weight": 0.0364,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0596
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-10",
+    "target": "INS-27",
+    "weight": 0.1946,
+    "breakdown": {
+      "cotag": 0.3171,
+      "coword": 0.0071
+    },
+    "shared_tags": [
+      "theory:mechanism_design",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-10",
+    "target": "INS-29",
+    "weight": 0.227,
+    "breakdown": {
+      "cotag": 0.3514,
+      "coword": 0.0266
+    },
+    "shared_tags": [
+      "theory:mechanism_design",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-10",
+    "target": "INS-30",
+    "weight": 0.2053,
+    "breakdown": {
+      "cotag": 0.3421,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:mechanism_design",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-11",
+    "target": "INS-12",
+    "weight": 0.5868,
+    "breakdown": {
+      "cotag": 0.8667,
+      "coword": 0.1095
+    },
+    "shared_tags": [
+      "theory:principal_agent",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-11",
+    "target": "INS-26",
+    "weight": 0.4105,
+    "breakdown": {
+      "cotag": 0.6842,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:principal_agent",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-11",
+    "target": "TCH-01",
+    "weight": 0.5099,
+    "breakdown": {
+      "cotag": 0.7143,
+      "coword": 0.1332
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "INS-11",
+    "target": "TCH-02",
+    "weight": 0.5968,
+    "breakdown": {
+      "cotag": 0.9286,
+      "coword": 0.065
+    },
+    "shared_tags": [
+      "theory:principal_agent",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-11",
+    "target": "TCH-07",
+    "weight": 0.3574,
+    "breakdown": {
+      "cotag": 0.5556,
+      "coword": 0.0394
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "INS-11",
+    "target": "TCH-08",
+    "weight": 0.4549,
+    "breakdown": {
+      "cotag": 0.625,
+      "coword": 0.1309
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "INS-11",
+    "target": "TA-02",
+    "weight": 0.52,
+    "breakdown": {
+      "cotag": 0.8667,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:principal_agent",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-12",
+    "target": "INS-26",
+    "weight": 0.5029,
+    "breakdown": {
+      "cotag": 0.6842,
+      "coword": 0.1513
+    },
+    "shared_tags": [
+      "theory:principal_agent",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-12",
+    "target": "TCH-02",
+    "weight": 0.5571,
+    "breakdown": {
+      "cotag": 0.9286,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:principal_agent",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-12",
+    "target": "TCH-10",
+    "weight": 0.487,
+    "breakdown": {
+      "cotag": 0.6667,
+      "coword": 0.1426
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "INS-12",
+    "target": "TA-02",
+    "weight": 0.546,
+    "breakdown": {
+      "cotag": 0.8667,
+      "coword": 0.0426
+    },
+    "shared_tags": [
+      "theory:principal_agent",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-12",
+    "target": "TA-04",
+    "weight": 0.2883,
+    "breakdown": {
+      "cotag": 0.4167,
+      "coword": 0.0628
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "INS-13",
+    "target": "INS-14",
+    "weight": 0.4,
+    "breakdown": {
+      "cotag": 0.6667,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-13",
+    "target": "INS-15",
+    "weight": 0.4,
+    "breakdown": {
+      "cotag": 0.6667,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-13",
+    "target": "INS-18",
+    "weight": 0.5706,
+    "breakdown": {
+      "cotag": 0.9091,
+      "coword": 0.0412
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-13",
+    "target": "INS-19",
+    "weight": 0.6217,
+    "breakdown": {
+      "cotag": 1.0,
+      "coword": 0.0355
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-13",
+    "target": "INS-20",
+    "weight": 0.5695,
+    "breakdown": {
+      "cotag": 0.9091,
+      "coword": 0.0395
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-13",
+    "target": "INS-21",
+    "weight": 0.5455,
+    "breakdown": {
+      "cotag": 0.9091,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-13",
+    "target": "INS-24",
+    "weight": 0.0684,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1121
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-13",
+    "target": "INS-27",
+    "weight": 0.3552,
+    "breakdown": {
+      "cotag": 0.5556,
+      "coword": 0.0358
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-13",
+    "target": "INS-28",
+    "weight": 0.4487,
+    "breakdown": {
+      "cotag": 0.7143,
+      "coword": 0.0329
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-13",
+    "target": "INS-29",
+    "weight": 0.4564,
+    "breakdown": {
+      "cotag": 0.7143,
+      "coword": 0.0457
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-13",
+    "target": "INS-30",
+    "weight": 0.4,
+    "breakdown": {
+      "cotag": 0.6667,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-14",
+    "target": "INS-15",
+    "weight": 0.3474,
+    "breakdown": {
+      "cotag": 0.5789,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:mechanism_design",
+      "misc:— core"
+    ]
+  },
+  {
+    "source": "INS-14",
+    "target": "INS-17",
+    "weight": 0.0779,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1276
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-14",
+    "target": "INS-18",
+    "weight": 0.375,
+    "breakdown": {
+      "cotag": 0.625,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-14",
+    "target": "INS-19",
+    "weight": 0.4,
+    "breakdown": {
+      "cotag": 0.6667,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-14",
+    "target": "INS-20",
+    "weight": 0.375,
+    "breakdown": {
+      "cotag": 0.625,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-14",
+    "target": "INS-21",
+    "weight": 0.375,
+    "breakdown": {
+      "cotag": 0.625,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-14",
+    "target": "TCH-21",
+    "weight": 0.076,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1245
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-14",
+    "target": "STU-09",
+    "weight": 0.092,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1508
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-15",
+    "target": "INS-18",
+    "weight": 0.375,
+    "breakdown": {
+      "cotag": 0.625,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-15",
+    "target": "INS-19",
+    "weight": 0.4,
+    "breakdown": {
+      "cotag": 0.6667,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-15",
+    "target": "INS-20",
+    "weight": 0.375,
+    "breakdown": {
+      "cotag": 0.625,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-15",
+    "target": "INS-21",
+    "weight": 0.375,
+    "breakdown": {
+      "cotag": 0.625,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-16",
+    "target": "TCH-16",
+    "weight": 0.0706,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1156
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-16",
+    "target": "TCH-18",
+    "weight": 0.1514,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.248
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-16",
+    "target": "TCH-19",
+    "weight": 0.1046,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1713
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-16",
+    "target": "STU-03",
+    "weight": 0.0809,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1326
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-16",
+    "target": "STU-06",
+    "weight": 0.48,
+    "breakdown": {
+      "cotag": 0.8,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cluster:Real-project cluster"
+    ]
+  },
+  {
+    "source": "INS-16",
+    "target": "STU-08",
+    "weight": 0.1976,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.3239
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-17",
+    "target": "TCH-21",
+    "weight": 0.0616,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1009
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-17",
+    "target": "STU-09",
+    "weight": 0.163,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.2671
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-18",
+    "target": "INS-19",
+    "weight": 0.5455,
+    "breakdown": {
+      "cotag": 0.9091,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-18",
+    "target": "INS-20",
+    "weight": 0.5147,
+    "breakdown": {
+      "cotag": 0.8333,
+      "coword": 0.024
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-18",
+    "target": "INS-21",
+    "weight": 0.5,
+    "breakdown": {
+      "cotag": 0.8333,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-18",
+    "target": "INS-24",
+    "weight": 0.1856,
+    "breakdown": {
+      "cotag": 0.0909,
+      "coword": 0.2148
+    },
+    "shared_tags": [
+      "misc:Stakeholder notes"
+    ]
+  },
+  {
+    "source": "INS-18",
+    "target": "INS-28",
+    "weight": 0.4219,
+    "breakdown": {
+      "cotag": 0.6667,
+      "coword": 0.0358
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-18",
+    "target": "INS-29",
+    "weight": 0.4,
+    "breakdown": {
+      "cotag": 0.6667,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-19",
+    "target": "INS-20",
+    "weight": 0.5956,
+    "breakdown": {
+      "cotag": 0.9091,
+      "coword": 0.0822
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-19",
+    "target": "INS-21",
+    "weight": 0.5455,
+    "breakdown": {
+      "cotag": 0.9091,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-19",
+    "target": "INS-27",
+    "weight": 0.3333,
+    "breakdown": {
+      "cotag": 0.5556,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-19",
+    "target": "INS-28",
+    "weight": 0.4286,
+    "breakdown": {
+      "cotag": 0.7143,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-19",
+    "target": "INS-29",
+    "weight": 0.5676,
+    "breakdown": {
+      "cotag": 0.7143,
+      "coword": 0.2277
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-19",
+    "target": "INS-30",
+    "weight": 0.8,
+    "breakdown": {
+      "cotag": 0.6667,
+      "coword": 0.6554
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-19",
+    "target": "TCH-20",
+    "weight": 0.0665,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.109
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-19",
+    "target": "STU-03",
+    "weight": 0.1125,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1843
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-20",
+    "target": "INS-21",
+    "weight": 0.6,
+    "breakdown": {
+      "cotag": 1.0,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:mechanism_design",
+      "misc:Lit_Review_08"
+    ]
+  },
+  {
+    "source": "INS-20",
+    "target": "INS-27",
+    "weight": 0.3258,
+    "breakdown": {
+      "cotag": 0.5263,
+      "coword": 0.0165
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-20",
+    "target": "INS-28",
+    "weight": 0.4117,
+    "breakdown": {
+      "cotag": 0.6667,
+      "coword": 0.0192
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-20",
+    "target": "INS-29",
+    "weight": 0.4,
+    "breakdown": {
+      "cotag": 0.6667,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-20",
+    "target": "INS-30",
+    "weight": 0.4053,
+    "breakdown": {
+      "cotag": 0.625,
+      "coword": 0.0496
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-21",
+    "target": "INS-28",
+    "weight": 0.4,
+    "breakdown": {
+      "cotag": 0.6667,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-21",
+    "target": "INS-30",
+    "weight": 0.4033,
+    "breakdown": {
+      "cotag": 0.625,
+      "coword": 0.0464
+    },
+    "shared_tags": [
+      "theory:mechanism_design"
+    ]
+  },
+  {
+    "source": "INS-22",
+    "target": "INS-30",
+    "weight": 0.0493,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0807
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-22",
+    "target": "TA-01",
+    "weight": 0.0865,
+    "breakdown": {
+      "cotag": 0.0833,
+      "coword": 0.0598
+    },
+    "shared_tags": [
+      "misc:source TBD —"
+    ]
+  },
+  {
+    "source": "INS-22",
+    "target": "TA-04",
+    "weight": 0.0705,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1155
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-23",
+    "target": "TCH-02",
+    "weight": 0.1518,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.2487
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-23",
+    "target": "STU-01",
+    "weight": 0.1909,
+    "breakdown": {
+      "cotag": 0.3182,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:signaling",
+      "cluster:Internship cluster"
+    ]
+  },
+  {
+    "source": "INS-23",
+    "target": "STU-11",
+    "weight": 0.0645,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1057
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-24",
+    "target": "TA-02",
+    "weight": 0.209,
+    "breakdown": {
+      "cotag": 0.0714,
+      "coword": 0.2723
+    },
+    "shared_tags": [
+      "misc:Stakeholder notes"
+    ]
+  },
+  {
+    "source": "INS-24",
+    "target": "TA-03",
+    "weight": 0.0943,
+    "breakdown": {
+      "cotag": 0.0833,
+      "coword": 0.0726
+    },
+    "shared_tags": [
+      "misc:Stakeholder notes"
+    ]
+  },
+  {
+    "source": "INS-24",
+    "target": "TA-04",
+    "weight": 0.1867,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.3059
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-24",
+    "target": "STU-06",
+    "weight": 0.0535,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0876
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-25",
+    "target": "TA-03",
+    "weight": 0.085,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1393
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-25",
+    "target": "TA-04",
+    "weight": 0.051,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0835
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-26",
+    "target": "TCH-02",
+    "weight": 0.4333,
+    "breakdown": {
+      "cotag": 0.7222,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:principal_agent",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-26",
+    "target": "TCH-10",
+    "weight": 0.4813,
+    "breakdown": {
+      "cotag": 0.6111,
+      "coword": 0.1878
+    },
+    "shared_tags": [
+      "theory:principal_agent",
+      "misc:AI variable"
+    ]
+  },
+  {
+    "source": "INS-26",
+    "target": "TCH-11",
+    "weight": 0.4235,
+    "breakdown": {
+      "cotag": 0.6842,
+      "coword": 0.0213
+    },
+    "shared_tags": [
+      "theory:principal_agent",
+      "cross:methodology"
+    ]
+  },
+  {
+    "source": "INS-26",
+    "target": "STU-04",
+    "weight": 0.0588,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0964
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "INS-27",
+    "target": "INS-28",
+    "weight": 0.4145,
+    "breakdown": {
+      "cotag": 0.6842,
+      "coword": 0.0065
+    },
+    "shared_tags": [
+      "theory:mechanism_design",
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "INS-27",
+    "target": "INS-29",
+    "weight": 0.4351,
+    "breakdown": {
+      "cotag": 0.6842,
+      "coword": 0.0403
+    },
+    "shared_tags": [
+      "theory:mechanism_design",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-27",
+    "target": "INS-30",
+    "weight": 0.39,
+    "breakdown": {
+      "cotag": 0.65,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:mechanism_design",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-29",
+    "target": "INS-30",
+    "weight": 0.6076,
+    "breakdown": {
+      "cotag": 0.8125,
+      "coword": 0.1968
+    },
+    "shared_tags": [
+      "theory:mechanism_design",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "INS-30",
+    "target": "TCH-20",
+    "weight": 0.0615,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1007
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-01",
+    "target": "TCH-02",
+    "weight": 0.6151,
+    "breakdown": {
+      "cotag": 0.7692,
+      "coword": 0.2516
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TCH-01",
+    "target": "TCH-05",
+    "weight": 0.0638,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1046
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-01",
+    "target": "TCH-07",
+    "weight": 0.4896,
+    "breakdown": {
+      "cotag": 0.7143,
+      "coword": 0.1
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TCH-01",
+    "target": "TCH-08",
+    "weight": 0.7321,
+    "breakdown": {
+      "cotag": 0.8333,
+      "coword": 0.3804
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TCH-01",
+    "target": "TCH-09",
+    "weight": 0.0551,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0903
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-01",
+    "target": "TCH-10",
+    "weight": 0.5709,
+    "breakdown": {
+      "cotag": 0.9091,
+      "coword": 0.0418
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TCH-01",
+    "target": "TCH-11",
+    "weight": 0.5629,
+    "breakdown": {
+      "cotag": 0.7143,
+      "coword": 0.22
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TCH-01",
+    "target": "TCH-20",
+    "weight": 0.0526,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0862
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-01",
+    "target": "TA-01",
+    "weight": 0.5443,
+    "breakdown": {
+      "cotag": 0.8333,
+      "coword": 0.0726
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TCH-01",
+    "target": "TA-02",
+    "weight": 0.4286,
+    "breakdown": {
+      "cotag": 0.7143,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TCH-01",
+    "target": "TA-03",
+    "weight": 0.5,
+    "breakdown": {
+      "cotag": 0.8333,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TCH-01",
+    "target": "TA-04",
+    "weight": 0.3,
+    "breakdown": {
+      "cotag": 0.5,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TCH-02",
+    "target": "TCH-08",
+    "weight": 0.5571,
+    "breakdown": {
+      "cotag": 0.6667,
+      "coword": 0.2575
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TCH-02",
+    "target": "TA-01",
+    "weight": 0.4354,
+    "breakdown": {
+      "cotag": 0.6667,
+      "coword": 0.058
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TCH-02",
+    "target": "TA-02",
+    "weight": 0.6125,
+    "breakdown": {
+      "cotag": 0.9286,
+      "coword": 0.0908
+    },
+    "shared_tags": [
+      "theory:principal_agent",
+      "cross:governance"
+    ]
+  },
+  {
+    "source": "TCH-02",
+    "target": "TA-03",
+    "weight": 0.4,
+    "breakdown": {
+      "cotag": 0.6667,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TCH-02",
+    "target": "STU-02",
+    "weight": 0.0613,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1004
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-02",
+    "target": "STU-11",
+    "weight": 0.0504,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0826
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-03",
+    "target": "TCH-04",
+    "weight": 0.0969,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1587
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-03",
+    "target": "TCH-09",
+    "weight": 0.1374,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.2252
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-03",
+    "target": "TCH-13",
+    "weight": 0.0608,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0996
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-03",
+    "target": "TCH-15",
+    "weight": 0.1007,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1649
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-03",
+    "target": "TCH-21",
+    "weight": 0.0694,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1138
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-03",
+    "target": "STU-08",
+    "weight": 0.1375,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.2254
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-04",
+    "target": "TCH-06",
+    "weight": 0.0673,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1103
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-04",
+    "target": "TCH-09",
+    "weight": 0.2796,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.4582
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-04",
+    "target": "STU-06",
+    "weight": 0.0843,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1381
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-05",
+    "target": "TCH-07",
+    "weight": 0.0484,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0792
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-05",
+    "target": "TCH-09",
+    "weight": 0.0437,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0715
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-05",
+    "target": "TCH-20",
+    "weight": 0.0417,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0683
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-05",
+    "target": "STU-07",
+    "weight": 0.16,
+    "breakdown": {
+      "cotag": 0.2667,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "cluster:Competition cluster"
+    ]
+  },
+  {
+    "source": "TCH-06",
+    "target": "TCH-09",
+    "weight": 0.0554,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0908
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-06",
+    "target": "TCH-17",
+    "weight": 0.6463,
+    "breakdown": {
+      "cotag": 1.0,
+      "coword": 0.0758
+    },
+    "shared_tags": [
+      "cross:sustainability"
+    ]
+  },
+  {
+    "source": "TCH-06",
+    "target": "STU-02",
+    "weight": 0.0592,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0969
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-06",
+    "target": "STU-03",
+    "weight": 0.1655,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.2711
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-07",
+    "target": "TCH-08",
+    "weight": 0.402,
+    "breakdown": {
+      "cotag": 0.625,
+      "coword": 0.0442
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TCH-07",
+    "target": "TCH-10",
+    "weight": 0.4193,
+    "breakdown": {
+      "cotag": 0.6667,
+      "coword": 0.0317
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TCH-07",
+    "target": "TA-01",
+    "weight": 0.44,
+    "breakdown": {
+      "cotag": 0.7333,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:principal_agent",
+      "misc:source TBD —"
+    ]
+  },
+  {
+    "source": "TCH-07",
+    "target": "TA-03",
+    "weight": 0.375,
+    "breakdown": {
+      "cotag": 0.625,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TCH-08",
+    "target": "TCH-10",
+    "weight": 0.4728,
+    "breakdown": {
+      "cotag": 0.7692,
+      "coword": 0.0185
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TCH-08",
+    "target": "TCH-11",
+    "weight": 0.444,
+    "breakdown": {
+      "cotag": 0.625,
+      "coword": 0.113
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TCH-08",
+    "target": "TA-01",
+    "weight": 0.5273,
+    "breakdown": {
+      "cotag": 0.8462,
+      "coword": 0.0321
+    },
+    "shared_tags": [
+      "theory:principal_agent",
+      "misc:Framework"
+    ]
+  },
+  {
+    "source": "TCH-08",
+    "target": "TA-03",
+    "weight": 0.4471,
+    "breakdown": {
+      "cotag": 0.7143,
+      "coword": 0.0304
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TCH-08",
+    "target": "TA-04",
+    "weight": 0.2727,
+    "breakdown": {
+      "cotag": 0.4545,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TCH-09",
+    "target": "STU-06",
+    "weight": 0.0921,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1508
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-10",
+    "target": "TCH-11",
+    "weight": 0.4222,
+    "breakdown": {
+      "cotag": 0.6667,
+      "coword": 0.0364
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TCH-10",
+    "target": "TA-01",
+    "weight": 0.4615,
+    "breakdown": {
+      "cotag": 0.7692,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TCH-10",
+    "target": "TA-03",
+    "weight": 0.4615,
+    "breakdown": {
+      "cotag": 0.7692,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TCH-10",
+    "target": "TA-04",
+    "weight": 0.2857,
+    "breakdown": {
+      "cotag": 0.4762,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TCH-10",
+    "target": "STU-04",
+    "weight": 0.0613,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1005
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-11",
+    "target": "TA-01",
+    "weight": 0.4018,
+    "breakdown": {
+      "cotag": 0.625,
+      "coword": 0.0438
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TCH-11",
+    "target": "TA-03",
+    "weight": 0.3921,
+    "breakdown": {
+      "cotag": 0.625,
+      "coword": 0.028
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TCH-13",
+    "target": "TCH-17",
+    "weight": 0.0927,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.152
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-13",
+    "target": "TCH-18",
+    "weight": 0.114,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1868
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-14",
+    "target": "TCH-16",
+    "weight": 0.1811,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.2967
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-14",
+    "target": "TCH-22",
+    "weight": 0.0349,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0573
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-14",
+    "target": "STU-03",
+    "weight": 0.042,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0689
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-15",
+    "target": "TCH-17",
+    "weight": 0.0589,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0966
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-15",
+    "target": "TCH-22",
+    "weight": 0.0449,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0735
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-15",
+    "target": "STU-08",
+    "weight": 0.1088,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1782
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-16",
+    "target": "TCH-19",
+    "weight": 0.1646,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.2697
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-16",
+    "target": "STU-08",
+    "weight": 0.0614,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1006
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-18",
+    "target": "STU-03",
+    "weight": 0.0442,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0725
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-18",
+    "target": "STU-05",
+    "weight": 0.0538,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0882
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-18",
+    "target": "STU-08",
+    "weight": 0.145,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.2376
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-19",
+    "target": "STU-08",
+    "weight": 0.1641,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.2688
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-20",
+    "target": "STU-03",
+    "weight": 0.0581,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0952
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-21",
+    "target": "STU-09",
+    "weight": 0.2066,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.3386
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-22",
+    "target": "STU-03",
+    "weight": 0.0895,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1467
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TCH-22",
+    "target": "STU-08",
+    "weight": 0.0689,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1129
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TA-01",
+    "target": "TA-03",
+    "weight": 0.5576,
+    "breakdown": {
+      "cotag": 0.7143,
+      "coword": 0.2115
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TA-01",
+    "target": "STU-04",
+    "weight": 0.0711,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1165
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TA-02",
+    "target": "TA-03",
+    "weight": 0.44,
+    "breakdown": {
+      "cotag": 0.7333,
+      "coword": 0.0
+    },
+    "shared_tags": [
+      "theory:principal_agent",
+      "misc:Stakeholder notes"
+    ]
+  },
+  {
+    "source": "TA-02",
+    "target": "TA-04",
+    "weight": 0.4269,
+    "breakdown": {
+      "cotag": 0.4167,
+      "coword": 0.2898
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "TA-02",
+    "target": "STU-11",
+    "weight": 0.0805,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1319
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "TA-03",
+    "target": "TA-04",
+    "weight": 0.306,
+    "breakdown": {
+      "cotag": 0.4545,
+      "coword": 0.0545
+    },
+    "shared_tags": [
+      "theory:principal_agent"
+    ]
+  },
+  {
+    "source": "STU-01",
+    "target": "STU-02",
+    "weight": 0.0723,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1185
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "STU-01",
+    "target": "STU-05",
+    "weight": 0.3598,
+    "breakdown": {
+      "cotag": 0.5556,
+      "coword": 0.0433
+    },
+    "shared_tags": [
+      "theory:signaling"
+    ]
+  },
+  {
+    "source": "STU-01",
+    "target": "STU-10",
+    "weight": 0.3405,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.558
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "STU-01",
+    "target": "STU-12",
+    "weight": 0.5316,
+    "breakdown": {
+      "cotag": 0.625,
+      "coword": 0.2566
+    },
+    "shared_tags": [
+      "theory:signaling"
+    ]
+  },
+  {
+    "source": "STU-02",
+    "target": "STU-10",
+    "weight": 0.0448,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0735
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "STU-04",
+    "target": "STU-10",
+    "weight": 0.0567,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0929
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "STU-05",
+    "target": "STU-12",
+    "weight": 0.4112,
+    "breakdown": {
+      "cotag": 0.625,
+      "coword": 0.0593
+    },
+    "shared_tags": [
+      "theory:signaling"
+    ]
+  },
+  {
+    "source": "STU-07",
+    "target": "STU-09",
+    "weight": 0.1221,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.2001
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "STU-07",
+    "target": "STU-10",
+    "weight": 0.043,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.0704
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "STU-07",
+    "target": "STU-11",
+    "weight": 0.3177,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.5205
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "STU-09",
+    "target": "STU-11",
+    "weight": 0.122,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.1998
+    },
+    "shared_tags": []
+  },
+  {
+    "source": "STU-10",
+    "target": "STU-12",
+    "weight": 0.128,
+    "breakdown": {
+      "cotag": 0.0,
+      "coword": 0.2097
+    },
+    "shared_tags": []
+  }
+]

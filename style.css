@@ -1,0 +1,176 @@
+:root {
+  --bg: #f7f8fa;
+  --panel: #ffffff;
+  --border: #e2e5ea;
+  --text: #1f2430;
+  --muted: #6b7280;
+  --accent: #4e79a7;
+  --danger: #e15759;
+}
+
+* { box-sizing: border-box; }
+
+[hidden] { display: none !important; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: -apple-system, "Segoe UI", "Microsoft YaHei", Roboto, "Helvetica Neue", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  font-size: 14px;
+}
+
+body { display: flex; flex-direction: column; overflow: hidden; }
+
+/* ---------------- 顶部工具栏 ---------------- */
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 18px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  flex: 0 0 auto;
+}
+.title h1 { margin: 0; font-size: 16px; font-weight: 650; }
+.subtitle { font-size: 12px; color: var(--muted); }
+.controls { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.btn {
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--text);
+}
+.btn:hover { background: #f0f2f5; }
+.btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+#search {
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 13px;
+  width: 180px;
+}
+.mini {
+  border: none; background: none; cursor: pointer;
+  color: var(--muted); font-size: 12px; padding: 2px 6px;
+}
+.mini:hover { color: var(--danger); }
+
+/* ---------------- 主体 ---------------- */
+.main { display: flex; flex: 1 1 auto; min-height: 0; }
+
+/* 侧边筛选 */
+.sidebar {
+  width: 200px;
+  flex: 0 0 auto;
+  background: var(--panel);
+  border-right: 1px solid var(--border);
+  overflow-y: auto;
+  padding: 12px;
+}
+.filter-head {
+  display: flex; justify-content: space-between; align-items: center;
+  font-weight: 650; margin-bottom: 4px;
+}
+.filter-group { margin-bottom: 14px; }
+.filter-group h3 { font-size: 12px; color: var(--muted); margin: 8px 0 4px; text-transform: uppercase; letter-spacing: .04em; }
+.chk { display: flex; align-items: center; gap: 6px; padding: 2px 0; cursor: pointer; font-size: 13px; }
+.chk input { cursor: pointer; }
+.chk .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex: 0 0 auto; }
+.chk .cnt { color: var(--muted); font-size: 11px; margin-left: auto; }
+
+/* 图区 */
+.graph-wrap {
+  flex: 1 1 auto;
+  position: relative;
+  min-width: 0;
+}
+#graph { width: 100%; height: 100%; display: block; cursor: grab; }
+#graph:active { cursor: grabbing; }
+.hint {
+  position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);
+  font-size: 11px; color: var(--muted); background: rgba(255,255,255,.8);
+  padding: 4px 12px; border-radius: 20px; pointer-events: none;
+}
+.legend {
+  position: absolute; top: 10px; left: 10px;
+  background: rgba(255,255,255,.92); border: 1px solid var(--border);
+  border-radius: 8px; padding: 8px 10px; font-size: 12px;
+}
+.legend .li { display: flex; align-items: center; gap: 6px; padding: 1px 0; }
+.legend .dot { width: 10px; height: 10px; border-radius: 50%; }
+
+/* 节点 / 边 */
+.link { stroke: #c9ced6; stroke-opacity: .5; }
+.link.highlight { stroke: var(--accent); stroke-opacity: .9; }
+.link.dim { stroke-opacity: .06; }
+.node { stroke: #fff; stroke-width: 1px; cursor: pointer; }
+.node.dim { opacity: .12; }
+.node-label { font-size: 10px; fill: #555; pointer-events: none; text-anchor: middle; }
+.node-label.dim { opacity: .12; }
+
+/* 详情面板 */
+.detail {
+  width: 300px;
+  flex: 0 0 auto;
+  background: var(--panel);
+  border-left: 1px solid var(--border);
+  overflow-y: auto;
+  padding: 14px;
+}
+.detail-empty { color: var(--muted); font-size: 13px; text-align: center; margin-top: 40px; }
+.detail h2 { margin: 0 0 4px; font-size: 15px; }
+.detail .meta { font-size: 12px; color: var(--muted); margin-bottom: 10px; }
+.detail .qtext { font-size: 14px; line-height: 1.6; margin: 8px 0; }
+.detail .qtext.en { }
+.badge {
+  display: inline-block; padding: 2px 8px; border-radius: 12px;
+  font-size: 11px; margin: 2px 3px 2px 0; background: #eef1f5; color: #333;
+}
+.badge.theory { background: #e8eef7; color: #2a5b8f; }
+.badge.warn { background: #fdecec; color: #b23a3c; }
+.detail .sec { margin-top: 12px; }
+.detail .sec h4 { margin: 0 0 6px; font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+.detail .cite { font-size: 12px; padding: 4px 0; border-top: 1px solid #f0f2f5; }
+.detail .cite a { color: var(--accent); text-decoration: none; }
+.detail .cite a:hover { text-decoration: underline; }
+
+/* 指标弹层 */
+.metrics-overlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,.35);
+  display: flex; align-items: center; justify-content: center; z-index: 50;
+}
+.metrics-panel {
+  background: #fff; border-radius: 12px; width: 560px; max-width: 92vw;
+  max-height: 82vh; overflow-y: auto; padding: 18px 20px;
+  box-shadow: 0 12px 40px rgba(0,0,0,.2);
+}
+.metrics-head { display: flex; justify-content: space-between; align-items: center; }
+.metrics-head h2 { margin: 0; font-size: 16px; }
+.stat-row { display: flex; gap: 16px; margin: 12px 0; flex-wrap: wrap; }
+.stat {
+  flex: 1; min-width: 90px; background: #f4f6f9; border-radius: 8px;
+  padding: 10px 12px; text-align: center;
+}
+.stat .v { font-size: 22px; font-weight: 700; color: var(--accent); }
+.stat .k { font-size: 11px; color: var(--muted); margin-top: 2px; }
+.metrics-panel table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 8px 0 16px; }
+.metrics-panel th, .metrics-panel td { text-align: left; padding: 5px 8px; border-bottom: 1px solid #f0f2f5; }
+.metrics-panel th { color: var(--muted); font-weight: 600; font-size: 12px; }
+.metrics-panel .cluster-row { cursor: pointer; }
+.metrics-panel .cluster-row:hover { background: #f4f6f9; }
+
+/* tooltip */
+.tooltip {
+  position: fixed; pointer-events: none; z-index: 100;
+  background: rgba(20,24,32,.94); color: #fff;
+  border-radius: 8px; padding: 8px 10px; font-size: 12px;
+  max-width: 320px; line-height: 1.5; box-shadow: 0 4px 16px rgba(0,0,0,.3);
+}
+.tooltip .t-title { font-weight: 650; margin-bottom: 2px; }
+.tooltip .t-why { color: #aeb8c6; font-size: 11px; margin-top: 4px; }
