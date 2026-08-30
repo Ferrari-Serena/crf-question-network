@@ -1,3 +1,3 @@
-# Netlify local artifacts (this site is deployed via GitHub Pages now)
-.netlify/
-netlify.toml
+# OS junk
+.DS_Store
+Thumbs.db
