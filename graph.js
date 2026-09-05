@@ -1,7 +1,21 @@
 /* 问题网络力导向图 —— d3-force + 交互 */
 "use strict";
 
-const COLORS = ["#4e79a7", "#f28e2b", "#e15759", "#76b7b2", "#59a14f", "#edc948", "#b07aa1", "#ff9da7", "#9c755f", "#bab0ac"];
+// 7 簇配色（cluster_id → 颜色）。2026-09-05 调过：原 簇2红/簇3青/簇4绿 三色相邻易混，
+// 改为 簇3 青→紫、簇6 紫→青，红加深，让「持续性·型别·机制设计」三团拉开色相。
+const COLORS = ["#4e79a7", "#f28e2b", "#d62728", "#9467bd", "#59a14f", "#edc948", "#17becf", "#ff9da7", "#9c755f", "#bab0ac"];
+
+// 7 簇语义名（Louvain 分簇后人工归纳，非算法预设）。若重跑 cluster.py 导致簇编号漂移，需复核此表。
+const CLUSTER_NAMES = {
+  0: "激励传导",
+  1: "企业动机·课程落地",
+  2: "持续性·流失",
+  3: "人才型别",
+  4: "机制设计·治理",
+  5: "信号·筛选",
+  6: "谁更着急·公平",
+};
+function clusterName(id) { return CLUSTER_NAMES[id] || `簇 ${id + 1}`; }
 
 const STAKEHOLDER_CN = {
   enterprise: "企业方", institution: "院系方", instructor: "老师方",
@@ -297,14 +311,14 @@ function buildFilters() {
   ].map(([value, label]) => ({ value, label, cnt: cnt(n => n.chain_step === value) })));
   buildFilterGroup("#filter-cluster",
     (metrics?.cluster_centers || []).map(cc => ({
-      value: String(cc.cluster_id), label: `簇 ${cc.cluster_id + 1}`, color: clusterColor(cc.cluster_id), cnt: cc.size,
+      value: String(cc.cluster_id), label: `簇${cc.cluster_id + 1}·${clusterName(cc.cluster_id)}`, color: clusterColor(cc.cluster_id), cnt: cc.size,
     })));
 }
 
 function buildLegend() {
   const items = (metrics?.cluster_centers || []).map(cc => `
     <div class="li"><span class="dot" style="background:${clusterColor(cc.cluster_id)}"></span>
-    簇 ${cc.cluster_id + 1} · 中心 [${cc.label}]</div>`).join("");
+    簇 ${cc.cluster_id + 1} · ${clusterName(cc.cluster_id)} · 中心 [${cc.label}]</div>`).join("");
   d3.select("#legend").html(items);
 }
 
@@ -331,7 +345,7 @@ function showMetrics() {
       <tr><th>簇</th><th>规模</th><th>中心问题</th><th>度</th></tr>
       ${m.cluster_centers.map(cc => `
         <tr class="cluster-row" data-id="${cc.center}">
-          <td><span class="dot" style="background:${clusterColor(cc.cluster_id)};width:10px;height:10px;border-radius:50%;display:inline-block"></span> 簇${cc.cluster_id + 1}</td>
+          <td><span class="dot" style="background:${clusterColor(cc.cluster_id)};width:10px;height:10px;border-radius:50%;display:inline-block"></span> 簇${cc.cluster_id + 1}<br><span style="color:#999;font-size:11px">${clusterName(cc.cluster_id)}</span></td>
           <td>${cc.size}</td><td>${cc.center} [${cc.label}]</td><td>${cc.degree}</td>
         </tr>`).join("")}
     </table>
