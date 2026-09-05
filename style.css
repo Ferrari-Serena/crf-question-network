@@ -165,6 +165,17 @@ body { display: flex; flex-direction: column; overflow: hidden; }
 .metrics-panel .cluster-row { cursor: pointer; }
 .metrics-panel .cluster-row:hover { background: #f4f6f9; }
 
+/* 读图说明弹层 */
+.readme-panel { width: 680px; }
+.readme-body { font-size: 13px; line-height: 1.7; color: var(--text); }
+.readme-body h3 { margin: 16px 0 6px; font-size: 14px; }
+.readme-body p, .readme-body ul { margin: 6px 0; }
+.readme-body ul { padding-left: 18px; }
+.readme-body .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
+.readme-clusters { width: 100%; border-collapse: collapse; margin: 8px 0; }
+.readme-clusters td { padding: 5px 8px; border-bottom: 1px solid #f0f2f5; vertical-align: top; }
+.readme-clusters td:first-child { white-space: nowrap; font-weight: 600; }
+
 /* tooltip */
 .tooltip {
   position: fixed; pointer-events: none; z-index: 100;

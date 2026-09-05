@@ -381,6 +381,9 @@ document.querySelector("#lang-toggle").addEventListener("click", function () {
   }
 });
 document.querySelector("#metrics-toggle").addEventListener("click", showMetrics);
+document.querySelector("#readme-toggle").addEventListener("click", () => document.querySelector("#readme-overlay").hidden = false);
+document.querySelector("#readme-close").addEventListener("click", () => document.querySelector("#readme-overlay").hidden = true);
+document.querySelector("#readme-overlay").addEventListener("click", e => { if (e.target.id === "readme-overlay") e.target.hidden = true; });
 document.querySelector("#metrics-close").addEventListener("click", () => document.querySelector("#metrics-overlay").hidden = true);
 document.querySelector("#metrics-overlay").addEventListener("click", e => { if (e.target.id === "metrics-overlay") e.target.hidden = true; });
 document.querySelector("#reset-view").addEventListener("click", () => {
