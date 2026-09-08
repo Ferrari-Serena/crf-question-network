@@ -1,43 +1,43 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>校企合作治理 · 问题网络（114 题）</title>
+  <title>Enterprise-Engaged Innovation Education · Question Network (114)</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="toolbar">
     <div class="title">
-      <h1>校企合作治理 · 问题网络</h1>
+      <h1>Enterprise-Engaged Innovation Education · Question Network</h1>
       <span class="subtitle">114 questions · force-directed graph · 7 clusters</span>
     </div>
     <div class="controls">
-      <button id="readme-toggle" class="btn">读图说明</button>
-      <button id="lang-toggle" class="btn" title="切换中/英文">EN ⇄ 中</button>
-      <button id="metrics-toggle" class="btn">指标面板</button>
-      <button id="reset-view" class="btn">重置视图</button>
-      <input id="search" type="text" placeholder="搜索关键词…">
+      <button id="readme-toggle" class="btn">Reading Guide</button>
+      <button id="lang-toggle" class="btn" title="Toggle CN/EN">EN ⇄ 中</button>
+      <button id="metrics-toggle" class="btn">Metrics</button>
+      <button id="reset-view" class="btn">Reset View</button>
+      <input id="search" type="text" placeholder="Search keywords…">
     </div>
   </header>
 
   <div class="main">
     <aside class="sidebar" id="sidebar">
-      <div class="filter-head">筛选器 <button id="clear-filters" class="mini">清除</button></div>
+      <div class="filter-head">Filters <button id="clear-filters" class="mini">Clear</button></div>
       <section class="filter-group">
-        <h3>按方</h3>
+        <h3>By Party</h3>
         <div id="filter-stakeholder"></div>
       </section>
       <section class="filter-group">
-        <h3>理论标签</h3>
+        <h3>Theory Tags</h3>
         <div id="filter-theory"></div>
       </section>
       <section class="filter-group">
-        <h3>四步链条</h3>
+        <h3>Four-step Chain</h3>
         <div id="filter-chain"></div>
       </section>
       <section class="filter-group">
-        <h3>簇</h3>
+        <h3>Cluster</h3>
         <div id="filter-cluster"></div>
       </section>
     </aside>
@@ -45,18 +45,18 @@
     <div class="graph-wrap" id="graph-wrap">
       <svg id="graph"></svg>
       <div class="legend" id="legend"></div>
-      <div class="hint">拖拽节点 · 滚轮缩放 · 点击节点看详情 · 悬停看「为什么连」</div>
+      <div class="hint">Drag nodes · scroll to zoom · click for detail · hover to see "why linked"</div>
     </div>
 
     <aside class="detail" id="detail">
-      <div class="detail-empty">点击任意节点查看详情</div>
+      <div class="detail-empty">Click any node for details</div>
     </aside>
   </div>
 
   <div class="metrics-overlay" id="metrics-overlay" hidden>
     <div class="metrics-panel">
       <div class="metrics-head">
-        <h2>网络指标</h2>
+        <h2>Network Metrics</h2>
         <button id="metrics-close" class="mini">✕</button>
       </div>
       <div id="metrics-body"></div>
@@ -66,35 +66,35 @@
   <div class="metrics-overlay" id="readme-overlay" hidden>
     <div class="metrics-panel readme-panel">
       <div class="metrics-head">
-        <h2>这张图怎么看</h2>
+        <h2>How to read this graph</h2>
         <button id="readme-close" class="mini">✕</button>
       </div>
       <div class="readme-body">
-        <h3>一、每个颜色 = 一个问题簇（共 7 簇，算法自动抱团）</h3>
-        <p>颜色不是预设的主题，是 Louvain 社区检测根据问题之间的关联自动"抱团"出来的。7 个簇各讨论一块议题：</p>
+        <h3>1. Each color = one question cluster (7 clusters, algorithmically grouped)</h3>
+        <p>Colors are not preset topics — Louvain community detection groups questions by how they link. Each of the 7 clusters addresses one issue:</p>
         <table class="readme-clusters">
-          <tr><td><span class="dot" style="background:#4e79a7"></span>蓝 · 激励传导</td><td>院系 / 老师 / 助教的激励怎么往下传（评职称、KE 政策、助教承重）</td></tr>
-          <tr><td><span class="dot" style="background:#f28e2b"></span>橙 · 企业动机·课程落地</td><td>企业为什么进课堂 + 课怎么落地（共教 / PBL / 真实项目）</td></tr>
-          <tr><td><span class="dot" style="background:#d62728"></span>红 · 持续性·流失</td><td>企业第二年还来吗、为什么流失、时间错配</td></tr>
-          <tr><td><span class="dot" style="background:#9467bd"></span>紫 · 人才型别</td><td>企业要的是哪种人才（筛选 / 分摊成本 / 塑造规格）</td></tr>
-          <tr><td><span class="dot" style="background:#59a14f"></span>绿 · 机制设计·治理</td><td>五方激励怎么对齐、价值怎么分、怎么防企业捕获</td></tr>
-          <tr><td><span class="dot" style="background:#edc948"></span>黄 · 信号·筛选</td><td>学生倒贴换长期回报、企业「先试后买」</td></tr>
-          <tr><td><span class="dot" style="background:#17becf"></span>青 · 谁更着急·公平</td><td>谁更离不开合作、各方的「货币」、公平性</td></tr>
+          <tr><td><span class="dot" style="background:#4e79a7"></span>Blue · Incentive Transmission</td><td>How incentives cascade from institution → instructor → TA (promotion, KE policy, TA load)</td></tr>
+          <tr><td><span class="dot" style="background:#f28e2b"></span>Orange · Firm Motivation · Course Delivery</td><td>Why firms enter the classroom + how the course is delivered (co-teaching / PBL / real projects)</td></tr>
+          <tr><td><span class="dot" style="background:#d62728"></span>Red · Sustainability · Attrition</td><td>Will firms return next year, why they leave, time mismatch</td></tr>
+          <tr><td><span class="dot" style="background:#9467bd"></span>Purple · Talent Types</td><td>What kind of talent firms want (screening / cost-sharing / shaping specs)</td></tr>
+          <tr><td><span class="dot" style="background:#59a14f"></span>Green · Mechanism Design · Governance</td><td>How to align the five parties' incentives, split value, prevent firm capture</td></tr>
+          <tr><td><span class="dot" style="background:#edc948"></span>Yellow · Signaling · Screening</td><td>Students pay out of pocket for long-term returns; firms "try before they buy"</td></tr>
+          <tr><td><span class="dot" style="background:#17becf"></span>Cyan · Urgency · Fairness</td><td>Who needs the cooperation more, each party's "currency", fairness</td></tr>
         </table>
 
-        <h3>二、两个点之间的一条线 = 「这两个问题同源」</h3>
-        <p>线<b>不是</b>「这个问题导致那个问题」（非因果），而是「这两个问题本质是同一件事的两个侧面」。由两层信号合成：</p>
+        <h3>2. A line between two points = "these two questions share the same root"</h3>
+        <p>A line is <b>not</b> "this question causes that one" (not causal), but "these two are two sides of the same thing". Composed of two signals:</p>
         <ul>
-          <li><b>共标签（占 60%）</b>：共享同一套诺奖理论 / 引同一篇文献 / 谈同一种合作模式 / 同一个治理维度</li>
-          <li><b>共词（占 40%）</b>：两题英文用词的语义相近度（TF-IDF）</li>
+          <li><b>Shared tags (60%)</b>: same Nobel theory / same citation / same cooperation mode / same governance dimension</li>
+          <li><b>Shared wording (40%)</b>: semantic similarity of English wording (TF-IDF)</li>
         </ul>
-        <p>悬停或点开任意节点，右侧会列出「为什么连（共享标签 / 文献）」——那就是这根线的证据。</p>
+        <p>Hover or click any node — the right panel lists "why linked (shared tags / citations)", which is the evidence for that line.</p>
 
-        <h3>三、为什么有些簇混在一起</h3>
-        <p>红（流失）、紫（人才型别）、绿（机制设计）三团，底层是同一片「企业激励 × 治理」的领地——<b>流失是症状、型别是病因、机制设计是药方</b>，语义天然相邻，所以图上自然抱成一团。这不是画错了，是一个真实发现：这三块议题本就难分。</p>
+        <h3>3. Why some clusters mix together</h3>
+        <p>Red (attrition), purple (talent types), green (mechanism design) sit on the same "firm incentive × governance" territory — <b>attrition is the symptom, types the cause, mechanism design the cure</b>; they are semantically adjacent, so they naturally clump. This is not a rendering bug but a real finding: these three issues are inherently hard to separate.</p>
 
-        <h3>四、网络读出了什么（一句话）</h3>
-        <p>中心问题落在 <b>「激励对齐 + 持续性」</b>，不是某个单一 stakeholder——印证「四股劲拧成一股」的机制设计就是研究主轴。</p>
+        <h3>4. What the network says (one line)</h3>
+        <p>The central questions fall on <b>"incentive alignment + sustainability"</b>, not any single stakeholder — confirming that "four forces into one" mechanism design is the main research axis.</p>
       </div>
     </div>
   </div>
