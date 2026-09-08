@@ -740,29 +740,15 @@
     "crosscutting": [],
     "cluster_mode": [],
     "misc_tags": [
-      ", Frontiers in Education 11:1794804 review flags this",
-      "⚠ **attribution unverified**: the review attributes \"shared training costs\" to , but (Archnet-IJAR 17(3), 518–535, DOI ) is a Delphi study of architecture WIL that lists mentoring cost as a *barrier*, not \"shared training costs\" as a *benefit* — the attribution cannot be traced, and must be re-traced or removed before formal citation"
+      "Em & Khampirat 2026 review flags shared training costs as a co-op benefit",
+      "screening vs shared-training-cost conflict / renewal decision not directly adjudicated by the review"
     ],
     "source_rec": [],
     "citations": [
       {
-        "key": null,
-        "label": "DOI 10.1108/ARCH-01-2023-0001",
-        "doi": "10.1108/ARCH-01-2023-0001",
-        "url": null,
-        "unverified": true
-      },
-      {
         "key": "Em & Khampirat 2026",
         "label": "Em & Khampirat 2026",
-        "doi": null,
-        "url": null,
-        "unverified": false
-      },
-      {
-        "key": "Briant et al. 2023",
-        "label": "Briant et al. 2023",
-        "doi": null,
+        "doi": "10.3389/feduc.2026.1794804",
         "url": null,
         "unverified": false
       }
@@ -1116,19 +1102,11 @@
     "crosscutting": [],
     "cluster_mode": [],
     "misc_tags": [
-      "⚠ claim un-traced: EJ929321 is actually \"challenges of university–workplace partnerships\", off-topic for \"SME vs. large firm\"; kept as a **hypothesis** for now",
+      "research gap: SME vs large-firm try-before-you-buy tension",
       "firm attrition attribution"
     ],
     "source_rec": [],
-    "citations": [
-      {
-        "key": "Choy & Delahaye 2011",
-        "label": "Choy & Delahaye 2011",
-        "doi": null,
-        "url": null,
-        "unverified": false
-      }
-    ],
+    "citations": [],
     "cluster_id": 3,
     "degree": 8,
     "degree_centrality": 0.070796,
@@ -2261,21 +2239,15 @@
       "Competition cluster"
     ],
     "misc_tags": [
-      "⚠ concept to be sourced: the term \"knowledge broker\" for teachers is a real concept (cf. , \"Teacher educators as knowledge brokers,\" Professional Development in Education, DOI ), but its application to *industry-facing* instructors is not yet theorized — previously mis-attributed to Benson & Chau, whose actual paper is a SCM case competition"
+      "Knight 2024 knowledge broker concept, sourced to teacher-educator context",
+      "industry-facing instructor application not yet theorized"
     ],
     "source_rec": [],
     "citations": [
       {
-        "key": null,
-        "label": "DOI 10.1080/19415257.2024.2360461",
-        "doi": "10.1080/19415257.2024.2360461",
-        "url": null,
-        "unverified": true
-      },
-      {
         "key": "Knight 2024",
         "label": "Knight 2024",
-        "doi": null,
+        "doi": "10.1080/19415257.2024.2360461",
         "url": null,
         "unverified": false
       }
