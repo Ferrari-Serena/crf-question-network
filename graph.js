@@ -1,30 +1,53 @@
 /* 问题网络力导向图 —— d3-force + 交互 */
 "use strict";
 
-// 7 簇配色（cluster_id → 颜色）。2026-09-05 调过：原 簇2红/簇3青/簇4绿 三色相邻易混，
-// 改为 簇3 青→紫、簇6 紫→青，红加深，让「持续性·型别·机制设计」三团拉开色相。
-const COLORS = ["#4e79a7", "#f28e2b", "#d62728", "#9467bd", "#59a14f", "#edc948", "#17becf", "#ff9da7", "#9c755f", "#bab0ac"];
+// 17 簇配色（cluster_id → 颜色）。V400 重跑 Louvain 后得到 17 个算法簇，扩展为 20 色备用。
+const COLORS = [
+  "#4e79a7", "#f28e2b", "#d62728", "#9467bd", "#59a14f", "#edc948", "#17becf",
+  "#e15759", "#76b7b2", "#ff9da7", "#9c755f", "#bab0ac", "#86bc25", "#8c564b",
+  "#b07aa1", "#bcbd22", "#7f7f7f", "#c49c94", "#98df8a", "#ffbb78",
+];
 
-// 7 簇语义名（Louvain 分簇后人工归纳，非算法预设）。若重跑 cluster.py 导致簇编号漂移，需复核此表。
+// 17 簇语义名（V400 的 380 题 Louvain 分簇后人工归纳，非算法预设）。若重跑 cluster.py 导致簇编号漂移，需复核此表。
 // 中英双语：默认英文（李博士要求），点右上角 EN ⇄ 中 切换。
 const CLUSTER_NAMES = {
   en: {
-    0: "Incentive Transmission",
-    1: "Firm Motivation · Course Delivery",
-    2: "Sustainability · Attrition",
-    3: "Talent Types",
-    4: "Mechanism Design · Governance",
-    5: "Signaling · Screening",
-    6: "Urgency · Fairness",
+    0: "Course Design & Workload",
+    1: "Institution Funding & Reputation",
+    2: "Firm Value Perception & Data Access",
+    3: "Urgency & Time Mismatch",
+    4: "Firm Efficiency & Commitment Signals",
+    5: "Attrition Attribution & Contact Churn",
+    6: "Incentive Alignment & Multitask",
+    7: "Student Long-term Returns & Reputation",
+    8: "Mentor Cost & Who Pays",
+    9: "TA Load & Scalability",
+    10: "Value Realization Lag & Scale",
+    11: "Mechanism Design & Governance",
+    12: "Success Measurement & Attribution",
+    13: "Firm Hiring Motives & AI",
+    14: "Transaction Costs",
+    15: "Signaling & Screening",
+    16: "Sustainability & Attrition",
   },
   cn: {
-    0: "激励传导",
-    1: "企业动机·课程落地",
-    2: "持续性·流失",
-    3: "人才型别",
-    4: "机制设计·治理",
-    5: "信号·筛选",
-    6: "谁更着急·公平",
+    0: "课程设计与教学负荷",
+    1: "院系资源与声誉激励",
+    2: "企业价值认知与数据可得",
+    3: "谁更着急·时间错配",
+    4: "企业效率与承诺信号",
+    5: "流失归因与对接人变动",
+    6: "激励对齐与多任务",
+    7: "学生长期回报与声誉替代",
+    8: "导师成本与谁承担",
+    9: "助教负荷与可扩展性",
+    10: "价值兑现滞后与规模化",
+    11: "机制设计·治理",
+    12: "成功度量与归因",
+    13: "企业招聘动机与 AI",
+    14: "交易成本结构",
+    15: "信号·筛选",
+    16: "持续性·流失",
   },
 };
 function clusterName(id) {
@@ -51,6 +74,8 @@ const CROSS = {
   governance: { en: "Governance / Mechanism", cn: "治理/机制" },
   sustainability: { en: "Sustainability", cn: "持续性" },
   methodology: { en: "Methodology", cn: "方法论" },
+  constraint: { en: "Constraint", cn: "约束" },
+  imbalance: { en: "Imbalance", cn: "失衡" },
 };
 const CHAIN = {
   efficiency: { en: "Efficiency", cn: "效率" },
@@ -187,7 +212,7 @@ function buildGraph() {
     .data(nodes).join("text")
     .attr("class", "node-label")
     .attr("dy", d => -nodeRadius(d) - 3)
-    .text(d => d.id);
+    .text(d => d.short_id || d.id);
 
   // 力模拟
   sim = d3.forceSimulation(nodes)

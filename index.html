@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enterprise-Engaged Innovation Education · Question Network (114)</title>
+  <title>Enterprise-Engaged Innovation Education · Question Network (380)</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="toolbar">
     <div class="title">
       <h1>Enterprise-Engaged Innovation Education · Question Network</h1>
-      <span class="subtitle">114 questions · force-directed graph · 7 clusters</span>
+      <span class="subtitle">380 questions · force-directed graph · 17 clusters</span>
     </div>
     <div class="controls">
       <button id="readme-toggle" class="btn">Reading Guide</button>
@@ -69,32 +69,42 @@
         <h2>How to read this graph</h2>
         <button id="readme-close" class="mini">✕</button>
       </div>
-      <div class="readme-body">
-        <h3>1. Each color = one question cluster (7 clusters, algorithmically grouped)</h3>
-        <p>Colors are not preset topics — Louvain community detection groups questions by how they link. Each of the 7 clusters addresses one issue:</p>
+            <div class="readme-body">
+        <h3>1. Each color = one question cluster (17 clusters, algorithmically grouped)</h3>
+        <p>Colors are not preset topics — Louvain community detection groups questions by how they link. V400 contains 380 questions (114 original + 260 expanded research gaps + 6 design questions) grouped into 17 clusters.</p>
         <table class="readme-clusters">
-          <tr><td><span class="dot" style="background:#4e79a7"></span>Blue · Incentive Transmission</td><td>How incentives cascade from institution → instructor → TA (promotion, KE policy, TA load)</td></tr>
-          <tr><td><span class="dot" style="background:#f28e2b"></span>Orange · Firm Motivation · Course Delivery</td><td>Why firms enter the classroom + how the course is delivered (co-teaching / PBL / real projects)</td></tr>
-          <tr><td><span class="dot" style="background:#d62728"></span>Red · Sustainability · Attrition</td><td>Will firms return next year, why they leave, time mismatch</td></tr>
-          <tr><td><span class="dot" style="background:#9467bd"></span>Purple · Talent Types</td><td>What kind of talent firms want (screening / cost-sharing / shaping specs)</td></tr>
-          <tr><td><span class="dot" style="background:#59a14f"></span>Green · Mechanism Design · Governance</td><td>How to align the five parties' incentives, split value, prevent firm capture</td></tr>
-          <tr><td><span class="dot" style="background:#edc948"></span>Yellow · Signaling · Screening</td><td>Students pay out of pocket for long-term returns; firms "try before they buy"</td></tr>
-          <tr><td><span class="dot" style="background:#17becf"></span>Cyan · Urgency · Fairness</td><td>Who needs the cooperation more, each party's "currency", fairness</td></tr>
+          <tr><td><span class="dot" style="background:#4e79a7"></span>Course Design & Workload</td><td>Instructor/course-side preparation, topic cycles, domain-specific prerequisites, TA persistence</td></tr>
+          <tr><td><span class="dot" style="background:#f28e2b"></span>Institution Funding & Reputation</td><td>How schools attract firms through funding, star courses, employer-relations offices, and risk/reputation motives</td></tr>
+          <tr><td><span class="dot" style="background:#d62728"></span>Firm Value Perception & Data Access</td><td>How firms update perceived participation value from observable metrics and what data access makes observable</td></tr>
+          <tr><td><span class="dot" style="background:#9467bd"></span>Urgency & Time Mismatch</td><td>Who needs the cooperation more, and how budget-year / cohort-cycle mismatches change that balance</td></tr>
+          <tr><td><span class="dot" style="background:#59a14f"></span>Firm Efficiency & Commitment Signals</td><td>Where firm-side efficiency loss concentrates and which long-term-intent signals are credible</td></tr>
+          <tr><td><span class="dot" style="background:#edc948"></span>Attrition Attribution & Contact Churn</td><td>Whether firms leave because value is absent or crowded out, and whether relationships survive contact-person turnover</td></tr>
+          <tr><td><span class="dot" style="background:#17becf"></span>Incentive Alignment & Multitask</td><td>How promotion, budget-line attribution, and multitask pressure align or misalign the five parties</td></tr>
+          <tr><td><span class="dot" style="background:#e15759"></span>Student Long-term Returns & Reputation</td><td>Whether students' deferred returns realize, and how reputation substitutes for them</td></tr>
+          <tr><td><span class="dot" style="background:#76b7b2"></span>Mentor Cost & Who Pays</td><td>Cost-sharing among TAs, external mentors, course budgets, and firms</td></tr>
+          <tr><td><span class="dot" style="background:#ff9da7"></span>TA Load & Scalability</td><td>TA resource allocation and how one-price courses scale as teams and stakeholders grow</td></tr>
+          <tr><td><span class="dot" style="background:#9c755f"></span>Value Realization Lag & Scale</td><td>The 2–3-year value lag, template standardization, and multi-school firm teams</td></tr>
+          <tr><td><span class="dot" style="background:#bab0ac"></span>Mechanism Design & Governance</td><td>How to align five-party incentives, define value creation/capture, and prevent both firm capture and firm flight</td></tr>
+          <tr><td><span class="dot" style="background:#86bc25"></span>Success Measurement & Attribution</td><td>Whose success criteria win, and how schools/firms differently attribute outcomes</td></tr>
+          <tr><td><span class="dot" style="background:#8c564b"></span>Firm Hiring Motives & AI</td><td>Why firms hire interns, how AI changes screening, and long-horizon versus short-horizon firm types</td></tr>
+          <tr><td><span class="dot" style="background:#b07aa1"></span>Transaction Costs</td><td>Search / sign / mentor / supervise / exit costs and which are least sensitive to project scale</td></tr>
+          <tr><td><span class="dot" style="background:#bcbd22"></span>Signaling & Screening</td><td>Student pay-to-signal, firm try-before-buy, and separation of ability from attitude</td></tr>
+          <tr><td><span class="dot" style="background:#7f7f7f"></span>Sustainability & Attrition</td><td>Why annual attrition is high, whether mobilization lowers it, and what makes one-shot courses return</td></tr>
         </table>
 
         <h3>2. A line between two points = "these two questions share the same root"</h3>
         <p>A line is <b>not</b> "this question causes that one" (not causal), but "these two are two sides of the same thing". Composed of two signals:</p>
         <ul>
-          <li><b>Shared tags (60%)</b>: same Nobel theory / same citation / same cooperation mode / same governance dimension</li>
+          <li><b>Shared tags (60%)</b>: same Nobel theory / same citation / same seed question / same governance or constraint dimension</li>
           <li><b>Shared wording (40%)</b>: semantic similarity of English wording (TF-IDF)</li>
         </ul>
         <p>Hover or click any node — the right panel lists "why linked (shared tags / citations)", which is the evidence for that line.</p>
 
         <h3>3. Why some clusters mix together</h3>
-        <p>Red (attrition), purple (talent types), green (mechanism design) sit on the same "firm incentive × governance" territory — <b>attrition is the symptom, types the cause, mechanism design the cure</b>; they are semantically adjacent, so they naturally clump. This is not a rendering bug but a real finding: these three issues are inherently hard to separate.</p>
+        <p>Clusters sit close together when they describe the same mechanism from different stakeholders — for example, attrition is the symptom, time mismatch the cause, and mechanism design the cure. This adjacency is a finding, not a rendering bug.</p>
 
         <h3>4. What the network says (one line)</h3>
-        <p>The central questions fall on <b>"incentive alignment + sustainability"</b>, not any single stakeholder — confirming that "four forces into one" mechanism design is the main research axis.</p>
+        <p>The highest-betweenness questions now sit on institution funding/reputation and firm value/sustainability, confirming that five-party incentive alignment and sustainability remain the research spine.</p>
       </div>
     </div>
   </div>
