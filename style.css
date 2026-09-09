@@ -84,6 +84,16 @@ body { display: flex; flex-direction: column; overflow: hidden; }
 .chk .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex: 0 0 auto; }
 .chk .cnt { color: var(--muted); font-size: 11px; margin-left: auto; }
 
+
+.filter-toggle { cursor: pointer; user-select: none; display: flex; justify-content: space-between; align-items: center; }
+.filter-toggle::after { content: "▾"; font-size: 9px; color: var(--muted); }
+.filter-group.collapsed .filter-toggle::after { content: "▸"; }
+.filter-group.collapsed div[id^="filter-"] { display: none; }
+.legend .legend-head { font-weight: 650; cursor: pointer; }
+.legend .legend-head::after { content: " ▾"; font-size: 9px; }
+.legend.collapsed .legend-head::after { content: " ▸"; }
+.legend.collapsed .legend-body { display: none; }
+
 /* 图区 */
 .graph-wrap {
   flex: 1 1 auto;

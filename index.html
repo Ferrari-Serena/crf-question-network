@@ -16,6 +16,7 @@
       <button id="readme-toggle" class="btn">Reading Guide</button>
       <button id="lang-toggle" class="btn" title="Toggle CN/EN">EN ⇄ 中</button>
       <button id="metrics-toggle" class="btn">Metrics</button>
+      <button id="toggle-labels" class="btn">Labels</button>
       <button id="reset-view" class="btn">Reset View</button>
       <input id="search" type="text" placeholder="Search keywords…">
     </div>
@@ -25,19 +26,19 @@
     <aside class="sidebar" id="sidebar">
       <div class="filter-head">Filters <button id="clear-filters" class="mini">Clear</button></div>
       <section class="filter-group">
-        <h3>By Party</h3>
+        <h3 class="filter-toggle">By Party</h3>
         <div id="filter-stakeholder"></div>
       </section>
       <section class="filter-group">
-        <h3>Theory Tags</h3>
+        <h3 class="filter-toggle">Theory Tags</h3>
         <div id="filter-theory"></div>
       </section>
       <section class="filter-group">
-        <h3>Four-step Chain</h3>
+        <h3 class="filter-toggle">Four-step Chain</h3>
         <div id="filter-chain"></div>
       </section>
-      <section class="filter-group">
-        <h3>Cluster</h3>
+      <section class="filter-group collapsed">
+        <h3 class="filter-toggle">Cluster</h3>
         <div id="filter-cluster"></div>
       </section>
     </aside>

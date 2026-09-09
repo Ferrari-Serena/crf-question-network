@@ -144,6 +144,8 @@ let sim, svg, g, linkSel, nodeSel, labelSel, zoomBehavior;
 let activeSet = null;      // 当前应正常显示的节点 id 集（null = 全部）
 let hoverNode = null;
 let currentDetailId = null;
+let legendOpen = false;
+let showLabels = false;
 
 // forceLink 会把 edge.source/target 原地从 id 字符串替换成 node 对象，统一取 id
 const sid = x => (typeof x === "string" ? x : x.id);
@@ -213,6 +215,7 @@ function buildGraph() {
     .attr("class", "node-label")
     .attr("dy", d => -nodeRadius(d) - 3)
     .text(d => d.short_id || d.id);
+  updateLabels();
 
   // 力模拟
   sim = d3.forceSimulation(nodes)
@@ -283,6 +286,7 @@ function applyActive() {
     .attr("stroke-width", d => (hoverNode && (d === hoverNode || isNeighbor(d, hoverNode))) ? 2.5 : 1);
   labelSel
     .attr("opacity", d => (!activeSet || activeSet.has(d.id)) ? 0.9 : 0.12);
+  updateLabels();
   linkSel
     .attr("opacity", d => {
       if (activeSet && !(activeSet.has(d.source.id) && activeSet.has(d.target.id))) return 0.05;
@@ -316,6 +320,10 @@ function moveTooltip(ev) {
   tooltip.style("left", (mx + 14) + "px").style("top", (my - 10) + "px");
 }
 function hideTooltip() { hoverNode = null; tooltip.attr("hidden", ""); applyActive(); }
+function updateLabels() {
+  if (!labelSel) return;
+  labelSel.attr("display", d => (showLabels || (hoverNode && d === hoverNode)) ? null : "none");
+}
 
 function stakeholderLabel(n) {
   const key = n.stakeholder ?? "null";
@@ -434,7 +442,10 @@ function buildLegend() {
   const items = (metrics?.cluster_centers || []).map(cc => `
     <div class="li"><span class="dot" style="background:${clusterColor(cc.cluster_id)}"></span>
     ${clusterLabel(cc.cluster_id)} · ${clusterName(cc.cluster_id)} · ${T("centerWord")} [${displayLabel(cc.label)}]</div>`).join("");
-  d3.select("#legend").html(items);
+  const leg = d3.select("#legend");
+  leg.html(`<div class="legend-head">Legend · ${metrics?.n_clusters ?? 0} clusters</div><div class="legend-body">${items}</div>`);
+  leg.classed("collapsed", !legendOpen);
+  leg.select(".legend-head").on("click", () => { legendOpen = !legendOpen; leg.classed("collapsed", !legendOpen); });
 }
 
 /* ---------------- 指标面板 ---------------- */
@@ -533,6 +544,12 @@ document.querySelector("#metrics-overlay").addEventListener("click", e => { if (
 document.querySelector("#reset-view").addEventListener("click", () => {
   svg.transition().duration(400).call(zoomBehavior.transform, d3.zoomIdentity);
 });
+document.querySelector("#toggle-labels").addEventListener("click", function () {
+  showLabels = !showLabels;
+  this.classList.toggle("active", showLabels);
+  updateLabels();
+});
+document.querySelectorAll(".filter-toggle").forEach(h => h.addEventListener("click", () => h.parentElement.classList.toggle("collapsed")));
 document.querySelector("#clear-filters").addEventListener("click", () => {
   document.querySelectorAll(".sidebar input:checked").forEach(i => i.checked = false);
   applyActive();
