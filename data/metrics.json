@@ -280,5 +280,11 @@
       "size": 10,
       "degree": 12
     }
-  ]
+  ],
+  "eigenvector_method": "eigenvector",
+  "_repro_meta": {
+    "python": "3.14.6",
+    "networkx": "3.6.1",
+    "generated_at": "2026-09-11"
+  }
 }
