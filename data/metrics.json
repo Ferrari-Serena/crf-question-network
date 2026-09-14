@@ -1,7 +1,7 @@
 {
-  "n_nodes": 380,
+  "n_nodes": 401,
   "n_edges": 1518,
-  "avg_degree": 7.989,
+  "avg_degree": 7.571,
   "modularity": 0.68,
   "n_clusters": 17,
   "top_degree": [

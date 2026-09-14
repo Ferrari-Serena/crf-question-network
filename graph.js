@@ -80,9 +80,10 @@ const CROSS = {
 const CHAIN = {
   efficiency: { en: "Efficiency", cn: "效率" },
   impact: { en: "Impact", cn: "产出" },
-  alignment: { en: "Alignment", cn: "对齐" },
+  incentive_alignment: { en: "Alignment", cn: "对齐" },
   incentive: { en: "Incentive", cn: "动机" },
 };
+const CHAIN_OUTSIDE = { en: "Outside chain", cn: "链外" };
 
 // 取双语条目当前语言的值；回退中文，再回退空。
 const L = (entry) => entry ? (entry[lang] || entry.cn) : "";
@@ -155,7 +156,7 @@ const wrap = d3.select("#graph-wrap");
 const tooltip = d3.select("#tooltip");
 const detail = d3.select("#detail");
 
-function clusterColor(id) { return COLORS[id % COLORS.length]; }
+function clusterColor(id) { return id == null ? "#9aa0a6" : COLORS[id % COLORS.length]; }
 function nodeRadius(d) {
   // 线性放大 degree：度 5≈9px，度 18≈22px，让枢纽节点一眼可见
   return Math.min(24, Math.max(7, 4 + (d.degree || 1)));
@@ -254,7 +255,10 @@ function computeActiveSet() {
     set = new Set(nodes.filter(n => {
       const okSt = !f.stakeholder.length || f.stakeholder.includes(n.stakeholder ?? "__null__");
       const okTh = !f.theory.length || f.theory.some(t => n.theory_tags.includes(t));
-      const okCh = !f.chain.length || (n.chain_step && f.chain.includes(n.chain_step));
+      const okCh = !f.chain.length || f.chain.some(s => {
+        if (s === "__outside__") return !Array.isArray(n.chain_steps) || n.chain_steps.length === 0;
+        return Array.isArray(n.chain_steps) && n.chain_steps.includes(s);
+      });
       const okCl = !f.cluster.length || f.cluster.includes(String(n.cluster_id));
       return okSt && okTh && okCh && okCl;
     }).map(n => n.id));
@@ -351,7 +355,7 @@ function showDetail(n) {
     ...(n.theory_tags || []).map(t => `<span class="badge theory">${theoryLabel(t)}</span>`),
     ...(n.cluster_mode || []).map(c => `<span class="badge">${lang === "en" ? c : c.replace(/ cluster$/, "簇")}</span>`),
     ...(n.crosscutting || []).map(c => `<span class="badge">${L(CROSS[c]) || c}</span>`),
-    ...(n.chain_step ? [`<span class="badge">${chainLabel(n.chain_step)}</span>`] : []),
+    ...(Array.isArray(n.chain_steps) ? n.chain_steps.map(s => `<span class="badge">${chainLabel(s)}</span>`) : []),
   ].join("");
 
   const cites = (n.citations || []).map(c => {
@@ -428,10 +432,16 @@ function buildFilters() {
     ["signaling", null], ["types", null],
     ["mechanism_design", null], ["principal_agent", null],
   ].map(([value]) => ({ value, label: theoryLabel(value), cnt: cnt(n => n.theory_tags.includes(value)) })));
-  buildFilterGroup("#filter-chain", [
+  const chainFilters = [
     ["efficiency", null], ["impact", null],
-    ["alignment", null], ["incentive", null],
-  ].map(([value]) => ({ value, label: chainLabel(value), cnt: cnt(n => n.chain_step === value) })));
+    ["incentive_alignment", null], ["incentive", null],
+  ].map(([value]) => ({ value, label: chainLabel(value), cnt: cnt(n => Array.isArray(n.chain_steps) && n.chain_steps.includes(value)) }));
+  chainFilters.push({
+    value: "__outside__",
+    label: L(CHAIN_OUTSIDE),
+    cnt: cnt(n => !Array.isArray(n.chain_steps) || n.chain_steps.length === 0),
+  });
+  buildFilterGroup("#filter-chain", chainFilters);
   buildFilterGroup("#filter-cluster",
     (metrics?.cluster_centers || []).map(cc => ({
       value: String(cc.cluster_id), label: `${clusterLabel(cc.cluster_id)} · ${clusterName(cc.cluster_id)}`, color: clusterColor(cc.cluster_id), cnt: cc.size,
