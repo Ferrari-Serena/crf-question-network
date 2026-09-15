@@ -73,6 +73,9 @@ const THEORY = {
   types: { en: "Types", cn: "型别" },
   mechanism_design: { en: "Mechanism Design", cn: "机制设计" },
   principal_agent: { en: "Principal-Agent", cn: "委托代理" },
+  social_exchange: { en: "Social Exchange", cn: "社会交换" },
+  academic_capitalism: { en: "Academic Capitalism", cn: "学术资本主义" },
+  stakeholder_salience: { en: "Stakeholder Salience", cn: "利益相关者显著度" },
 };
 const CROSS = {
   governance: { en: "Governance / Mechanism", cn: "治理/机制" },
@@ -91,6 +94,12 @@ const CHAIN_OUTSIDE = { en: "Outside chain", cn: "链外" };
 
 // 取双语条目当前语言的值；回退中文，再回退空。
 const L = (entry) => entry ? (entry[lang] || entry.cn) : "";
+function stakeholderList(n) {
+  const v = n?.stakeholder;
+  if (Array.isArray(v)) return v;
+  if (typeof v === "string" && v) return [v];
+  return [];
+}
 function theoryLabel(val) {
   const entry = THEORY[val];
   if (!entry) return val;
@@ -257,7 +266,7 @@ function computeActiveSet() {
   // 筛选
   if (f.stakeholder.length || f.theory.length || f.chain.length || f.cluster.length) {
     set = new Set(nodes.filter(n => {
-      const okSt = !f.stakeholder.length || f.stakeholder.includes(n.stakeholder ?? "__null__");
+      const okSt = !f.stakeholder.length || stakeholderList(n).some(s => f.stakeholder.includes(s));
       const okTh = !f.theory.length || f.theory.some(t => n.theory_tags.includes(t));
       const okCh = !f.chain.length || f.chain.some(s => {
         if (s === "__outside__") return !Array.isArray(n.chain_steps) || n.chain_steps.length === 0;
@@ -320,6 +329,7 @@ function showTooltip(ev, d) {
     <div class="t-title">${d.id} ${lang === "en" ? `(No. ${displayLabel(d.label)})` : `（编号 ${displayLabel(d.label)}）`} · ${stakeholderLabel(d)}</div>
     <div>${txt.length > 120 ? txt.slice(0, 120) + "…" : txt}</div>
     ${uniq ? `<div class="t-why">${lang === "en" ? "Linked: " : "连："}${uniq}</div>` : ""}
+    <div class="t-note">${lang === "en" ? "Links are a frozen snapshot; node labels are updated." : "连边为冻结快照；节点标签已更新。"}</div>
   `).attr("hidden", null);
   moveTooltip(ev);
 }
@@ -334,8 +344,9 @@ function updateLabels() {
 }
 
 function stakeholderLabel(n) {
-  const key = n.stakeholder ?? "null";
-  return L(STAKEHOLDER[key]) || (lang === "en" ? (n.stakeholder || "cross-cutting") : "横切");
+  const keys = stakeholderList(n);
+  if (!keys.length) return L(STAKEHOLDER.null);
+  return keys.map(k => L(STAKEHOLDER[k]) || k).join("·");
 }
 function prettyTag(t) {
   const [type, ...rest] = t.split(":");
@@ -427,15 +438,21 @@ function buildFilters() {
   buildFilterGroup("#filter-stakeholder", [
     ["enterprise", "#4e79a7"], ["institution", "#f28e2b"],
     ["instructor", "#e15759"], ["ta", "#76b7b2"],
-    ["student", "#59a14f"], ["__null__", "#edc948"],
+    ["student", "#59a14f"],
   ].map(([value, color]) => {
-    const key = value === "__null__" ? "null" : value;
-    return { value, label: L(STAKEHOLDER[key]), color, cnt: cnt(n => (n.stakeholder ?? "__null__") === value) };
+    return { value, label: L(STAKEHOLDER[value]), color, cnt: cnt(n => stakeholderList(n).includes(value)) };
   }));
-  buildFilterGroup("#filter-theory", [
-    ["signaling", null], ["types", null],
-    ["mechanism_design", null], ["principal_agent", null],
-  ].map(([value]) => ({ value, label: theoryLabel(value), cnt: cnt(n => n.theory_tags.includes(value)) })));
+  const theoryOrder = ["signaling", "types", "mechanism_design", "principal_agent"];
+  const extraTheory = [...new Set(nodes.flatMap(n => n.theory_tags || []))]
+    .filter(t => !theoryOrder.includes(t))
+    .sort();
+  buildFilterGroup("#filter-theory",
+    theoryOrder.concat(extraTheory).map(value => ({
+      value,
+      label: theoryLabel(value),
+      cnt: cnt(n => n.theory_tags.includes(value)),
+    }))
+  );
   const chainFilters = [
     ["efficiency", null], ["impact", null],
     ["incentive_alignment", null], ["incentive", null],
