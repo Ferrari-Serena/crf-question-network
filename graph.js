@@ -1,4 +1,4 @@
-﻿/* 问题网络力导向图 —— d3-force + 交互 */
+/* 问题网络力导向图 —— d3-force + 交互 */
 "use strict";
 
 // 19 簇配色（cluster_id → 颜色）。401 题重跑 Louvain 后得到 19 个算法簇，扩展为 20 色备用。
@@ -76,6 +76,8 @@ const THEORY = {
   social_exchange: { en: "Social Exchange", cn: "社会交换" },
   academic_capitalism: { en: "Academic Capitalism", cn: "学术资本主义" },
   stakeholder_salience: { en: "Stakeholder Salience", cn: "利益相关者显著度" },
+  public_goods: { en: "Public Goods", cn: "公共品" },
+  club_goods: { en: "Club Goods", cn: "俱乐部产品" },
 };
 const CROSS = {
   governance: { en: "Governance / Mechanism", cn: "治理/机制" },
