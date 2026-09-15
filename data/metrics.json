@@ -1,19 +1,14 @@
 {
   "n_nodes": 401,
-  "n_edges": 1518,
-  "avg_degree": 7.571,
-  "modularity": 0.68,
-  "n_clusters": 17,
+  "n_edges": 1607,
+  "avg_degree": 8.015,
+  "modularity": 0.6753,
+  "n_clusters": 19,
   "top_degree": [
     {
       "id": "INS/EXP-009",
       "label": "EXP-009",
-      "value": 18
-    },
-    {
-      "id": "STU/EXP-007",
-      "label": "EXP-007",
-      "value": 16
+      "value": 17
     },
     {
       "id": "TCH-02",
@@ -21,118 +16,123 @@
       "value": 15
     },
     {
-      "id": "INS-13",
-      "label": "治①",
-      "value": 13
+      "id": "STU/EXP-007",
+      "label": "EXP-007",
+      "value": 15
     },
     {
-      "id": "INS/EXP-010",
-      "label": "EXP-010",
-      "value": 13
-    },
-    {
-      "id": "INS/EXP-027",
-      "label": "EXP-027",
-      "value": 13
-    },
-    {
-      "id": "INS/EXP-044",
-      "label": "EXP-044",
-      "value": 13
-    },
-    {
-      "id": "TCH/EXP-010",
-      "label": "EXP-010",
-      "value": 13
+      "id": "INS/EXP-024",
+      "label": "EXP-024",
+      "value": 14
     },
     {
       "id": "TA/EXP-020",
       "label": "EXP-020",
+      "value": 14
+    },
+    {
+      "id": "TA/EXP-026",
+      "label": "EXP-026",
+      "value": 14
+    },
+    {
+      "id": "ENT/EXP-018",
+      "label": "EXP-018",
       "value": 13
     },
     {
-      "id": "INS-08",
-      "label": "10",
-      "value": 12
+      "id": "ENT/EXP-034",
+      "label": "EXP-034",
+      "value": 13
+    },
+    {
+      "id": "ENT/EXP-098",
+      "label": "EXP-098",
+      "value": 13
+    },
+    {
+      "id": "INS/EXP-008",
+      "label": "EXP-008",
+      "value": 13
     }
   ],
   "top_betweenness": [
     {
       "id": "INS/EXP-009",
       "label": "EXP-009",
-      "value": 0.1059
-    },
-    {
-      "id": "INS-01",
-      "label": "1",
-      "value": 0.0886
+      "value": 0.0872
     },
     {
       "id": "ENT-26",
       "label": "14c",
-      "value": 0.0851
+      "value": 0.0825
     },
     {
       "id": "ENT-29",
       "label": "③",
-      "value": 0.075
+      "value": 0.0682
     },
     {
       "id": "ENT-36",
       "label": "⑩",
-      "value": 0.0695
+      "value": 0.0642
+    },
+    {
+      "id": "ENT/EXP-052",
+      "label": "EXP-052",
+      "value": 0.0581
     },
     {
       "id": "ENT-27",
       "label": "①",
-      "value": 0.0669
+      "value": 0.0546
     },
     {
-      "id": "ENT-19",
-      "label": "新⑤",
-      "value": 0.0666
+      "id": "TCH-14",
+      "label": "课②",
+      "value": 0.0535
     },
     {
-      "id": "TCH-15",
-      "label": "课③",
-      "value": 0.064
+      "id": "INS-01",
+      "label": "1",
+      "value": 0.0519
     },
     {
-      "id": "INS-07",
-      "label": "9",
-      "value": 0.0614
+      "id": "ENT-34",
+      "label": "⑧",
+      "value": 0.0479
     },
     {
-      "id": "ENT-30",
-      "label": "④",
-      "value": 0.0613
+      "id": "ENT-38",
+      "label": "子1",
+      "value": 0.0459
     }
   ],
   "top_eigenvector": [
     {
       "id": "INS-08",
       "label": "10",
-      "value": 0.3842
+      "value": 0.3827
     },
     {
       "id": "ENT-21",
       "label": "新⑦",
-      "value": 0.3807
+      "value": 0.3804
     },
     {
       "id": "TCH-17",
       "label": "课⑤",
-      "value": 0.3761
+      "value": 0.3758
     },
     {
       "id": "ENT-05",
       "label": "5",
-      "value": 0.3683
+      "value": 0.3682
     },
     {
       "id": "TCH-06",
       "label": "6",
-      "value": 0.3516
+      "value": 0.3509
     },
     {
       "id": "ENT-06",
@@ -142,12 +142,12 @@
     {
       "id": "ENT-24",
       "label": "新⑨",
-      "value": 0.2362
+      "value": 0.235
     },
     {
       "id": "ENT-42",
       "label": "子5",
-      "value": 0.2276
+      "value": 0.2273
     },
     {
       "id": "ENT-45",
@@ -157,134 +157,148 @@
     {
       "id": "ENT-23",
       "label": "新⑩",
-      "value": 0.1159
+      "value": 0.1158
     }
   ],
   "cluster_centers": [
     {
       "cluster_id": 0,
-      "center": "STU/EXP-007",
-      "label": "EXP-007",
-      "size": 51,
-      "degree": 16
+      "center": "ENT/EXP-034",
+      "label": "EXP-034",
+      "size": 48,
+      "degree": 13
     },
     {
       "cluster_id": 1,
       "center": "INS/EXP-009",
       "label": "EXP-009",
-      "size": 47,
-      "degree": 18
+      "size": 42,
+      "degree": 17
     },
     {
       "cluster_id": 2,
-      "center": "ENT/EXP-007",
-      "label": "EXP-007",
-      "size": 42,
-      "degree": 12
+      "center": "INS/EXP-027",
+      "label": "EXP-027",
+      "size": 35,
+      "degree": 13
     },
     {
       "cluster_id": 3,
-      "center": "ENT/EXP-036",
-      "label": "EXP-036",
-      "size": 26,
-      "degree": 10
+      "center": "INS/EXP-008",
+      "label": "EXP-008",
+      "size": 32,
+      "degree": 13
     },
     {
       "cluster_id": 4,
-      "center": "ENT/EXP-043",
-      "label": "EXP-043",
-      "size": 24,
-      "degree": 12
+      "center": "TA/EXP-020",
+      "label": "EXP-020",
+      "size": 25,
+      "degree": 14
     },
     {
       "cluster_id": 5,
-      "center": "ENT/EXP-098",
-      "label": "EXP-098",
-      "size": 24,
-      "degree": 12
+      "center": "ENT/EXP-036",
+      "label": "EXP-036",
+      "size": 25,
+      "degree": 10
     },
     {
       "cluster_id": 6,
       "center": "TCH-02",
       "label": "2",
-      "size": 20,
+      "size": 22,
       "degree": 15
     },
     {
       "cluster_id": 7,
-      "center": "STU/EXP-018",
-      "label": "EXP-018",
-      "size": 20,
+      "center": "TCH/EXP-053",
+      "label": "EXP-053",
+      "size": 21,
       "degree": 11
     },
     {
       "cluster_id": 8,
-      "center": "TA/EXP-020",
-      "label": "EXP-020",
+      "center": "INS/EXP-024",
+      "label": "EXP-024",
       "size": 20,
-      "degree": 13
+      "degree": 14
     },
     {
       "cluster_id": 9,
-      "center": "TA/EXP-026",
-      "label": "EXP-026",
-      "size": 19,
+      "center": "ENT/EXP-052",
+      "label": "EXP-052",
+      "size": 18,
       "degree": 12
     },
     {
       "cluster_id": 10,
-      "center": "ENT/EXP-056",
-      "label": "EXP-056",
-      "size": 15,
-      "degree": 10
+      "center": "STU/EXP-007",
+      "label": "EXP-007",
+      "size": 17,
+      "degree": 15
     },
     {
       "cluster_id": 11,
-      "center": "INS-13",
-      "label": "治①",
-      "size": 14,
+      "center": "ENT/EXP-018",
+      "label": "EXP-018",
+      "size": 16,
       "degree": 13
     },
     {
       "cluster_id": 12,
-      "center": "TCH/EXP-010",
-      "label": "EXP-010",
-      "size": 14,
-      "degree": 13
+      "center": "TA/EXP-026",
+      "label": "EXP-026",
+      "size": 16,
+      "degree": 14
     },
     {
       "cluster_id": 13,
-      "center": "ENT-28",
-      "label": "②",
+      "center": "INS-13",
+      "label": "治①",
+      "size": 14,
+      "degree": 12
+    },
+    {
+      "cluster_id": 14,
+      "center": "ENT/EXP-056",
+      "label": "EXP-056",
+      "size": 13,
+      "degree": 9
+    },
+    {
+      "cluster_id": 15,
+      "center": "ENT-46",
+      "label": "研①",
       "size": 12,
       "degree": 11
     },
     {
-      "cluster_id": 14,
-      "center": "ENT/EXP-052",
-      "label": "EXP-052",
-      "size": 11,
-      "degree": 11
-    },
-    {
-      "cluster_id": 15,
+      "cluster_id": 16,
       "center": "ENT-03",
       "label": "3",
       "size": 11,
-      "degree": 11
+      "degree": 10
     },
     {
-      "cluster_id": 16,
+      "cluster_id": 17,
       "center": "INS-08",
       "label": "10",
       "size": 10,
-      "degree": 12
+      "degree": 11
+    },
+    {
+      "cluster_id": 18,
+      "center": "ENT/EXP-102",
+      "label": "EXP-102",
+      "size": 4,
+      "degree": 8
     }
   ],
   "eigenvector_method": "eigenvector",
   "_repro_meta": {
     "python": "3.14.6",
     "networkx": "3.6.1",
-    "generated_at": "2026-09-11"
+    "generated_at": "2026-09-15"
   }
 }
