@@ -880,9 +880,7 @@
     ],
     "text_en": "Does the premise that a student's short-term labor is \"≈ zero value\" to the firm actually hold? Kemp, using social exchange theory, says students do bring organizational value, and the benefit exceeds the mentoring cost. Is the firm's incentive for participating \"observing future talent\", or does it also include \"using student output now\"? When do the two conflict?",
     "text_cn": "学生短期劳动对企业\"≈0 价值\"这个前提到底成不成立？Kemp 用社会交换理论说学生能给组织带来价值、收益还大于带教成本。企业参与的 incentive 究竟是\"观察未来人才\"，还是也包括\"当下就用学生产出\"？两者什么时候打架？",
-    "theory_tags": [
-      "social_exchange"
-    ],
+    "theory_tags": [],
     "chain_step": "incentive",
     "crosscutting": [],
     "cluster_mode": [],
@@ -891,15 +889,7 @@
       "social exchange theory"
     ],
     "source_rec": [],
-    "citations": [
-      {
-        "key": "Kemp et al. 2021",
-        "label": "Kemp et al. 2021",
-        "doi": "10.1007/s10459-021-10038-x",
-        "url": null,
-        "unverified": false
-      }
-    ],
+    "citations": [],
     "cluster_id": 16,
     "degree": 7,
     "degree_centrality": 0.0175,
@@ -1042,9 +1032,7 @@
     ],
     "text_en": "Is it the firm that \"wants\" talent, or the school that \"has to\" seek firms after government funding declines? Which end is the true source of demand — and could that decide the entire direction of mechanism design?",
     "text_cn": "企业进课堂，到底是企业\"想要\"人才，还是学校在政府拨款下降之后\"不得不\"去找企业？需求的真正源头在哪一端，会不会反过来决定整个机制设计的方向？",
-    "theory_tags": [
-      "academic_capitalism"
-    ],
+    "theory_tags": [],
     "chain_step": "incentive",
     "crosscutting": [],
     "cluster_mode": [],
@@ -1053,15 +1041,7 @@
       "Framework premise"
     ],
     "source_rec": [],
-    "citations": [
-      {
-        "key": "Slaughter & Leslie 1997",
-        "label": "Slaughter & Leslie 1997",
-        "doi": null,
-        "url": null,
-        "unverified": true
-      }
-    ],
+    "citations": [],
     "cluster_id": 1,
     "degree": 6,
     "degree_centrality": 0.015,
@@ -1202,9 +1182,9 @@
       {
         "key": "Mitchell 1997",
         "label": "Mitchell 1997",
-        "doi": null,
+        "doi": "10.5465/amr.1997.9711022105",
         "url": null,
-        "unverified": true
+        "unverified": false
       }
     ],
     "cluster_id": 15,
@@ -1927,7 +1907,6 @@
     "text_en": "In star courses the firm is \"too eager\" — what does the institution rely on to keep autonomy? The literature (Slaughter/Zukin) only sounds alarms and gives no classroom-level mechanism — so where does the institution's \"anti-capture\" counterforce actually come from?",
     "text_cn": "明星课里企业\"太着急\"，院系靠什么保住自主？文献（Slaughter/Zukin）只敲警钟、没给课堂级机制——那院系\"防捕获\"的反制力到底来自哪？",
     "theory_tags": [
-      "academic_capitalism",
       "mechanism_design"
     ],
     "chain_step": null,
@@ -1941,22 +1920,7 @@
       "Lit_Review_08 two-way governance"
     ],
     "source_rec": [],
-    "citations": [
-      {
-        "key": "Slaughter & Rhoades 2004",
-        "label": "Slaughter & Rhoades 2004",
-        "doi": null,
-        "url": null,
-        "unverified": true
-      },
-      {
-        "key": "Slaughter & Leslie 1997",
-        "label": "Slaughter & Leslie 1997",
-        "doi": null,
-        "url": null,
-        "unverified": true
-      }
-    ],
+    "citations": [],
     "cluster_id": 13,
     "degree": 6,
     "degree_centrality": 0.015,
@@ -3482,9 +3446,9 @@
       {
         "key": "Mitchell 1997",
         "label": "Mitchell 1997",
-        "doi": null,
+        "doi": "10.5465/amr.1997.9711022105",
         "url": null,
-        "unverified": true
+        "unverified": false
       }
     ],
     "cluster_id": 6,
@@ -4320,7 +4284,9 @@
     ],
     "text_en": "When a firm partners with multiple schools, is the turning point between decreasing and increasing marginal cost set by a reusable course template or by school-specific relationship assets?",
     "text_cn": "一家企业同时对接多所学校时，边际成本由递减转为递增的拐点，是由可复用的课程模板决定，还是由各校特有的关系资产决定？",
-    "theory_tags": [],
+    "theory_tags": [
+      "public_goods"
+    ],
     "chain_step": "efficiency",
     "crosscutting": [],
     "cluster_mode": [
@@ -4331,7 +4297,15 @@
       "res:tech"
     ],
     "source_rec": [],
-    "citations": [],
+    "citations": [
+      {
+        "key": "Samuelson 1954",
+        "label": "Samuelson 1954",
+        "doi": "10.2307/1925895",
+        "url": null,
+        "unverified": false
+      }
+    ],
     "seed": "ENT-19",
     "org_level": "course",
     "resources": "tech",
@@ -11805,7 +11779,9 @@
     ],
     "text_en": "Does the scalability difference between a one-price course and a screening internship come from class size, resource intensity, or matching cost?",
     "text_cn": "一口价课程与筛选制实习的可扩展性差异，来自班级规模、资源强度，还是匹配成本？",
-    "theory_tags": [],
+    "theory_tags": [
+      "club_goods"
+    ],
     "chain_step": "efficiency",
     "crosscutting": [
       "constraint"
@@ -11818,7 +11794,15 @@
       "res:money"
     ],
     "source_rec": [],
-    "citations": [],
+    "citations": [
+      {
+        "key": "Buchanan 1965",
+        "label": "Buchanan 1965",
+        "doi": "10.2307/2552442",
+        "url": null,
+        "unverified": false
+      }
+    ],
     "seed": "TCH-21",
     "org_level": "school",
     "resources": "money",
