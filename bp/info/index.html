@@ -153,9 +153,12 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
 <body>
 <div id="fit">
 <div id="deck">
+<script>/* 首屏早启动：舞台缩放先就位，避免内容以未缩放态画出 */
+(function(){var d=document.getElementById('deck');function f(){var v=window.visualViewport,w=Math.round((v&&v.width)||window.innerWidth),h=Math.round((v&&v.height)||window.innerHeight),k=Math.min(w/1920,h/1080);d.style.transform='translate('+((w-1920*k)/2)+'px,'+((h-1080*k)/2)+'px) scale('+k+')';}f();})();
+</script>
 
   <!-- ==================== A1 · 封面 + 索引 ==================== -->
-  <section class="stage active">
+  <section class="stage active" style="--s:1.200">
     <div class="chrome"><div>校企合作智能顾问 · 附录 · BP v0.4.2</div><div class="r">IKB · 2026.10 · 01 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -203,7 +206,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
   </section>
 
   <!-- ==================== 02–05 · 白皮书 ==================== -->
-  <section class="stage">
+  <section class="stage" style="--s:1.394">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 02 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -274,7 +277,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <div class="ghost">白</div>
   </section>
 
-  <section class="stage">
+  <section class="stage" style="--s:1.225">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 04 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -307,7 +310,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <div class="ghost">白</div>
   </section>
 
-  <section class="stage">
+  <section class="stage" style="--s:1.306">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 05 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -341,7 +344,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <a class="backtoc" href="#1">← 返回目录</a></section>
 
   <!-- ==================== 06–08 · 内层 gap 措辞 ==================== -->
-  <section class="stage">
+  <section class="stage" style="--s:1.394">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 06 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -376,7 +379,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <div class="ghost">内</div>
   </section>
 
-  <section class="stage">
+  <section class="stage" style="--s:1.394">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 07 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -406,7 +409,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <div class="ghost">内</div>
   </section>
 
-  <section class="stage">
+  <section class="stage" style="--s:1.394">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 08 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -434,7 +437,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <a class="backtoc" href="#1">← 返回目录</a></section>
 
   <!-- ==================== 09–11 · 反方缺口骨架 ==================== -->
-  <section class="stage">
+  <section class="stage" style="--s:1.394">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 09 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -468,7 +471,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <div class="ghost">反</div>
   </section>
 
-  <section class="stage">
+  <section class="stage" style="--s:1.394">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 10 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -507,7 +510,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <div class="ghost">反</div>
   </section>
 
-  <section class="stage">
+  <section class="stage" style="--s:1.381">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 11 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -535,7 +538,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <a class="backtoc" href="#1">← 返回目录</a></section>
 
   <!-- ==================== 12–13 · 理论工具 ==================== -->
-  <section class="stage">
+  <section class="stage" style="--s:1.394">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 12 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -557,7 +560,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <div class="ghost">镜</div>
   </section>
 
-  <section class="stage">
+  <section class="stage" style="--s:1.394">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 13 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -588,7 +591,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <a class="backtoc" href="#1">← 返回目录</a></section>
 
   <!-- ==================== 14–16 · 产品化定案 ==================== -->
-  <section class="stage">
+  <section class="stage" style="--s:1.287">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 14 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -614,7 +617,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <div class="ghost">定</div>
   </section>
 
-  <section class="stage">
+  <section class="stage" style="--s:1.262">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 15 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -641,7 +644,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <div class="ghost">定</div>
   </section>
 
-  <section class="stage">
+  <section class="stage" style="--s:1.294">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 16 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -666,7 +669,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <a class="backtoc" href="#1">← 返回目录</a></section>
 
   <!-- ==================== 17–20 · 竞争格局_底稿 ==================== -->
-  <section class="stage">
+  <section class="stage" style="--s:1.394">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 17 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -689,7 +692,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <div class="ghost">底</div>
   </section>
 
-  <section class="stage">
+  <section class="stage" style="--s:1.394">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 18 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -711,7 +714,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <div class="ghost">底</div>
   </section>
 
-  <section class="stage">
+  <section class="stage" style="--s:1.394">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 19 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -745,7 +748,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <div class="ghost">底</div>
   </section>
 
-  <section class="stage">
+  <section class="stage" style="--s:1.394">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 20 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -771,7 +774,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <a class="backtoc" href="#1">← 返回目录</a></section>
 
   <!-- ==================== 21–24 · 教育IT市场地图 ==================== -->
-  <section class="stage">
+  <section class="stage" style="--s:1.306">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 21 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -796,7 +799,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <div class="ghost">图</div>
   </section>
 
-  <section class="stage">
+  <section class="stage" style="--s:1.075">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 22 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -823,7 +826,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <div class="ghost">图</div>
   </section>
 
-  <section class="stage">
+  <section class="stage" style="--s:1.344">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 23 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -846,7 +849,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <div class="ghost">图</div>
   </section>
 
-  <section class="stage">
+  <section class="stage" style="--s:1.394">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 24 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -875,7 +878,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <a class="backtoc" href="#1">← 返回目录</a></section>
 
   <!-- ==================== 25–29 · 教育IT系统-分层骨架 ==================== -->
-  <section class="stage">
+  <section class="stage" style="--s:1.025">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 25 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -903,7 +906,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <div class="ghost">骨</div>
   </section>
 
-  <section class="stage">
+  <section class="stage" style="--s:1.394">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 26 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -927,7 +930,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <div class="ghost">骨</div>
   </section>
 
-  <section class="stage">
+  <section class="stage" style="--s:1.394">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 27 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -948,7 +951,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <div class="ghost">骨</div>
   </section>
 
-  <section class="stage">
+  <section class="stage" style="--s:1.231">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 28 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -975,7 +978,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <div class="ghost">骨</div>
   </section>
 
-  <section class="stage">
+  <section class="stage" style="--s:1.394">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 29 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -997,7 +1000,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <a class="backtoc" href="#1">← 返回目录</a></section>
 
   <!-- ==================== 30–32 · 产品判断 ==================== -->
-  <section class="stage">
+  <section class="stage" style="--s:1.394">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 30 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -1020,7 +1023,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <div class="ghost">判</div>
   </section>
 
-  <section class="stage">
+  <section class="stage" style="--s:1.162">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 31 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -1049,7 +1052,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <div class="ghost">判</div>
   </section>
 
-  <section class="stage">
+  <section class="stage" style="--s:1.394">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 32 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -1075,7 +1078,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <a class="backtoc" href="#1">← 返回目录</a></section>
 
   <!-- ==================== 33–35 · S5 用户旅程 ==================== -->
-  <section class="stage">
+  <section class="stage" style="--s:1.394">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 33 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -1099,7 +1102,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <div class="ghost">旅</div>
   </section>
 
-  <section class="stage">
+  <section class="stage" style="--s:1.394">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 34 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -1125,7 +1128,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <div class="ghost">旅</div>
   </section>
 
-  <section class="stage">
+  <section class="stage" style="--s:1.394">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 35 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -1150,7 +1153,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <a class="backtoc" href="#1">← 返回目录</a></section>
 
   <!-- ==================== 36–37 · S7 访谈提纲 ==================== -->
-  <section class="stage">
+  <section class="stage" style="--s:1.063">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 36 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -1179,7 +1182,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <div class="ghost">访</div>
   </section>
 
-  <section class="stage">
+  <section class="stage" style="--s:1.394">
     <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 37 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -1206,7 +1209,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
     <a class="backtoc" href="#1">← 返回目录</a></section>
 
   <!-- ==================== A1 · 附录封面（原有，顺延为 38 / 44） ==================== -->
-  <section class="stage">
+  <section class="stage" style="--s:1.394">
     <div class="chrome"><div>校企合作智能顾问 · 附录 · BP v0.4.2</div><div class="r">IKB · 2026.10 · 38 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -1275,7 +1278,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
   </section>
 
   <!-- ==================== A3 · 五方矩阵 ==================== -->
-  <section class="stage">
+  <section class="stage" style="--s:1.375">
     <div class="chrome"><div>校企合作智能顾问 · 附录 · BP v0.4.2</div><div class="r">IKB · 2026.10 · 40 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -1313,7 +1316,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
   </section>
 
   <!-- ==================== A4 · 体量试算 ==================== -->
-  <section class="stage">
+  <section class="stage" style="--s:1.094">
     <div class="chrome"><div>校企合作智能顾问 · 附录 · BP v0.4.2</div><div class="r">IKB · 2026.10 · 41 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -1367,7 +1370,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
   </section>
 
   <!-- ==================== A5 · 里程碑细表 ==================== -->
-  <section class="stage">
+  <section class="stage" style="--s:1.031">
     <div class="chrome"><div>校企合作智能顾问 · 附录 · BP v0.4.2</div><div class="r">IKB · 2026.10 · 42 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -1413,7 +1416,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
   </section>
 
   <!-- ==================== A6 · 数据治理全文 ==================== -->
-  <section class="stage">
+  <section class="stage" style="--s:1.188">
     <div class="chrome"><div>校企合作智能顾问 · 附录 · BP v0.4.2</div><div class="r">IKB · 2026.10 · 43 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -1454,7 +1457,7 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
   </section>
 
   <!-- ==================== A7 · 出处与引用 ==================== -->
-  <section class="stage">
+  <section class="stage" style="--s:1.306">
     <div class="chrome"><div>校企合作智能顾问 · 附录 · BP v0.4.2</div><div class="r">IKB · 2026.10 · 44 / 44</div></div>
     <div class="rule"></div>
     <div class="content">
@@ -1522,9 +1525,14 @@ a.lnk{color:var(--ikb);text-decoration:underline;text-underline-offset:3px}
   function ensureScaled(n){
     var st=slides[n]; if(!st || st.getAttribute("data-scaled")) return;
     st.setAttribute("data-scaled","1");
+    var baked=st.style.getPropertyValue("--s");
+    var m=measure(st);
+    if(m && m.avail>0){
+      if(baked && m.used/m.avail<=1.0) return;   /* 预置值可用 → 保留 */
+      if(!baked && m.used/m.avail>=0.90) return; /* 本来就不必放大 → 保持 1 */
+    }
     st.style.removeProperty("--s");
-    var m=measure(st); if(!m || m.avail<=0) return;
-    if(m.used/m.avail>=0.90) return;
+    var m2=measure(st); if(!m2 || m2.avail<=0) return;
     var lo=1, hi=1.4, best=1;
     for(var it=0; it<6; it++){
       var mid=(lo+hi)/2;
