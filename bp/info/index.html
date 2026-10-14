@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>校企合作智能顾问 · BP v0.4.2 · 附录</title>
+<style>
+/* ============================================================================
+   校企合作智能顾问 · BP v0.4.2 · 附录（Appendix）
+   风格：A 克莱因蓝档案（IKB Dossier）— 与 7 页 deck 同套 token
+   契约：单文件零依赖 · 固定 16:9 舞台（1920×1080）整体缩放 · 打印一页一张
+   内容源：Obsidian《校企合作智能顾问_商业计划书_v0.4.2_2026-10-04.md》
+           §4 口径 / §1.6 五方矩阵 / §4.2 体量试算 / §9+§11 里程碑与资源
+           / §13+§10 数据治理 / §14 出处
+   定位：BP v0.4.2 文件总目录 —— 封面（01）+ 各文件摘要 + 附录深挖（38–44）
+   ============================================================================ */
+:root{
+  --s:1;
+  --paper:#F5F4EF; --ink:#12161F; --sub:#5A6472; --faint:#8A93A0; --rule:#D9D6CE;
+  --ikb:#002FA7; --ikb-soft:#E6EAF6; --ikb-ink:#22307A; --card:#FFFFFF;
+  --mono:ui-monospace,"JetBrains Mono","SFMono-Regular",Consolas,"Liberation Mono",monospace;
+  --sans:"HarmonyOS Sans SC","MiSans","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#0b0b0c;overflow:hidden;font-family:var(--sans);color:var(--ink)}
+
+/* === 舞台与缩放（与 deck 同：纯像素计算，不依赖居中算法） === */
+#fit{position:fixed;left:0;top:0;right:0;bottom:0;width:100%;height:100%;overflow:hidden;background:#0b0b0c}
+#deck{position:absolute;left:0;top:0;width:1920px;height:1080px;
+  transform-origin:0 0;transform:translate(0,0) scale(1);
+  box-shadow:0 40px 120px rgba(0,0,0,.5);background:var(--paper)}
+.stage{position:absolute;inset:0;background:var(--paper);overflow:hidden;
+  opacity:0;visibility:hidden;transition:opacity .32s ease}
+.stage.active{opacity:1;visibility:visible}
+
+/* === 页眉 / 页脚 === */
+.chrome{position:absolute;top:58px;left:72px;right:72px;display:flex;justify-content:space-between;
+  font-family:var(--mono);font-size:19px;letter-spacing:.06em;color:var(--faint);z-index:3}
+.chrome .r{color:var(--ikb)}
+.rule{position:absolute;top:100px;left:72px;right:72px;height:1px;background:var(--rule);z-index:3}
+
+/* === 内容区 === */
+.content{position:absolute;left:72px;right:72px;top:158px;bottom:58px;display:flex;flex-direction:column;z-index:2}
+.kicker{font-family:var(--mono);font-size:20px;letter-spacing:.16em;color:var(--ikb)}
+.q{margin-top:12px;font-weight:250;font-size:54px;line-height:1.1;letter-spacing:-.02em;max-width:1720px}
+.q em{font-style:italic;font-weight:300;color:var(--ikb)}
+.q.cover{font-size:92px;letter-spacing:-.03em}
+.lede{margin-top:14px;font-size:24px;line-height:1.55;color:var(--sub);max-width:1500px}
+.lede b{color:var(--ink);font-weight:600}
+.body{flex:1;margin-top:24px;display:grid;gap:calc(18px*var(--s));align-content:start;min-height:0;grid-auto-rows:max-content}
+/* 密排页：同样是「一页 × 1920×1080」，靠收紧行距/内边距塞下更多参考内容 */
+.body.tightbody{gap:calc(12px*var(--s))}
+.body.tightbody .box{padding:calc(14px*var(--s)) calc(20px*var(--s))}
+.body.tightbody .band{padding:calc(13px*var(--s)) calc(22px*var(--s));font-size:calc(21px*var(--s))}
+.body.tightbody .tbl th{padding:calc(6px*var(--s)) 14px calc(6px*var(--s)) 0}
+.body.tightbody .tbl td{padding:calc(6px*var(--s)) 14px calc(6px*var(--s)) 0}
+
+/* === 通用块 === */
+.cards{display:grid;gap:calc(18px*var(--s))}
+.c2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.c3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.card{border:1px solid var(--rule);border-radius:10px;padding:20px 22px;background:var(--card)}
+.card .cat{display:block;font-family:var(--mono);font-size:16px;letter-spacing:.1em;color:var(--ikb);margin-bottom:8px}
+.card h3{margin:0 0 8px;font-size:25px;font-weight:600;letter-spacing:-.01em}
+.card p{margin:0;font-size:20px;line-height:1.5;color:var(--sub)}
+.card p+p{margin-top:6px}
+.card p b{color:var(--ink)}
+.card.accent{background:var(--ikb);border-color:var(--ikb)}
+.card.accent .cat,.card.accent h3{color:#fff}
+.card.accent p{color:rgba(255,255,255,.88)} .card.accent p b{color:#fff}
+.box{border:1px solid var(--rule);border-radius:10px;padding:calc(18px*var(--s)) calc(22px*var(--s));background:var(--card)}
+.box .h{font-family:var(--mono);font-size:calc(16px*var(--s));letter-spacing:.1em;color:var(--ikb);margin-bottom:calc(9px*var(--s))}
+.box p{font-size:calc(16px*var(--s))}
+.band{background:var(--ikb-soft);border-left:5px solid var(--ikb);
+  padding:calc(16px*var(--s)) calc(24px*var(--s));font-size:calc(22px*var(--s));line-height:1.5;color:var(--ikb-ink)}
+.band b{color:var(--ikb)}
+.band .t{font-family:var(--mono);font-size:16px;letter-spacing:.12em;color:var(--ikb);margin-right:12px}
+
+/* === 行列表 === */
+.rows{display:flex;flex-direction:column}
+.rows .r{display:grid;grid-template-columns:max-content 1fr;gap:calc(18px*var(--s));padding:calc(13px*var(--s)) 0;border-top:1px solid var(--rule);align-items:baseline}
+.rows .r:last-child{border-bottom:1px solid var(--rule)}
+.rows .n{font-family:var(--mono);font-size:calc(21px*var(--s));font-weight:700;color:var(--ikb);min-width:calc(52px*var(--s));white-space:nowrap}
+.rows .x{font-size:calc(21px*var(--s));line-height:1.5;color:var(--sub)}
+.rows .x b{color:var(--ink)}
+.rows .x .lbl{font-family:var(--mono);font-size:16px;color:var(--faint);margin-right:10px}
+
+/* === 表 === */
+.tbl{width:100%;border-collapse:collapse;font-size:calc(20px*var(--s))}
+.tbl th{font-family:var(--mono);font-size:calc(15px*var(--s));letter-spacing:.08em;color:var(--faint);
+  text-align:left;padding:calc(8px*var(--s)) 14px calc(8px*var(--s)) 0;border-bottom:1px solid var(--ink)}
+.tbl td{padding:calc(9px*var(--s)) 14px calc(9px*var(--s)) 0;border-bottom:1px solid var(--rule);vertical-align:top;color:var(--sub)}
+.tbl td b{color:var(--ink)}
+.tbl .id{font-family:var(--mono);font-weight:700;color:var(--ikb);width:58px;white-space:nowrap}
+.tbl .em{color:var(--ink);font-weight:600}
+.tbl.tight td{padding:calc(6px*var(--s)) 14px calc(6px*var(--s)) 0}
+/* 五方矩阵：数值右对齐 */
+.mx th,.mx td{text-align:right}
+.mx th:first-child,.mx td:first-child{text-align:left}
+.mx .sum{font-weight:700;color:var(--ink)}
+.mx .hot{background:var(--ikb-soft);color:var(--ikb);font-weight:700}
+.mx tr:last-child td{border-top:1px solid var(--ink);font-weight:700;color:var(--ink)}
+
+/* === 小工具 === */
+.strip{display:flex;border:1px solid var(--rule);border-radius:9px;overflow:hidden;background:var(--card)}
+.strip div{flex:1;padding:12px 18px;border-right:1px solid var(--rule);font-size:20px;color:var(--ink)}
+.strip div:last-child{border-right:0}
+.strip .k{display:block;font-family:var(--mono);font-size:15px;letter-spacing:.1em;color:var(--faint);margin-bottom:5px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:7px 14px;font-size:20px;line-height:1.45}
+.kv dt{font-family:var(--mono);font-size:16px;color:var(--faint);padding-top:3px}
+.kv dd{color:var(--sub)} .kv dd b{color:var(--ink)}
+.chip{display:inline-block;font-family:var(--mono);font-size:calc(15px*var(--s));padding:2px 9px;border-radius:99px;
+  border:1px solid var(--ikb);color:var(--ikb);background:var(--ikb-soft);margin-left:6px}
+.cite{font-family:var(--mono);font-size:calc(16px*var(--s));line-height:1.5;color:var(--faint)}
+.cite b{color:var(--sub)}
+.formula{font-family:var(--mono);font-size:26px;font-weight:700;color:var(--ikb);letter-spacing:-.01em}
+.formula .op{color:var(--faint);font-weight:400;margin:0 8px}
+
+/* === 封面 === */
+.cover-bar{position:absolute;left:0;top:6px;width:8px;height:300px;background:var(--ikb)}
+.ghost{position:absolute;right:58px;bottom:34px;font-family:var(--mono);font-size:300px;line-height:1;
+  color:var(--ikb-soft);font-weight:700;letter-spacing:-.04em;user-select:none}
+.pg-ghost{position:absolute;right:66px;bottom:40px;font-family:var(--mono);font-size:140px;line-height:1;
+  font-weight:700;color:var(--ikb-soft);user-select:none;z-index:1}
+.nav{position:fixed;right:16px;bottom:14px;font-family:var(--mono);font-size:12px;color:#666;
+  background:rgba(255,255,255,.06);padding:6px 10px;border-radius:6px;z-index:9}
+
+/* === 末页「返回目录」按钮 === */
+.backtoc{position:absolute;right:72px;bottom:56px;z-index:4;display:inline-block;
+  font-family:var(--mono);font-size:19px;letter-spacing:.04em;color:var(--ikb);
+  border:1.5px solid var(--ikb);border-radius:99px;padding:9px 22px;text-decoration:none;
+  background:var(--card)}
+.backtoc:hover{background:var(--ikb-soft)}
+/* === 打印：一页一张 16:9 === */
+@media print{
+  @page{size:20in 11.25in;margin:0}
+  html,body{height:auto;background:#fff;overflow:visible}
+  #fit{position:static;left:auto;top:auto;right:auto;bottom:auto;width:auto;height:auto;
+    display:block;overflow:visible;background:#fff}
+  #deck{position:static;left:auto;top:auto;width:auto;height:auto;
+    transform:none!important;transform-origin:0 0;box-shadow:none;background:#fff}
+  .stage{position:relative;inset:auto;opacity:1!important;visibility:visible!important;
+    width:1920px;height:1080px;break-after:page;page-break-after:always}
+  .stage:last-child{break-after:auto;page-break-after:auto}
+  .nav,.backtoc{display:none}
+  .pg-ghost,.ghost{color:#E9EDF8}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+@media (prefers-reduced-motion: reduce){ .stage{transition:none} }
+</style>
+</head>
+<body>
+<div id="fit">
+<div id="deck">
+
+  <!-- ==================== A1 · 封面 + 索引 ==================== -->
+  <section class="stage active">
+    <div class="chrome"><div>校企合作智能顾问 · 附录 · BP v0.4.2</div><div class="r">IKB · 2026.10 · 01 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">文件目录 · Contents</div>
+      <h2 class="q">全部文件，一张图</h2>
+      <div class="lede">CRF 项目全部文件，按<b>理论线 / 产品线</b>关系结构排；点条目跳该文件摘要页。</div>
+      <div class="body tightbody" style="margin-top:20px">
+        <div class="cards c2">
+          <div class="box">
+            <div class="h" style="font-weight:700">理论线 · 守 gap —— 研究什么、会不会被反驳</div>
+            <div class="rows">
+              <div class="r"><span class="n">02</span><span class="x"><a href="#2" style="color:inherit;text-decoration:none"><b>白皮书</b> · 命题 ＋ 四步链 ＋ 当前状态</a></span></div>
+              <div class="r"><span class="n">06</span><span class="x"><a href="#6" style="color:inherit;text-decoration:none"><b>内层 gap 措辞</b> · 理论迁移缺失 ＋ 激励传导断裂</a></span></div>
+              <div class="r"><span class="n">09</span><span class="x"><a href="#9" style="color:inherit;text-decoration:none"><b>反方缺口骨架</b> · 白皮书 §8 · 反方甲 H7′ ＋ 反方乙</a></span></div>
+              <div class="r"><span class="n">12</span><span class="x"><a href="#12" style="color:inherit;text-decoration:none"><b>理论工具</b> · 四块诺奖镜头（A&amp;P / H&amp;M / Myerson / 演化博弈）</a></span></div>
+            </div>
+            <div class="h" style="margin-top:16px;font-weight:700">产品线 · 用 gap —— ① 顶层</div>
+            <div class="rows">
+              <div class="r"><span class="n">⤴</span><span class="x"><a href="https://crf.ferrari11.com/bp/" style="color:inherit;text-decoration:none"><b>BP 商业计划书</b> · 7 页 deck（外链）</a></span></div>
+              <div class="r"><span class="n">14</span><span class="x"><a href="#14" style="color:inherit;text-decoration:none"><b>产品化定案</b> · 参赛 / 基金形态 ＋ 功能归属 ＋ 卖点</a></span></div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="h" style="font-weight:700">② 竞品调研 —— 赛道长什么样</div>
+            <div class="rows">
+              <div class="r"><span class="n">17</span><span class="x"><a href="#17" style="color:inherit;text-decoration:none"><b>竞争格局_底稿</b> · 窄赛道 · 两条死因 ＋ 问责 / 闸门</a></span></div>
+              <div class="r"><span class="n">21</span><span class="x"><a href="#21" style="color:inherit;text-decoration:none"><b>教育IT市场地图</b> · S1 · 宽赛道按玩家分</a></span></div>
+              <div class="r"><span class="n">25</span><span class="x"><a href="#25" style="color:inherit;text-decoration:none"><b>教育IT系统-分层骨架</b> · S2/S3 · 表 A 动作 ＋ 表 B 玩家 ＋ 收购</a></span></div>
+            </div>
+            <div class="h" style="margin-top:16px;font-weight:700">③ 产品落地 —— 产品是什么、怎么被用</div>
+            <div class="rows">
+              <div class="r"><span class="n">30</span><span class="x"><a href="#30" style="color:inherit;text-decoration:none"><b>产品判断</b> · 一句话定义 ＋ 删留 ＋ 确信度</a></span></div>
+              <div class="r"><span class="n">33</span><span class="x"><a href="#33" style="color:inherit;text-decoration:none"><b>S5 用户旅程</b> · 四路径体验地图</a></span></div>
+              <div class="r"><span class="n">36</span><span class="x"><a href="#36" style="color:inherit;text-decoration:none"><b>S7 访谈</b> · 提纲 ＋ 四栏归因表</a></span></div>
+            </div>
+            <div class="h" style="margin-top:16px;font-weight:700">④ 附录 —— BP 深挖</div>
+            <div class="rows">
+              <div class="r"><span class="n">38</span><span class="x"><a href="#38" style="color:inherit;text-decoration:none"><b>附录</b> · 口径 / 矩阵 / 体量 / 里程碑 / 治理 / 出处</a></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ghost">目</div>
+  </section>
+
+  <!-- ==================== 02–05 · 白皮书 ==================== -->
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 02 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">理论线 · 白皮书 · 这是什么</div>
+      <h2 class="q">研究什么、怎么切</h2>
+      <div class="lede">白皮书（Firm Involved Learning Manifesto）是项目的<b>理论顶层件</b>，也是正式的 project log —— <b>给李博士和团队成员看的项目入口</b>。产品线的一切，都站在它肩上。</div>
+      <div class="body tightbody">
+        <div class="cards c2">
+          <div class="box">
+            <div class="h">研究对象</div>
+            <p>企业进入高校本科课堂的<b>「教学合作治理」</b>，不是一般校企科研合作。</p>
+            <p>问的是：这桩合作<b>该不该立</b>、由谁定、激励怎么摆 —— 一个<b>治理</b>问题，不是一个教学问题。</p>
+          </div>
+          <div class="box">
+            <div class="h">学科切入</div>
+            <p>管理 / 治理与 <b>机制设计</b>，<b>不是教学法</b>。</p>
+            <p>因为现有教育研究「<b>有教学、无治理</b>」：只问怎么教、学生学到什么，不问「老师为什么有激励去教、合作为什么立得住」。</p>
+          </div>
+        </div>
+        <div class="band"><span class="t">核心命题</span><b>Efficiency ≠ Alignment</b> —— 激励对齐不等于效率，是<b>两步</b>。四步链：<b>Incentive → Incentive Alignment → Efficiency → Impact</b>。现有平台都停在「效率」（跑得动），CRF 答的是前两步（动机 ＋ 对齐）。</div>
+        <div class="cards c2">
+          <div class="box">
+            <div class="h">双向治理</div>
+            <p>企业<b>过冷</b>时「请进来」（激励不足）；企业<b>过热</b>时「防捕获」（威胁院校自主）。两个方向都要治。</p>
+          </div>
+          <div class="box">
+            <div class="h">五方</div>
+            <p>企业、院系、教师、助教、学生 —— 不是「企业 vs 学校」两方，是<b>五方各自的激励与约束</b>。</p>
+          </div>
+        </div>
+        <div class="cite">状态：§1 为 <span class="chip">DRAFT</span>；教学法视角排除与中介路径为 <span class="chip">待补</span>。证据级别 E1–E4（E1 公开文件 / E2 一手材料 / E3 我方推断 / E4 对手假设）。</div>
+      </div>
+    </div>
+    <div class="ghost">白</div>
+  </section>
+
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 03 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">理论线 · 白皮书 · 研究现状</div>
+      <h2 class="q">三支文献、七种模式、gap 在哪</h2>
+      <div class="lede">现有文献分成<b>三支、彼此不通</b>；现实中校企合作有<b>七种模式</b>、各有「谁更着急」。两者的交叉点，就是我们站的位置。</div>
+      <div class="body tightbody">
+        <div class="h" style="margin-bottom:4px">三支文献互相不通 —— 每支都缺一块</div>
+        <table class="tbl tight" style="table-layout:fixed">
+          <colgroup><col style="width:180px"><col style="width:250px"><col></colgroup>
+          <tr><th>支</th><th>问什么</th><th>缺什么</th></tr>
+          <tr><td><b>教育 / 工程</b></td><td>怎么教、学生学了什么</td><td><b>有教学，无治理</b></td></tr>
+          <tr><td><b>管理学治理</b></td><td>大学—企业科研合作怎么匹配、怎么承诺</td><td><b>有治理，无教学</b></td></tr>
+          <tr><td><b>高教 / 批判社会学</b></td><td>企业过强如何捕获院校</td><td><b>有批判，无机制设计</b></td></tr>
+        </table>
+        <div class="h" style="margin:10px 0 4px">七种模式 —— 谁更着急决定议价权</div>
+        <div class="rows">
+          <div class="r"><span class="n">1–2</span><span class="x"><b>共教 / 真实项目</b> —— 散在低层教育刊，无治理镜头，属中间态</span></div>
+          <div class="r"><span class="n">3–4</span><span class="x"><b>实习 / COOP</b> —— 制度化最深，头号障碍 ＝ <b>企业激励不足</b>（学校求企业）</span></div>
+          <div class="r"><span class="n">5–6</span><span class="x"><b>比赛 / 黑客松</b> —— 企业办赛 ＝ branding ＋ 人才池（<b>企业求人才</b>，钱几乎不流动）</span></div>
+          <div class="r"><span class="n">7</span><span class="x"><b>明星课</b> —— 企业砸钱抢人才，威胁院校自主（<b>企业求学校</b>）</span></div>
+        </div>
+        <div class="box" style="margin-top:4px">
+          <div class="h">Gap 声明 —— 我们站的位置</div>
+          <p><b>外层 FROZEN</b>：现有研究「<b>几乎没有</b>」把「机制设计镜头」对准「企业进课堂的教学合作」，且<b>无严格形式化建模</b>。</p>
+          <p><b>内层 SOFT</b>：供给方 incentive 的成熟理论未迁移到本科课堂 ＋ 院系 urgency 传导不到教师个体（详见 06–08 页）。</p>
+        </div>
+      </div>
+      <div class="cite">来源：Lit_Review_08 / 10；证据级别 E1。说明：中文政策链 ＋ 国家级经费形成了「规范/对策」文献富矿，但缺严格建模。</div>
+    </div>
+    <div class="ghost">白</div>
+  </section>
+
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 04 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">理论线 · 白皮书 · 工具箱 ＋ 数据</div>
+      <h2 class="q">用什么工具、手头有什么</h2>
+      <div class="lede">填 gap 靠<b>四块诺奖工具</b>（＋第五块、外围镜头）；证据靠一条<b>已经做成产品的 <a href="https://crf.ferrari11.com" style="color:inherit;text-decoration:none">401 问题网络</a></b>。</div>
+      <div class="body tightbody">
+        <div class="h" style="margin-bottom:4px">四块诺奖工具（现状全 DRAFT）</div>
+        <table class="tbl tight" style="table-layout:fixed">
+          <colgroup><col style="width:150px"><col style="width:210px"><col style="width:66px"><col></colgroup>
+          <tr><th>工具</th><th>一句话</th><th>诺奖</th><th>接 CRF 的哪一步</th></tr>
+          <tr><td><b>信号传递</b></td><td>要辨型别，设一个对骗子更贵的门槛</td><td>2001</td><td>企业投入 / 带教 / 续约哪个是真信号</td></tr>
+          <tr><td><b>型别空间</b></td><td>你面对的不是「企业」，是型别分布</td><td>1994</td><td>让企业自选合作档位（院系方的机制）</td></tr>
+          <tr><td><b>机制设计</b></td><td>想要结果，反推规则</td><td>2007</td><td>五方 incentive 对齐的正式语言</td></tr>
+          <tr><td><b>多任务委托代理</b></td><td>加强可测激励，会赶走不可测投入</td><td>2016</td><td>老师 / 助教为什么被机制挤走（补 Alignment）</td></tr>
+        </table>
+        <div class="cards c2">
+          <div class="box">
+            <div class="h">第五块 ＋ 外围镜头</div>
+            <p><b>第五块</b>：公共品（企业为何理性搭便车）＋ 俱乐部产品（把共享收益做成可排他会费）。<b>外围</b>：Stakeholder Salience、交易成本、Academic Capitalism、Social Exchange。</p>
+          </div>
+          <div class="box">
+            <div class="h">401 问题网络（已上线）</div>
+            <p>节点 <b>401</b> ＝ 114 基线 ＋ 281 扩题 ＋ 6 设计题；边 <b>1607</b>、平均度 8.015、<b>19 簇</b>、modularity 0.6753。114 基线里 <b>60 题（52.6%）</b>判为研究空白。可交互站 <a href="https://crf.ferrari11.com" style="color:inherit;text-decoration:none"><b>crf.ferrari11.com</b></a>。</p>
+          </div>
+        </div>
+      </div>
+      <div class="cite">四步链 v2 重映射已完成（单标签 294 / 双标签 33 / 链外 74）；⚠️ 该批数为「按本课题口径的一次性模型归类」，测的是分类器服从度，两份对外件已撤回这批数。</div>
+    </div>
+    <div class="ghost">白</div>
+  </section>
+
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 05 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">理论线 · 白皮书 · 状态与自省</div>
+      <h2 class="q">现在到哪、可能错在哪</h2>
+      <div class="body tightbody">
+        <div class="cards c2">
+          <div class="box">
+            <div class="h">当前状态（AS-OF 2026-09）</div>
+            <p>gap 外层 <b>FROZEN</b> / 内层 <b>SOFT</b>；401 题已冻结、网络上线；方向变更：重心转 <b>TDG</b>，项目改名 <b>Firm Involved Learning</b>（CRF 只指那笔 grant），研究层级钉为 <b>course level</b>。</p>
+          </div>
+          <div class="box">
+            <div class="h">§8 我们可能错在哪</div>
+            <p>最接近的威胁：多淑杰&amp;郑琦 2024、Zhang 2024、潘丽云/尹江海、A&amp;P 学徒制。当前核验 <b>致命 0 / 严重 4 / 轻微 3 / 不构成 1</b>。</p>
+          </div>
+        </div>
+        <div class="h" style="margin:2px 0 4px">六条假设（全部 DRAFT）</div>
+        <div class="rows">
+          <div class="r"><span class="n">H1</span><span class="x">企业的根本回报是<b>观察人才</b>，不是项目成果（比续约/带教/招聘的 revealed 行为，不用自述）</span></div>
+          <div class="r"><span class="n">H2</span><span class="x">课前动员会能把年流失率从 <b>75–80% 降到 60%</b>（准实验）</span></div>
+          <div class="r"><span class="n">H3</span><span class="x">circular topic 能同时解决新鲜感与进阶感</span></div>
+          <div class="r"><span class="n">H4</span><span class="x">持续性靠<b>企业可替换、对接成本低</b>（拆搜寻/签约/磨合/退出成本）</span></div>
+          <div class="r"><span class="n">H5</span><span class="x">企业 incentive <b>至少 6 类</b>，不同类型驱动不同企业（choice/conjoint）</span></div>
+          <div class="r"><span class="n">H6</span><span class="x">持续性：若经 learning outcome 中介则挂钩、若靠人才观察/声誉则脱钩（不用企业自述）</span></div>
+        </div>
+        <div class="cite">两条反方缺口（TODO）：教学法经 LO 的中介排除（→ 09–11 页）；正式论证治理视角为何不可被教学法替代。⚠️ 网络指标只描述「问题库存结构」，不描述现实世界。</div>
+      </div>
+    </div>
+    <div class="ghost">白</div>
+  
+    <a class="backtoc" href="#1">← 返回目录</a></section>
+
+  <!-- ==================== 06–08 · 内层 gap 措辞 ==================== -->
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 06 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">理论线 · 内层 gap 措辞 · 是什么</div>
+      <h2 class="q">「内层 gap」是那两个真正的空位</h2>
+      <div class="lede" style="display:grid;grid-template-columns:auto 1fr;gap:6px 16px;align-items:baseline"><span style="font-weight:600;color:var(--ink)">外层</span><span>机制设计镜头「几乎没有」照过企业进课堂（已 FROZEN）。</span><span style="font-weight:600;color:var(--ink)">内层</span><span>具体空在哪 —— 本件就是内层那两个空位的<b>正面立论</b>。</span></div>
+      <div class="body tightbody">
+        <div class="cards c2">
+          <div class="box">
+            <div class="h">① 理论迁移缺失</div>
+            <p>企业「为什么要参与培训/教学」的 incentive 理论，在<b>劳动经济学</b>一侧早已成熟；但这套理论<b>未见迁移到「本科课堂 × 企业进课堂」</b>。</p>
+            <p>⇒ 本科情境下「企业为什么把课堂资源投进来」，<b>缺对应的正式建模</b>。</p>
+          </div>
+          <div class="box">
+            <div class="h">② 激励传导断裂</div>
+            <p>院系的 urgency（要企业进课堂）<b>传导不到教师个体</b>。</p>
+            <p>⇒ 政策定了、院系想做，但落到具体老师身上，激励不接得上 —— 缺口在这里。</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="h">两条的性质与边界（读法）</div>
+          <p><b>① 是文献缺口</b>（我方构念）—— 说的是「没人在这个交叉点上建模」，属 <span class="chip">E3</span>；<b>② 是我方理论预测</b> —— 说的是「会发生传导断裂，我们预测」，也属 <span class="chip">E3</span>。</p>
+          <p>手上唯一的经验材料是<b>四校制度文本</b>，但它只量「制度」，连院校层的「教师行为」都还没有 ⇒ <b>只作②的上游前提，不代替 course-level 结论</b>。</p>
+        </div>
+        <div class="rows">
+          <div class="r"><span class="n">用</span><span class="x">内层 gap 的措辞最终要<b>并回白皮书</b>（Lit_Review_10 §四内层）；每条都过 G1（回源）＋ G2（红队）后才定稿</span></div>
+          <div class="r"><span class="n">配</span><span class="x">与「反方缺口骨架」（09–11 页）是一对：内层<b>正面立</b>，反方<b>反面守</b></span></div>
+        </div>
+        <div class="cite">一句话：① 是文献缺口；② 是我方理论预测；四校制度层证据只作②的上游前提，不代替 course-level 结论。证据级别 E1/E3。</div>
+      </div>
+    </div>
+    <div class="ghost">内</div>
+  </section>
+
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 07 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">理论线 · 内层 gap · 支点一</div>
+      <h2 class="q">理论迁移缺失（Acemoglu &amp; Pischke）</h2>
+      <div class="body tightbody">
+        <div class="h">措辞（v2.1 · 收口版）</div>
+        <p>企业参与培训 / 教学的 incentive 理论，在<b>劳动经济学</b>一侧已成熟 —— 企业是否投入培训，取决于<b>劳动力市场摩擦</b>与<b>技能可转移性</b>；但这套理论<b>未见迁移到「本科教育 × 企业进课堂」</b>：本科情境下「企业为什么把课堂资源投进来」缺对应的正式建模。</p>
+        <div class="h" style="margin:10px 0 4px">点名理论（该支核心）</div>
+        <div class="rows">
+          <div class="r"><span class="n">98</span><span class="x">Acemoglu &amp; Pischke, <i>QJE</i> <b>113(1), 79–119</b> · DOI 10.1162/003355398555531 —— <b>该支核心理论</b>（奠基位属 Becker 1964）</span></div>
+          <div class="r"><span class="n">99</span><span class="x">Acemoglu &amp; Pischke, <i>EJ</i> <b>109(453), F112–F142</b>（标题即 "Beyond Becker"）—— 更贴「有摩擦 ⇒ 企业为通用技能付费」一句</span></div>
+        </div>
+        <div class="cards c2">
+          <div class="box">
+            <div class="h">最近邻 · 就地处置</div>
+            <p>多淑杰 &amp; 郑琦（2024，本科层 · 委托代理）：焦点在<b>政府激励 ＋ 规范对策</b>，<b>未做企业侧形式化建模</b>；页码 <span class="chip">待核实</span>、不落引用表。</p>
+          </div>
+          <div class="box">
+            <div class="h">两个措辞纪律</div>
+            <p>① 用「<b>理论迁移</b>」全称 —— 教育语境里「迁移」默认指「学习迁移」，不限定会被误读；② 写「<b>未见</b>迁移」而非「没有」—— 内层不立同级强句。</p>
+          </div>
+        </div>
+      </div>
+      <div class="cite">我方构念「理论迁移（labor economics → 本科课堂）缺失」属 <span class="chip">E3</span>；点名理论字段属 <span class="chip">E1</span>（文献核实台账 A&amp;P 系列 4 条全确认）。</div>
+    </div>
+    <div class="ghost">内</div>
+  </section>
+
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 08 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">理论线 · 内层 gap · 支点二</div>
+      <h2 class="q">激励传导断裂（Holmström &amp; Milgrom）</h2>
+      <div class="body tightbody">
+        <div class="h">措辞（v2.1 · 收口版）</div>
+        <p>院系 urgency <b>传导不到教师个体</b>。教师处在<b>多任务</b>结构下 —— 科研（可测、算职称）／教学投入（难测）／企业关系维护（几乎完全不可测）；<b>若两类任务争夺同一个人的时间</b>，强化可测任务（科研）的激励，就会挤掉不可测任务（企业合作教学）。</p>
+        <div class="box" style="margin-top:8px">
+          <div class="h">点名理论（字段已全）</div>
+          <p><b>Holmström &amp; Milgrom 1991</b>, <i>JLEO</i> <b>7(Special Issue), 24–52</b> · DOI 10.1093/jleo/7.special_issue.24 —— 结论形态是「<b>最优可能是不给绩效工资 / 弱激励</b>」。<br>＋ <b>Holmström 2017</b>, <i>AER</i> <b>107(7), 1753–1777</b>（诺奖讲座 · 已核 · 双源）。</p>
+        </div>
+        <div class="h" style="margin:8px 0 4px">四校制度层「同向」（相关非因果 · 口径不一）</div>
+        <div class="rows">
+          <div class="r"><span class="n">PolyU</span><span class="x">最硬 / 最早强制 —— <b>2005 必修（全校）</b></span></div>
+          <div class="r"><span class="n">CUHK</span><span class="x"><b>2021 选修（全校）</b></span></div>
+          <div class="r"><span class="n">HKU</span><span class="x"><b>碎片</b>（部分专业必修，无统一品牌）</span></div>
+          <div class="r"><span class="n">HKUST</span><span class="x">最软 / <b>可选</b>（个别学院，近年）· <span class="chip">待确认</span></span></div>
+        </div>
+      </div>
+      <div class="cite">⚠️ 诚实标注：现证据链只到「制度 ↔ 制度」（量的是必修/可选、年份），<b>连院校层的教师行为都还没有</b> ⇒ 「传导断裂」的经验支撑仍是 <b>0</b>。四校「同向」不替支点二扛经验重量。适用条件必带：<b>若二者争夺同一个人的时间（本课题待检假设）</b>。</div>
+    </div>
+    <div class="ghost">内</div>
+  
+    <a class="backtoc" href="#1">← 返回目录</a></section>
+
+  <!-- ==================== 09–11 · 反方缺口骨架 ==================== -->
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 09 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">理论线 · 反方缺口骨架（白皮书 §8）</div>
+      <h2 class="q">别人会怎么反驳我们</h2>
+      <div class="lede">这是白皮书 §8「我们可能错在哪」的骨架 —— 与「内层 gap」（06–08）是一对：那边<b>正面立</b>，这边<b>反面守</b>。核心是两条互锁的 TODO。</div>
+      <div class="body tightbody">
+        <div class="cards c2">
+          <div class="box">
+            <div class="h">反方甲 · H7′（竞争假设）</div>
+            <p>企业续约<b>不是</b>治理 / 激励问题，而是<b>教学质量</b>问题 —— 课教得好 → 学生学到 → 企业满意 → 续约。</p>
+            <p>⇒ 整套「机制设计」叙事，可以被一句「<b>把课教好就行</b>」替代。</p>
+          </div>
+          <div class="box">
+            <div class="h">反方乙 · 治理不可替代</div>
+            <p>企业进课堂本就是<b>教学问题</b>（WIL / pedagogy），归教育学即可；治理 / 机制设计是「<b>多余包装</b>」。</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="h">两条为什么「互锁」＋ 一条边界</div>
+          <p><b>互锁</b>：甲若不倒（教学法确实能解释），乙白写；乙若不立（治理确实可被替代），甲即便倒了，gap 仍会被说成「包装」。</p>
+          <p>⚠️ <b>边界</b>：<b>甲倒 ＋ 乙立 ⇒ 只排除两个替代解释，不构成正面证明</b>（正面证明靠 H1–H6 的实证）。不写这句，§8 会被读成「反方排除 ＝ 结论成立」。</p>
+        </div>
+        <div class="rows">
+          <div class="r"><span class="n">甲</span><span class="x">TODO :290 —— 教学法经 learning outcome 间接解释持续性 ⇒ 写成<b>可检验的竞争假设 H7′</b>（→ 10 页）</span></div>
+          <div class="r"><span class="n">乙</span><span class="x">TODO :291 —— 正式论证「治理 / 机制设计视角」为何<b>不能由教学法替代</b>（→ 11 页）</span></div>
+        </div>
+      </div>
+      <div class="cite">证据级别 <span class="chip">E4</span>（我方假设的对手）为主。本件 v0.2，已过 G2（教学法阵营红队），待 G3（跨件口径一致）。</div>
+    </div>
+    <div class="ghost">反</div>
+  </section>
+
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 10 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">理论线 · 反方缺口 · 反方甲</div>
+      <h2 class="q">H7′：教学法经 learning outcome 中介</h2>
+      <div class="body tightbody">
+        <div class="cards c2">
+          <div class="box">
+            <div class="h">① 先钉适用域（最要紧）</div>
+            <p><b>企业是否测量 learning outcome</b> 是<b>适用域门槛（＝样本定义）</b>，<b>不是模型阶段</b>。H7′ 只适用于「确实测 LO 的企业」这个子样本。</p>
+            <p>企业不测 LO 时，「LO → 续约」在企业决策上<b>根本不存在</b> ⇒ 那是 H7′ <b>不可测</b>，不是被拒。</p>
+          </div>
+          <div class="box">
+            <div class="h">② 提法（竞争假设）</div>
+            <p>H7′（<span class="chip">E4</span> · 不进 §6 假设表）：在适用域内，企业续约的 <b>hazard</b> 由 learning outcome 中介；<b>给定 LO 后，机制设计变量的直接效应 ≈ 0</b>。</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="h">③ 判别设计</div>
+          <p>因变量 ＝ <b>revealed 续约的 duration / hazard</b>（与 §6「持续性」对齐，二元稀发用 logit/probit 或生存模型，<b>不用 ΔR²</b>，用似然比 / Wald）。</p>
+          <p>结构：<b>机制(t−1) → LO(t) → 续约(t+1)</b> 有向滞后；<b>三者不同时放进回归</b>（同时放＝过度控制，机制系数必然变小，变小不能区分敌论与己论）。判别量 ＝ <b>中介份额</b> ＋「给定 LO 后直接效应 ≈ 0」。</p>
+        </div>
+        <div class="cards c2">
+          <div class="box">
+            <div class="h">④ 代理两难</div>
+            <p>LO 用<b>成绩</b> ⇒ 敌论说「成绩不是企业看的」；用<b>雇主评</b> ⇒ 违反 H6 铁律「不用企业自述」。⇒ 须<b>预登记多代理 ＋ 敏感性</b>，把「企业满意度」换成企业投入的 revealed 行为。</p>
+          </div>
+          <div class="box">
+            <div class="h">⑤ 三支读法</div>
+            <p>成立 ⇒ CRF 弱化｜被拒 ⇒ 反方甲倒、内层支点二上升｜<b>各自独立显著 ＝ 互补（最可能的真实结果）</b>。</p>
+          </div>
+        </div>
+      </div>
+      <div class="cite">⚠️ 功效：一手材料显示连续三年参与企业 <b>仅 11 家</b> ⇒ firm 维度 n 在十位量级，中介检验基本无功效，须写最小样本量或改 pooled 设计。标 <b>E4·H7′</b>（不标 DRAFT，避免与对手假设同栏）。</div>
+    </div>
+    <div class="ghost">反</div>
+  </section>
+
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 11 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">理论线 · 反方缺口 · 反方乙 ＋ 威胁清单</div>
+      <h2 class="q">治理为何不可替代 ＋ 谁在威胁我们</h2>
+      <div class="body tightbody">
+        <div class="h" style="margin-bottom:4px">反方乙 · 三层论证（已按 G2 重写）</div>
+        <table class="tbl tight" style="table-layout:fixed">
+          <colgroup><col style="width:150px"><col></colgroup>
+          <tr><th>层</th><th>结论</th></tr>
+          <tr><td><b>(a) 信息结构</b></td><td><b>反守为攻</b>：有补贴 ⇒ 问题从「不可能」变成「<b>补贴该怎样设计才激励相容</b>」—— 教学法阵营对此<b>完全无发言权</b>。权威来源从「借定理」改成「占主场」</td></tr>
+          <tr><td><b>(b) 组织结构</b></td><td><b>降调</b>：教学卓越奖／教学晋升轨道正是教学法阵营推的制度变化 ⇒ 改说「教学法阵营把教学投入当<b>不证自明的好事</b>，不处理教师为何有激励去投」</td></tr>
+          <tr><td><b>(c) 文献空位</b></td><td><b>降为旁证</b>：教学法一族问的全是学习产出、不碰治理（挂在期刊分区表、非逐篇核查）⇒ 须补一句「<b>为何这不是学科分工</b>」</td></tr>
+        </table>
+        <div class="h" style="margin:10px 0 4px">威胁清单（判据先写）</div>
+        <div class="rows">
+          <div class="r"><span class="n">T-gap</span><span class="x">能证伪 <b>gap 内核</b>者（文献核实台账 §三）：多淑杰&amp;郑琦 2024 ／ Zhang 2024 ／ 潘丽云·尹江海 ／ A&amp;P 学徒制 —— 核验 <b>致命 0 / 严重 4 / 轻微 3 / 不构成 1</b></span></div>
+          <div class="r"><span class="n">T-arg</span><span class="x">能证伪 <b>§2 三层 / H7′</b>者（新增 6 类）：① WIL/IJWIL 治理章（<b>最高优先</b>，若存在同时击穿 §2(c)）② co-op employer 实证 ③ 灰文献 ④ Perkmann 综述（划界）⑤ 焦名海 2017（撞因变量）⑥ 2025–26 新文</span></div>
+        </div>
+      </div>
+      <div class="cite">⚠️ 防稻草人：<b>不得</b>把对手窄化成「只管教得怎样」—— WIL 研究本来就管制度设计（实习制度、校企关系维护、评估认证）。用窄版对手赢，红队一句话打回。</div>
+    </div>
+    <div class="ghost">反</div>
+  
+    <a class="backtoc" href="#1">← 返回目录</a></section>
+
+  <!-- ==================== 12–13 · 理论工具 ==================== -->
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 12 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">理论线 · 理论工具 · 四块诺奖镜头</div>
+      <h2 class="q">填 gap 要用的四块镜头</h2>
+      <div class="lede">CRF 缺的不是「是什么」的文献（7 簇模式 ＋ stakeholder ＋ academic capitalism 已扎实），而是<b>填 gap 要用的镜头</b> —— 这是 Ferrari 点名要「随时 recall」的单一权威件。</div>
+      <div class="body tightbody">
+        <table class="tbl tight" style="table-layout:fixed">
+          <colgroup><col style="width:140px"><col style="width:200px"><col style="width:60px"><col></colgroup>
+          <tr><th>镜头</th><th>来源</th><th>诺奖</th><th>一句话</th></tr>
+          <tr><td><b>信号传递</b></td><td>Spence 1973, <i>QJE</i></td><td>2001</td><td>说话不要钱、所以说话不算数（cheap talk）；要分辨型别，得设一个<b>对骗子更贵</b>的门槛，让人自己选进不同的门（<b>分离均衡</b>）</td></tr>
+          <tr><td><b>型别空间</b></td><td>Harsanyi（贝叶斯博弈）</td><td>1994</td><td>对面的私有信息你看不见 —— 你面对的不是一个总体，是一个<b>型别空间</b></td></tr>
+          <tr><td><b>机制设计</b></td><td>Hurwicz / Maskin / Myerson</td><td>2007</td><td>反着玩的博弈论：想要某个结果，该定什么规则，让一群自私又会撒谎的人<b>自动</b>走到那儿（<b>激励相容</b> ＋ 显示原理）</td></tr>
+          <tr><td><b>多任务委托代理</b></td><td>Holmström &amp; Milgrom 1991</td><td>2016</td><td>多件事只有部分可测时，<b>加强可测那部分，他就会扔掉不可测的</b> —— 不是所有 incentive 都能加强</td></tr>
+        </table>
+        <div class="cite">⚠️ 多任务那行最后一句 ＝ <b>我方转述</b>（Lit_Review_09:99 的「自检」栏），非 H&amp;M 原文；H&amp;M 的结论形态是「<b>最优可能是不给绩效工资／弱激励</b>」—— 成文引用按后者。</div>
+      </div>
+    </div>
+    <div class="ghost">镜</div>
+  </section>
+
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 13 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">理论线 · 理论工具 · CRF 接口</div>
+      <h2 class="q">四块镜头怎么接 CRF</h2>
+      <div class="body tightbody">
+        <div class="rows">
+          <div class="r"><span class="n">1</span><span class="x"><b>多任务委托代理 → 补 Alignment 那一步</b>：李博士金句「Efficiency ≠ Alignment」，但 Alignment 原本 <b>0 题</b>；「五方 incentive 对齐」本质就是多任务委托代理问题</span></div>
+          <div class="r"><span class="n">2</span><span class="x"><b>机制设计 → 给核心 gap 正名</b>：核心 gap 措辞必须答得出「<b>哪个</b>机制设计」（原「从没照过」已废，2026-08-27 核实后降级为「几乎没有」）</span></div>
+          <div class="r"><span class="n">3</span><span class="x"><b>信号传递 → 已答「企业新②」</b>（申请数／续约率／带教投入哪个最真实）：带教投入贵且对不真心的企业更贵 ＝ <b>真信号</b>；续约率成本低 ＝ 弱信号；口头承诺 ＝ cheap talk</span></div>
+          <div class="r"><span class="n">4</span><span class="x"><b>型别空间 → 「让企业自选合作档位」</b>：不问企业要什么，设计分离机制让它<b>自暴露型别</b>（这是<b>院系方</b>的机制）</span></div>
+        </div>
+        <div class="cards c2">
+          <div class="box">
+            <div class="h">讲法注意</div>
+            <p>信号传递<b>别从抽象定义开头</b>。正确讲法：先摆 cheap talk 困境（两种学生都说「我想干」）→ 设门槛（无薪实习对两型成本不同）→ 分离均衡 → 反例（给全薪就失效）→ 最后才抛反直觉结论。</p>
+          </div>
+          <div class="box">
+            <div class="h">第五块 ＋ 关联件</div>
+            <p><b>第五块</b>（公共品 / 俱乐部产品）—— 解释企业为什么「<b>理性地</b>」搭便车，也缺，尚未展开。关联：CC 侧行为/状态类记忆（surface-academic-concepts 等）<b>不随本件迁</b>。</p>
+          </div>
+        </div>
+      </div>
+      <div class="cite">单一权威：2026-10-09 由 Claude Code 侧记忆迁入本件，memory 件降为一行指针（消除双副本漂移）。</div>
+    </div>
+    <div class="ghost">镜</div>
+  
+    <a class="backtoc" href="#1">← 返回目录</a></section>
+
+  <!-- ==================== 14–16 · 产品化定案 ==================== -->
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 14 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">产品线 · 产品化定案 · 形态</div>
+      <h2 class="q">两条线 → 两种形态</h2>
+      <div class="lede">这是产品形态的<b>自决定案</b>，不是问题清单 —— 每条都按「我认为对的」写好；李博士只需<b>点头 / 划掉 / 改一个词</b>，不必从零回答。</div>
+      <div class="body tightbody">
+        <div class="box">
+          <div class="h">为什么是这份件</div>
+          <p>李博士给的是<b>方向</b>（申请 CRF／申请 RAISe／参赛）。两条线：<b>CRF ＝ 研究理论线</b>；<b>RAISe ＝ 产品化线</b>，产品化线站在研究线肩上。</p>
+        </div>
+        <table class="tbl tight" style="table-layout:fixed">
+          <colgroup><col style="width:120px"><col style="width:300px"><col></colgroup>
+          <tr><th>维度</th><th>参赛形态</th><th>基金形态</th></tr>
+          <tr><td><b>对谁</b></td><td>赛事评委（港大／神仙湖）</td><td>评审机构（RGC ＝ CRF；ITC ＝ RAISe）</td></tr>
+          <tr><td><b>交什么</b></td><td>站点（演「输入 → 追问 → 判断」）＋ 7 页 deck ＋ IP 凭据</td><td>CRF：理论 proposal ＋ 展示站上线；RAISe：成果转化 proposal</td></tr>
+          <tr><td><b>卖点聚焦</b></td><td>判断层（现有平台停在效率，我们答前两步）</td><td>CRF ＝ 理论可证；RAISe ＝ 已有部署成果可转化</td></tr>
+          <tr><td><b>资格门槛</b></td><td>「无争议的自有 IP」凭据 <span class="chip">待授权</span></td><td>CRF：理论完整性；RAISe：业界配资（本轮已关闭）</td></tr>
+        </table>
+        <div class="band"><span class="t">一句话</span>参赛 ＝ <b>把产品演出来</b>；基金 ＝ <b>把产品的来路说圆</b>（CRF 讲理论、RAISe 讲转化）。<b>产品只有一套</b>，两栏只是同一套产品的两种打开方式。</div>
+      </div>
+    </div>
+    <div class="ghost">定</div>
+  </section>
+
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 15 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">产品线 · 产品化定案 · 功能 ＋ 卖点</div>
+      <h2 class="q">五个功能 ＋ 卖点</h2>
+      <div class="body tightbody">
+        <div class="h" style="margin-bottom:4px">功能归属（我方自决，不再问她）</div>
+        <table class="tbl tight" style="table-layout:fixed">
+          <colgroup><col style="width:60px"><col style="width:150px"><col style="width:190px"><col></colgroup>
+          <tr><th>#</th><th>功能</th><th>归哪条线 / 哪个 bot</th><th>角色与来路</th></tr>
+          <tr><td>1</td><td>企业侧问答</td><td>教学 bot（TDG／教学交付）</td><td><b>入口</b>（轻量 bot）· BP §2.2 已确认</td></tr>
+          <tr><td>2</td><td>对齐诊断</td><td>判断层（CRF 理论）</td><td><b>入口，非护城河</b> · 新增（最薄的格子）</td></tr>
+          <tr><td>3</td><td>层级定位</td><td>判断层</td><td>入口，非护城河 · 新增</td></tr>
+          <tr><td>4</td><td>「值不值」判断</td><td>Project Designer bot（RAISe 旗舰）</td><td><b>高客单钩子</b> · 09-13 李博士亲定</td></tr>
+          <tr><td>5</td><td>学生沟通训练</td><td>教学 bot</td><td>第二阶段 · BP §2.2 已确认</td></tr>
+        </table>
+        <div class="box">
+          <div class="h">卖点（2026-10-13 订正后）</div>
+          <p><b>卖尺子（跨机构基准），不卖数据；单桩判断是入口。</b>到底卖的是四步链前两步（Incentive / Alignment）的<b>判断基准（尺子）</b> —— 现有平台停在第三步，这是我们唯一说不平的东西；<b>单桩判断只作入口、不单独定价</b>（判断不单独定价，尺子才卖得动）。</p>
+        </div>
+      </div>
+      <div class="cite">⚠️ 诚实：判断层（入口）前 12–24 个月<b>可被抄</b>；真正的护城河在 <b>② 数据 / 基准</b>（结果标签时滞）。<span class="chip">待确认</span>：教学 bot 与 Project Designer bot 是否并为一个产品。</div>
+    </div>
+    <div class="ghost">定</div>
+  </section>
+
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 16 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">产品线 · 产品化定案 · 待确认</div>
+      <h2 class="q">我方不能自决的，就地标注</h2>
+      <div class="lede">只需<b>划下面这几处</b>；参数 / 形态 / 卖点<b>不在其中</b>（那些是 §1–§4 的自决项）。</div>
+      <div class="body tightbody">
+        <div class="rows">
+          <div class="r"><span class="n">待授权</span><span class="x"><b>数据授权</b>：课堂对话 / 结果标签<b>原始记录</b>的授权使用范围（BP §3.3 原料层）</span></div>
+          <div class="r"><span class="n">待授权</span><span class="x"><b>「订阅换回填」机制</b> ＋「可用于对外提供聚合与衍生产品」的授权（BP §15.1 第 2 条）</span></div>
+          <div class="r"><span class="n">待确认</span><span class="x"><b>IP 归属</b>：401 数据集 / 打标标准 / 四步链 —— 港大 / 课题组 / 个人（BP §3.3；参赛资格前置）</span></div>
+          <div class="r"><span class="n">待确认</span><span class="x"><b>定位 A / B / C</b>：纯课题组 / 独立主体 / 课题组为起点保留 spin-out</span></div>
+          <div class="r"><span class="n">待确认</span><span class="x"><b>网站</b>：展示站 or 产品原型；<b>教学 bot 与 Project Designer bot 并 / 不并</b></span></div>
+          <div class="r"><span class="n">待确认</span><span class="x">deck p6「500 万 → 5 亿怎么长」的两条口径（几年 / 是否破「不倒排」）</span></div>
+          <div class="r"><span class="n">已关闭</span><span class="x">~~配资~~ —— 已答「<b>这个先不管</b>」⇒ 关闭，不再问</span></div>
+        </div>
+        <div class="band"><span class="t">要紧一句</span>参赛要的是「<b>无争议的</b>自有 IP」—— 我方说「是我们的」<b>不算数</b>，得有一条<b>真凭据</b>（转让书 / 授权书 / 职务发明归属）。<b>这条不落，报名就有风险。</b></div>
+      </div>
+    </div>
+    <div class="ghost">定</div>
+  
+    <a class="backtoc" href="#1">← 返回目录</a></section>
+
+  <!-- ==================== 17–20 · 竞争格局_底稿 ==================== -->
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 17 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">产品线 · 竞争格局_底稿 · 窄赛道</div>
+      <h2 class="q">窄赛道事实件 · 判断层空白</h2>
+      <div class="lede">这是「校企合作对接」<b>窄赛道</b>的事实件（四轮回源）—— 与「教育IT市场地图」（宽赛道，21–24 页）是上 / 下关系，<b>只引不复制</b>。</div>
+      <div class="body tightbody">
+        <div class="h" style="margin-bottom:4px">五条核心读数（§0 精华）</div>
+        <div class="rows">
+          <div class="r"><span class="n">1</span><span class="x"><b>判断层是空的</b>：20+ 玩家全在「撮合 / 流程管理 / 事后评价」，前置判断「<b>这桩合作该不该立</b>」没有产品做</span></div>
+          <div class="r"><span class="n">2</span><span class="x"><b>判断有人卖，只是没做成软件</b>：轩辕网络 / 新道 / 江苏产教融合咨询 —— 判断<b>内嵌在咨询与代运营里</b></span></div>
+          <div class="r"><span class="n">3</span><span class="x"><b>判断卖成「产品」会死，卖成「咨询」才活</b> —— 两条死因我们已<b>独立核到同款</b>（→ 19 页）</span></div>
+          <div class="r"><span class="n">4</span><span class="x"><b>尺子是产品，单桩判断是入口</b>：判断不单独定价，必须包在一层能担信任的东西里（历史上是咨询）</span></div>
+          <div class="r"><span class="n">5</span><span class="x"><b>中文侧（内地）也是空的</b>：20+ 家全是撮合 / 流程 / 事后评价；但判断有人卖（咨询）⇒ <b>内地对手可能是咨询公司，不是软件</b></span></div>
+        </div>
+        <div class="band"><span class="t">结论一句</span><b>单桩判断，校内免费的人能做；「判断这件事的横向尺子」—— 跨机构基准 —— 谁也做不了。</b>能赚钱的信号在「数据 / 基准」（Handshake 转向 AI 数据）。</div>
+      </div>
+      <div class="cite">方法：四轮回源 ＋ 一轮外部抽检，全部挂来源与 AS-OF；22 处转述台账见 §3.4。AS-OF 2026-10-08。</div>
+    </div>
+    <div class="ghost">底</div>
+  </section>
+
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 18 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">产品线 · 竞争格局_底稿 · 两条硬证据</div>
+      <h2 class="q">「判断层空」不再是名单推断</h2>
+      <div class="lede">§2.7 从<b>问责侧</b>与<b>闸门侧</b>做了一手回源 —— 判断层空白，现在有两条<b>硬证据</b>，不再只是「名单里没看到」。</div>
+      <div class="body tightbody">
+        <div class="box">
+          <div class="h">证据一 · 三地问责指标逐条归档</div>
+          <p>内地（<b>3/16/44</b> 全文直读 ＋ 5/4/19 ＋ 6/20/53）｜ 香港 UGC KPI <b>16 条</b> ｜ 英国 KEF <b>18 条</b> —— 逐条读下来，<b>判断类 0 条</b>。港大自己写着 "as measured by the <b>volume</b>"（用数量衡量）。</p>
+        </div>
+        <div class="box">
+          <div class="h">证据二 · 港大四个闸门，没有一个问「该不该立」</div>
+          <p>最硬的 RIMS 站在法例 <b>Cap. 1053</b> 上，但它的结构是「<b>先承诺、后否决</b>」（step A 逐字：PI 提交 draft agreement）⇒ <b>法例只管「谁有权签」，不管「该不该签」</b>。</p>
+        </div>
+        <div class="band"><span class="t">反面读数（最该记住）</span>三地指标奖励的是「<b>多签</b>」，不是「<b>少签对签</b>」。判断（砍掉 40 份低效协议）<b>减少的是计数</b> ⇒ 我们的产品在常态下<b>与院校 KPI 反向</b>。需求出现在<b>问责事件之后的整改期</b>（常州纺院 166 份逐份判、终止 40 份）⇒ <b>市场是事件驱动的；产品要在「整改期」卖，卖的是「逐份依据」</b>。</div>
+      </div>
+    </div>
+    <div class="ghost">底</div>
+  </section>
+
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 19 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">产品线 · 竞争格局_底稿 · 死因</div>
+      <h2 class="q">判断型为什么会死（两条死因）</h2>
+      <div class="body tightbody">
+        <div class="h" style="margin-bottom:4px">反向检索结论（§2.6）</div>
+        <table class="tbl tight" style="table-layout:fixed">
+          <colgroup><col style="width:250px"><col></colgroup>
+          <tr><th>位置</th><th>检索结果</th></tr>
+          <tr><td><b>目标位置</b>（校企立项判断）</td><td><b>零痕迹</b> —— 找不到任何产品，死的活的都没有</td></tr>
+          <tr><td><b>邻近位置</b>（学术项目取舍 / 教学评估 / 认证准备）</td><td>有产品、也有死的；但<b>没有一例死因是「市场否决了判断这件事」</b></td></tr>
+          <tr><td><b>清一色的死因</b></td><td>被并购后吸收 ／ 被换代产品替换 ／ 唯一一例真需求失败 ＝ <b>被校内免费职能替代</b></td></tr>
+        </table>
+        <div class="cards c2">
+          <div class="box">
+            <div class="h">死的样本</div>
+            <p>EAB <b>APS</b> ／ Taskstream-Tk20（discontinued）／ eLumen legacy（2026-12 停支持）／ WEAVEonline ／ AEFIS ／ Anthology（含 Campus Labs，Chapter 11）。</p>
+          </div>
+          <div class="box">
+            <div class="h">活的样本（都裹了「人」）</div>
+            <p><b>Gray DI</b>（数据 ＋ facilitated workshops）／ <b>麦可思</b>（就业大数据库 ＋ 蓝皮书品牌）／ <b>新锦成</b>（监测平台 ＋ 专家咨询 ＋ 报告）。⇒ <b>判断不单独定价</b>。</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="h">两条死因（已独立核到同款）</div>
+          <p>① <b>校内已有免费的人 / 系统在做同一件事</b> —— Fitchburg 教务长原文：校内 <b>IR 办公室</b>本来就在提供这些数据 ⇒ APS 是 "an unnecessary expense"（省 $188,395）。<br>② <b>判断的「正确性」不可证</b> —— "the limits of using ROI models to measure academic effectiveness" ⇒ 判断卖不出「准」，只能卖「可信」，而可信只能靠人。</p>
+        </div>
+      </div>
+    </div>
+    <div class="ghost">底</div>
+  </section>
+
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 20 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">产品线 · 竞争格局_底稿 · 玩家与边界</div>
+      <h2 class="q">窄赛道玩家 ＋ 「被强制 ≠ 有科目」</h2>
+      <div class="body tightbody">
+        <div class="h" style="margin-bottom:4px">玩家分四类（长名单归类）</div>
+        <div class="rows">
+          <div class="r"><span class="n">撮合</span><span class="x">Riipen / EduSourced / Practera / Handshake / Forage / Symplicity / 12twenty —— <b>匹配，不判立项</b></span></div>
+          <div class="r"><span class="n">流程</span><span class="x">校企项目台账 / 开票 / 归档 —— 管理过程，不管该不该开始</span></div>
+          <div class="r"><span class="n">咨询</span><span class="x">轩辕网络 / 新道科技 / 江苏产教融合咨询 —— <b>判断的旧容器</b>（内嵌在咨询与代运营里）</span></div>
+          <div class="r"><span class="n">校内</span><span class="x">HKU CS Placement / PolyU WIE / 树仁 OCRPIA 等 —— 安置与配对，<b>不判</b>，且免费</span></div>
+        </div>
+        <div class="box">
+          <div class="h">「被强制」≠「有科目」—— 一条反直觉的边界</div>
+          <p>内地判断基础设施由<b>财政免费供给</b>：国家发改委 ＋ 教育部<b>自建</b>「<b>国家产教融合型企业建设信息服务平台</b>」（免费，管申报 / 公示 / 信用评价 / 办事大厅）。⇒ 这<b>不是造科目，是更彻底地消灭付费市场</b> —— 直接反驳「让判断变成强制项就有付款科目」。</p>
+        </div>
+      </div>
+      <div class="cite">⚠️ 修：原稿写「零系统」是错的 —— 香港不是没有系统，是没有判断层；那些系统管的是「实习安置」，与「课程层办不办这桩合作」不是同一件事。（此修由互审提出，Claudian 认。）</div>
+    </div>
+    <div class="ghost">底</div>
+  
+    <a class="backtoc" href="#1">← 返回目录</a></section>
+
+  <!-- ==================== 21–24 · 教育IT市场地图 ==================== -->
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 21 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">产品线 · 教育IT市场地图 · S1</div>
+      <h2 class="q">宽赛道地图 · 主轴钉 LMS 大类</h2>
+      <div class="lede">S1「全球教育 IT 市场分类」的起手清单 ＋ 边界件 —— 这是<b>宽赛道</b>（教育IT / LMS）地图，是底稿（窄赛道，17–20 页）的上一层；两者上 / 下关系、只引不复制。</div>
+      <div class="body tightbody">
+        <div class="box">
+          <div class="h">主轴为什么是「LMS 大类」（三条理由）</div>
+          <p>① 项目名就叫「<b>课程管理系统</b>」，李博士原话是「全世界的 education <b>course management system</b>」；② 产品差异化（校企合作课题的生成与匹配判断）是 <b>LMS 大类里的一个空白格</b> —— 不先画 LMS 地图，就说不清「Canvas / Moodle 为什么不填这一格」；③ 5 亿故事的结构 ＝「从 LMS 大类的一个空白格起家，往 adjacent 扩」（李博士举 Turnitin：从查重 → merge 进课程管理）。</p>
+        </div>
+        <div class="h" style="margin:2px 0 4px">三层取舍线（边界先钉死，再动手）</div>
+        <div class="rows">
+          <div class="r"><span class="n">深挖</span><span class="x">LMS 大类 ＋ 校企合作 adjacent（体验式学习 / 实习招聘）—— 挂事实 ＋ AS-OF，像底稿那样</span></div>
+          <div class="r"><span class="n">挂名</span><span class="x">校园 ERP、教务、排课选课、AI 情绪识别 —— 李博士用来定义「专家视野」的极远端，<b>只证明「我知道它在架构哪一格」</b></span></div>
+          <div class="r"><span class="n">不碰</span><span class="x">与教育IT无关的纯 K12 培训 —— 别失控</span></div>
+          <div class="r"><span class="n">单列</span><span class="x">硬件厂（视源 / 希沃 002841 · 鸿合 002955 · 康冠）→ 归「<b>收购方候选 / 渠道方</b>」一格，<b>不进 LMS 分层本体</b>（Ferrari 裁甲案 2026-10-12）</span></div>
+        </div>
+      </div>
+      <div class="cite">判断标准：李博士「你加 feature 知道它落在 architecture 哪一块」—— 这个 architecture ＝ <b>LMS 大类的分层</b>，不是整个教育信息化。要的是「能定位自己的地图」，不是「教育IT百科全书」。</div>
+    </div>
+    <div class="ghost">图</div>
+  </section>
+
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 22 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">产品线 · 教育IT市场地图 · 李博士五栏</div>
+      <h2 class="q">五栏分类 ＋ 缺口</h2>
+      <div class="lede">李博士点名要扫的五个方向 —— 逐栏核完，缺口不在个别公司，在<b>整整一层</b>。</div>
+      <div class="body tightbody">
+        <table class="tbl tight" style="table-layout:fixed">
+          <colgroup><col style="width:150px"><col style="width:330px"><col></colgroup>
+          <tr><th>五栏</th><th>核到的事实</th><th>落点</th></tr>
+          <tr><td><b>① 国内上市教育IT</b></td><td>教育信息化 <b>7 家</b> ／ 智慧教育 1（科大讯飞）／ LMS <b>空缺</b> ／ 职教 1</td><td>§6.1</td></tr>
+          <tr><td><b>② 势头正强的独角兽</b></td><td>Guild $4.4B ／ Eruditus $3.2B ／ Articulate $3.75B ／ Multiverse £1.4B</td><td>§5.3</td></tr>
+          <tr><td><b>③ 香港本地</b></td><td><b>有</b> LMS 供应商（Cyberwisdom 汇思，1999 起、约 300 人级）、<b>无上市头部</b>（全私营）</td><td>§6.2</td></tr>
+          <tr><td><b>④ Moodle 背后的公司</b></td><td>Moodle Pty Ltd（澳珀斯）＋ Partner 网络，10% 版税 ＋ AU$5,000/年注册费</td><td>§5.2</td></tr>
+          <tr><td><b>⑤ 海外头部玩家</b></td><td>Canvas ／ Blackboard ／ D2L ／ Moodle ／ Google Classroom ／ itslearning</td><td>§4</td></tr>
+        </table>
+        <div class="box">
+          <div class="h">重挂底稿的发现</div>
+          <p>底稿只够填「海外头部」一格的一角，其余四栏基本空 —— 缺的不是三栏，是「<b>教育IT / LMS 宽赛道</b>」<b>整整一层</b>（底稿扫的是窄赛道）。</p>
+        </div>
+      </div>
+      <div class="cite">另：corporate training LMS（Docebo / Cornerstone / Degreed / 云学堂 / 魔学院）<b>不属于五栏任何一栏</b>，单列 §0.3 —— 漏了这一格，5 亿故事会缺一块最关键的天花板数据。</div>
+    </div>
+    <div class="ghost">图</div>
+  </section>
+
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 23 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">产品线 · 教育IT市场地图 · LMS 头部</div>
+      <h2 class="q">六家 LMS 头部 · 判断层空白</h2>
+      <div class="body tightbody">
+        <table class="tbl tight" style="table-layout:fixed">
+          <colgroup><col style="width:150px"><col style="width:130px"><col></colgroup>
+          <tr><th>产品</th><th>定位</th><th>离「校企立项判断」多远</th></tr>
+          <tr><td><b>Canvas</b>（Instructure）</td><td>高教核心</td><td>流程管理 ＋ 第三方撮合外挂（Handshake / Parker Dewey），<b>未核到判断层</b></td></tr>
+          <tr><td><b>Blackboard</b>（Anthology）</td><td>高教核心</td><td>流程管理（Learn ＋ Ally）；雇主参与靠 uConnect / Handshake / Symplicity</td></tr>
+          <tr><td><b>D2L Brightspace</b></td><td>高教 ＋ 企业</td><td><b>唯一碰到「校企撮合」</b>（SkillsWave，员工↔课程），但答「上什么课」、<b>不判「该不该立」</b></td></tr>
+          <tr><td><b>Moodle</b>（开源）</td><td>教育为主</td><td>Workplace 能承载企业培训，<b>无校企匹配或立项判断</b></td></tr>
+          <tr><td><b>Google Classroom</b></td><td>K12</td><td>纯 K12，连「企业—高校」这条线都没接</td></tr>
+          <tr><td><b>itslearning</b></td><td>K12（欧洲）</td><td>纯学校 LMS，无校企功能</td></tr>
+        </table>
+        <div class="band"><span class="t">一句话结论</span><b>整张 LMS 头部玩家表里，「校企合作该不该立项」的判断层是空白。</b>六家要么只做教学流程管理，要么最多做到「员工 ↔ 课程」撮合。⇒ 把底稿「窄赛道判断层空」<b>升格为宽赛道版本</b>。</div>
+      </div>
+    </div>
+    <div class="ghost">图</div>
+  </section>
+
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 24 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">产品线 · 教育IT市场地图 · 侧线</div>
+      <h2 class="q">corporate training ＋ 独角兽 ＋ 中文侧</h2>
+      <div class="body tightbody">
+        <div class="h" style="margin-bottom:4px">corporate training LMS（企业培训）</div>
+        <table class="tbl tight" style="table-layout:fixed">
+          <colgroup><col style="width:200px"><col></colgroup>
+          <tr><th>公司</th><th>一句话</th></tr>
+          <tr><td><b>Docebo / Cornerstone / Degreed</b></td><td>海外企业培训；Degreed 唯一摸到跨界（College Credit：企业学习 → ACE 学分 → Credly）</td></tr>
+          <tr><td><b>云学堂（YXT）/ 魔学院</b></td><td>中文侧 corporate training <b>绑腾讯系</b>；两家都<b>无立项判断格</b></td></tr>
+        </table>
+        <div class="h" style="margin:8px 0 4px">独角兽（挂名）</div>
+        <div class="rows">
+          <div class="r"><span class="n">$</span><span class="x"><b>Guild</b> $4.4B（雇主资助教育）· <b>Eruditus</b> $3.2B（高管教育）· <b>Articulate</b> $3.75B（内容创作）· <b>Multiverse</b> £1.4B（学徒制）· <b>InStride</b>（ASU × TPG，赛道最贴，作参照）</span></div>
+        </div>
+        <div class="box">
+          <div class="h">关键读数 · 机会点在「分界线被打破处」</div>
+          <p>corporate training 与高校 LMS 的分界<b>不在功能、在三处</b>（付费方 / 认证体系 / 产品形态）。三家（Degreed College Credit、InStride、Guild）都在做同一件事 —— <b>让企业学习产出被高校学分体系承认</b>；三家里<b>只有 Degreed 摸到这条线</b>。</p>
+        </div>
+      </div>
+    </div>
+    <div class="ghost">图</div>
+  
+    <a class="backtoc" href="#1">← 返回目录</a></section>
+
+  <!-- ==================== 25–29 · 教育IT系统-分层骨架 ==================== -->
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 25 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">产品线 · 分层骨架 · 上位坐标</div>
+      <h2 class="q">S2/S3 共用骨架 · 一条行轴两张表</h2>
+      <div class="lede">李博士要的「加 feature 知道落在 architecture 哪一块」，前提是<b>只有一个 architecture</b>。所以本件只用<b>一条行轴</b>，撑起两张表：表 A 按动作分（S2），表 B 按玩家分（S3）。</div>
+      <div class="body tightbody">
+        <div class="h" style="margin-bottom:4px">三套分层对表（17 维度 → 5 行 × 9 列）</div>
+        <table class="tbl tight" style="table-layout:fixed">
+          <colgroup><col style="width:150px"><col style="width:190px"><col></colgroup>
+          <tr><th>分层</th><th>性质</th><th>回答</th></tr>
+          <tr><td><b>框架六层链</b>（上位坐标）</td><td>产业结构轴（横向价值链 ＋ 需求侧）</td><td>钱在哪、谁定价 —— <b>只有它回答「落在哪一块」</b></td></tr>
+          <tr><td><b>李博士五层</b></td><td>粒度 · 管辖轴 → <b>降为「粒度列」</b></td><td>一件事作用范围多大（个人/项目/课程/curriculum/校园）</td></tr>
+          <tr><td><b>底稿六轴</b></td><td>属性尺（checklist）→ <b>属性列</b></td><td>这个玩家什么属性</td></tr>
+        </table>
+        <div class="h" style="margin:8px 0 4px">共用行轴（框架六层链 · 本地化定义）</div>
+        <div class="rows">
+          <div class="r"><span class="n">① ②</span><span class="x"><b>底层基础设施</b>（云 / 算力 / 互操作标准）· <b>技术与数据中台</b>（学情数据 / 结果标签 —— <b>无独立玩家</b>）</span></div>
+          <div class="r"><span class="n">③</span><span class="x"><b>软件平台与内容</b>（课程交付 / 撮合 / 流程 / <b>判断</b> / 内容）—— <b>主战场</b></span></div>
+          <div class="r"><span class="n">④ ⑤</span><span class="x"><b>智能终端</b>（平板 / 智慧屏）· <b>集成渠道陪跑</b>（实施 / 咨询 / 代运营 / 校内免费职能）</span></div>
+          <div class="r"><span class="n">⑥</span><span class="x"><b>付费方</b>（需求侧 · <b>降为列</b>）—— 学校 / 企业 / 学生 / 政府</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="ghost">骨</div>
+  </section>
+
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 26 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">产品线 · 分层骨架 · 表 A（S2）</div>
+      <h2 class="q">31 个核心动作 · 逐行判定</h2>
+      <div class="lede">S2 要的「30+ 动作」—— 每个动作都判一遍「<b>该不该存在</b>」（来源 4 值 × 判定 8 值）。目标 ＝ 以后加 feature，知道它落在哪一格。</div>
+      <div class="body tightbody">
+        <table class="tbl tight" style="table-layout:fixed">
+          <colgroup><col style="width:110px"><col style="width:90px"><col></colgroup>
+          <tr><th>判定</th><th>数量</th><th>落在哪（动作号）</th></tr>
+          <tr><td><b>自建</b></td><td>7</td><td>#4 学情数据 · #5 结果标签/基准（<b>护城河 ②</b>）· #15 判断立项（入口）· #20/#22/#23 判断层 · #24 课题拆解</td></tr>
+          <tr><td><b>已有</b></td><td>1</td><td>#7 课程交付 —— <b>我方自建 LMS，挂靠点在此，非外购</b></td></tr>
+          <tr><td><b>买 / 集成</b></td><td>7</td><td>云算力 · 证书 · 企业培训 · 内容 · 集成 ＋ 撮合 ×2（覆盖 LMS 全功能面）</td></tr>
+          <tr><td><b>删</b></td><td>6</td><td>教务 · 考试 · 录播 · 家校 · 硬件 ×2 —— 有人做，但<b>非我方做</b></td></tr>
+          <tr><td><b>替代 / 竞争</b></td><td>3</td><td>咨询（判断旧容器）· 校内免费职能 · 机构计划 —— <b>都不在 ③ 软件层</b></td></tr>
+          <tr><td><b>外生 / 后置</b></td><td>3</td><td>互操作标准（外生）· 校本 AI 算力 / 学生 mentor（后置）</td></tr>
+        </table>
+      </div>
+      <div class="cite">计数复算：自建 7 ＋ 已有 1 ＋ 买 7 ＋ 并 4 ＋ 删 6 ＋ 替代 2 ＋ 竞争 1 ＋ 外生 1 ＋ 后置 2 ＝ <b>31</b> ✓（3 行带双标签，各归一处）。</div>
+    </div>
+    <div class="ghost">骨</div>
+  </section>
+
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 27 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">产品线 · 分层骨架 · 表 A 读数</div>
+      <h2 class="q">判定读数 · 五亿故事的起点</h2>
+      <div class="body tightbody">
+        <div class="rows">
+          <div class="r"><span class="n">1</span><span class="x">判「自建」的 7 个全落在 ②③ 的「数据 ＋ 判断」格 —— <b>5 亿故事起点必须是「数据 ＋ 判断」这条细线</b>；往 LMS 全功能铺的动作，都该砍</span></div>
+          <div class="r"><span class="n">2</span><span class="x">6 格「删」没有一格是「没人做」—— 全是「<b>有人做，但不是我方做</b>」（进表只为证明知道它落哪一格）</span></div>
+          <div class="r"><span class="n">3</span><span class="x"><b>真正的对手不是软件</b>，是 3 个伪装成免费 / 服务的格：咨询 / 校内免费职能 / 机构计划 —— 都不在 ③</span></div>
+          <div class="r"><span class="n">4</span><span class="x"><b>焦点格已订正</b>：从 #15（③ 判断）移到 #4 ＋ #5（② 数据 / 基准）—— 护城河只归 ②，③ 判断是入口</span></div>
+          <div class="r"><span class="n">5</span><span class="x">#7 是「已有」不是「买」—— 挂靠点 ＝ 我方自建 LMS（明飞 Demo 已上线），非外购第三方</span></div>
+          <div class="r"><span class="n">6</span><span class="x">增长故事两问合一：「corporate training」＝<b>企业进高校开课</b>，不是企业培训 LMS</span></div>
+        </div>
+        <div class="band"><span class="t">一句话</span><b>我方不必自建任何一格 LMS，但必须有一个挂靠点，否则判断层悬空。</b>买 / 集成 7 格覆盖 LMS 全功能面 —— 那是护栏，不是缺口。</div>
+      </div>
+    </div>
+    <div class="ghost">骨</div>
+  </section>
+
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 28 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">产品线 · 分层骨架 · 表 B（S3）＋ §3.4</div>
+      <h2 class="q">30 玩家 ＋ S3 收购分析</h2>
+      <div class="body tightbody">
+        <div class="h" style="margin-bottom:4px">表 B（玩家 × 定价权 × 收购可能性）</div>
+        <div class="rows">
+          <div class="r"><span class="n">③</span><span class="x">Canvas（已是买方，KKR $48 亿）· Blackboard（Chapter 11 后复出）· D2L · Moodle · 卓越睿新（<b>港股唯一贴 LMS</b>）· 云学堂 / 魔学院</span></div>
+          <div class="r"><span class="n">④</span><span class="x">视源 / 鸿合 / 康冠 / 网龙 / 读书郎（硬件，甲案单列「收购方候选 / 渠道方」）· 科大讯飞（潜在买方）</span></div>
+          <div class="r"><span class="n">⑤</span><span class="x">轩辕 / 新道（判断的旧容器，咨询形态）· 校内免费职能 · 机构计划（免费 ⇒ 定价权为零）</span></div>
+        </div>
+        <div class="h" style="margin:8px 0 4px">§3.4 S3 收购分析（初稿 · 五条）</div>
+        <div class="rows">
+          <div class="r"><span class="n">1</span><span class="x">③ 层纯流程 LMS ＝ <b>PE 整合标的</b>（退出按规模、不按增长）</span></div>
+          <div class="r"><span class="n">2</span><span class="x">④ 层玩家 ＋ 教培巨头（新东方 / 好未来）都是<b>买方 / 竞争者、不是标的</b>，都没进判断层</span></div>
+          <div class="r"><span class="n">3</span><span class="x"><b>真标的</b> ＝ ③ 里「有流程、无数据」那批（EduSourced / Riipen）；Moodle 拿不走</span></div>
+          <div class="r"><span class="n">4</span><span class="x">「长到 30 亿」的现实锚 ＝ <b>卓越睿新</b>（02687.HK，市值 ~85 亿 → 次日逼近 100 亿港元）—— 但卖的是内容 / 订阅，不是判断</span></div>
+          <div class="r"><span class="n">5</span><span class="x">⚠️ <b>新道科技（⑤ 层）持股蓝墨（③ 层）16.69%</b> —— ⑤ 已在买 ③ 的壳 ⇒ <b>壳会被买走、判断不会</b></span></div>
+        </div>
+      </div>
+      <div class="cite">一句话：<b>③ 层的钱在「规模 × 极低单价」；5 亿故事必须落在 ②（数据 / 基准），③ 判断只是入口。</b></div>
+    </div>
+    <div class="ghost">骨</div>
+  </section>
+
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 29 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">产品线 · 分层骨架 · §4 读数</div>
+      <h2 class="q">骨架自己产出的四条读数</h2>
+      <div class="lede">这四条是「三套分层对表之后」才看得见的 —— 单看某一份文件看不出来。</div>
+      <div class="body tightbody">
+        <div class="rows">
+          <div class="r"><span class="n">1</span><span class="x"><b>判断层有两个位置，不是一个 —— ③ 空、⑤ 有人。</b>判断的历史容器是 ⑤（咨询 / 代运营），不是 ③（软件）⇒ 我方要做的是把判断从 ⑤（人·不可扩）<b>搬进</b> ③（产品·可扩）—— 这是 5 亿故事的技术前提</span></div>
+          <div class="r"><span class="n">2</span><span class="x"><b>② 层是空的</b>（无独立学情数据中台玩家）⇒ 我方唯一可能真正自留的高地（401 问题网络 ＋ 结果标签）；③ 判断格<b>随时可被抄</b></span></div>
+          <div class="r"><span class="n">3</span><span class="x"><b>④ 层是收购方的产地，不是被收购方</b>（康冠纯硬件 / 读书郎 −65.3% / Mynd.ai −21.2%）⇒「长到 30 亿 or 被收购」在 ④ 层问法是<b>反的</b></span></div>
+          <div class="r"><span class="n">4</span><span class="x"><b>⑥ 列把「需求侧反向」放回架构</b>：院校 / 政府免费供给（校内职能＋机构计划，定价权为零）⇒ 我方收费收的是「<b>事件后整改期的逐份依据</b>」，不是「替代免费品」</span></div>
+        </div>
+        <div class="cite">骨架已定稿（四处置正全清 · 2026-10-13）；S3 收购分析只到<b>初稿</b>（不给估值、不列收购方名单，部分需再回源）。口径：本件带 <span class="chip">待核</span>/<span class="chip">待确认</span> 标注 ＝ 内部件。</div>
+      </div>
+    </div>
+    <div class="ghost">骨</div>
+  
+    <a class="backtoc" href="#1">← 返回目录</a></section>
+
+  <!-- ==================== 30–32 · 产品判断 ==================== -->
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 30 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">产品线 · 产品判断 · 一句话定义</div>
+      <h2 class="q">一句话定义 ＋ 五个事实</h2>
+      <div class="lede">这份件把「产品到底是什么」钉死。结论都标了来源：【事实】/【产品判断】/【设计假设】；<b>【用户反馈】暂时缺，不伪造，S7 采访后回填</b>。</div>
+      <div class="body tightbody">
+        <div class="band"><span class="t">一句话</span><b>CRF 不是在 LMS 里再加一个功能，而是把「该不该立项」从人工咨询搬进自己已有的 LMS 之上：先免费给出单次判断，再卖判断背后的那把尺子。</b></div>
+        <div class="h" style="margin:2px 0 4px">五个必须知道的事实</div>
+        <div class="rows">
+          <div class="r"><span class="n">1</span><span class="x">我方已有<b>一座自建 LMS</b>（明飞 Demo 已上线），判断层盖在它上面，不是插进 Canvas / 超星</span></div>
+          <div class="r"><span class="n">2</span><span class="x">「判断该不该立项」目前<b>没有产品化玩家</b>；它的旧容器是 ⑤ 层人工咨询（轩辕 / 新道）</span></div>
+          <div class="r"><span class="n">3</span><span class="x"><b>护城河不在判断，在数据</b>：② 层（学情数据 ＋ 结果标签 / 基准）才是唯一可自留的高地；③ 判断随时可被抄</span></div>
+          <div class="r"><span class="n">4</span><span class="x"><b>免费替代品已存在</b>：院校自建职能、政府 / 园区机构计划都免费 ⇒ 不能靠「替代免费服务」收费</span></div>
+          <div class="r"><span class="n">5</span><span class="x"><b>两条前置还没闭合</b>：判断层缺「正确性可证」闭环；② 层缺「数据回流授权」</span></div>
+        </div>
+      </div>
+      <div class="cite">产品形态 ＝ 自建 LMS（明飞 Demo）＋ 判断层覆盖其上，非外挂第三方 LMS。【事实 · 依骨架表 A #7】</div>
+    </div>
+    <div class="ghost">判</div>
+  </section>
+
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 31 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">产品线 · 产品判断 · 删留 ＋ 方案</div>
+      <h2 class="q">删什么、控什么 ＋ 更聚焦方案</h2>
+      <div class="body tightbody">
+        <div class="h" style="margin-bottom:4px">删（不做）—— 都是「有人做、但不是我方做」</div>
+        <div class="rows">
+          <div class="r"><span class="n">删</span><span class="x">校园 ERP / 教务 / 考试 / 录播 / 家校（骨架 #16–#19）—— 只证明知道落哪一格，<b>不进路线图</b></span></div>
+          <div class="r"><span class="n">删</span><span class="x">硬件（#26/#27）—— ④ 层玩家的主场，我方只当渠道 / 潜在买方</span></div>
+          <div class="r"><span class="n">删</span><span class="x">企业内训 LMS 当主线（Docebo / 云学堂线，#10）—— 增长故事是「企业进高校开课」</span></div>
+          <div class="r"><span class="n">删</span><span class="x">③ 判断单独当卖品（判断型卖成产品会死）</span></div>
+        </div>
+        <div class="h" style="margin:8px 0 4px">控（必须自建自持 vs 入口 vs 外购）</div>
+        <div class="rows">
+          <div class="r"><span class="n">持</span><span class="x"><b>自建自持</b>：② 层学情数据（#4）、结果标签 / 基准（#5）—— 唯一守得住的</span></div>
+          <div class="r"><span class="n">入</span><span class="x"><b>必须做但只是入口</b>：判断（#15/#22/#23）、企业问答（#20）、课题拆解（#24）</span></div>
+          <div class="r"><span class="n">买</span><span class="x"><b>外购 / 集成</b>：课程交付之外的能力、撮合入口、证书认证、内容制作</span></div>
+        </div>
+        <div class="box">
+          <div class="h">更聚焦方案（第一阶段只做一条闭环）</div>
+          <p>模糊课题 → 「该不该立项」判断（附依据）→ 立项执行 → 结果回流为「结果标签」→ 用跨机构基准向校方 / 企业卖「尺子」（单次判断不单独定价）→ 出问题提供「整改依据」。<br><b>检验标准：删掉所有 LMS 扩展功能后，用户是否还能说清产品价值。</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="ghost">判</div>
+  </section>
+
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 32 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">产品线 · 产品判断 · 时机 ＋ 确信度</div>
+      <h2 class="q">市场时机 ＋ 反面证据 ＋ 确信度</h2>
+      <div class="body tightbody">
+        <div class="h" style="margin-bottom:4px">市场时机（四项判据）</div>
+        <div class="rows">
+          <div class="r"><span class="n">1</span><span class="x">用户<b>部分</b>感受到问题，但普遍还在「免费配对 / 人工咨询」阶段，<b>不是急性痛点</b></span></div>
+          <div class="r"><span class="n">2</span><span class="x">LLM 判断 / 课题拆解技术可做；但「判断正确性可证」的闭环<b>尚未成熟</b></span></div>
+          <div class="r"><span class="n">3</span><span class="x">AI 推理成本已进入可规模区间（单次判断 ≈ 0.02–0.03 元 DeepSeek Flash）</span></div>
+          <div class="r"><span class="n">4</span><span class="x">结论：<b>偏早，但不早到不能做</b> —— 先用入口（判断）换 ② 层数据回流，把判断做成尺子的获客动作</span></div>
+        </div>
+        <div class="h" style="margin:8px 0 4px">反面证据（拿来找茬、压确信度）</div>
+        <div class="rows">
+          <div class="r"><span class="n">反</span><span class="x">①「判断型卖成产品会死」→ 单次判断作入口，是否也逃不过死亡模式？② 免费服务足够应付 → 若整改依据不是高频刚需，校方为何付费？③ 数据回流拿不到 → 尺子是空的，产品退回「判断工具」</span></div>
+        </div>
+        <div class="band"><span class="t">最终判断</span>方向成立 —— <b>「卖尺子，不卖单桩判断」</b>；<b>确信度：中（约 6/10）</b>。缺三条真实用户反馈、缺跨机构基准建设成本，不能升到高确信。等 S7 访谈回填；S5 走查由 Ferrari 亲自做。</div>
+      </div>
+    </div>
+    <div class="ghost">判</div>
+  
+    <a class="backtoc" href="#1">← 返回目录</a></section>
+
+  <!-- ==================== 33–35 · S5 用户旅程 ==================== -->
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 33 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">产品线 · S5 用户旅程 · 链条</div>
+      <h2 class="q">端到端链条 ＋ 老师 / 学生</h2>
+      <div class="lede">本产品<b>不是「一次购买即完成」的消费品</b>，而是「校企课题从提出到复盘再到再立项」的循环。四条路径共用同一条链，只是不同角色在每段关心的事不同。<b>首轮走查归 Ferrari 亲自做</b>，本件只出地图。</div>
+      <div class="body tightbody">
+        <div class="band"><span class="t">链条</span>发现 → 理解 → 购买 / 立项 → 开箱 / 上手 → 使用 → 分享 → 售后 / 复盘 → <b>再次购买 / 再立项</b></div>
+        <div class="h" style="margin:2px 0 4px">老师（课程负责人 / 项目主管）</div>
+        <div class="rows">
+          <div class="r"><span class="n">痛</span><span class="x">信息口头、零散；立项<b>缺可追溯依据，事后容易背锅</b>；若输入过重会直接放弃</span></div>
+          <div class="r"><span class="n">值</span><span class="x">「判断依据」是价值点；出问题时写整改说明、翻不到证据 —— <b>这是收费落点</b></span></div>
+        </div>
+        <div class="h" style="margin:8px 0 4px">学生 / 课题小组</div>
+        <div class="rows">
+          <div class="r"><span class="n">痛</span><span class="x">课题目标模糊、怕说错；过程缺统一标准、努力感流失；成果<b>没有跨机构结果标签、说服力弱</b></span></div>
+          <div class="r"><span class="n">值</span><span class="x">企业侧问答是入口；② 层<b>结果标签</b>是价值点（可写进简历 / 作品集）</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="ghost">旅</div>
+  </section>
+
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 34 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">产品线 · S5 用户旅程 · 组长 / 企业</div>
+      <h2 class="q">组长 ＋ 企业侧</h2>
+      <div class="body tightbody">
+        <div class="h" style="margin-bottom:4px">课题小组长 / team leader</div>
+        <div class="rows">
+          <div class="r"><span class="n">痛</span><span class="x">被指定当组长、不确定能否接；<b>三头传话</b>（老师 / 企业 / 组员）、信息损耗大 —— <b>最差节点候选</b>；若判断层不能拆到可执行，组长会累垮</span></div>
+          <div class="r"><span class="n">值</span><span class="x">课题拆解是输入；结果标签若不支持<b>团队维度</b>，就少了一块价值（「组长只多干活无回报」会导致难复购）</span></div>
+        </div>
+        <div class="h" style="margin:8px 0 4px">企业侧项目负责人</div>
+        <div class="rows">
+          <div class="r"><span class="n">痛</span><span class="x">不知道找谁、要花多少流程；担心学生做不出 / 泄露 / 扯皮；<b>沟通节奏难控</b> —— <b>最差节点候选</b></span></div>
+          <div class="r"><span class="n">值</span><span class="x">企业侧问答是入口；结果标签让向上级汇报时「<b>讲成效、不讲过程</b>」；若每期都要重新教育、流程重走，会流失</span></div>
+        </div>
+        <div class="box">
+          <div class="h">三个最差体验节点（跨路径）</div>
+          <p>① <b>立项前「不可回看判断」</b> —— 老师和企业都在拍脑袋，事后没人说清为什么做（最影响信任）。<br>② <b>执行与判断断链</b> —— 判断做完，学生执行不回写，判断无法变准（最影响护城河）。<br>③ <b>结果无统一标签</b> —— 学生要成果证明、企业要成效汇报、校方要整改依据，三方拿不到同一个口径（最影响付费与分享）。</p>
+        </div>
+      </div>
+    </div>
+    <div class="ghost">旅</div>
+  </section>
+
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 35 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">产品线 · S5 用户旅程 · 走查</div>
+      <h2 class="q">走查时重点看四件事</h2>
+      <div class="lede">下面四条都是【设计假设】—— <b>等 Ferrari 亲自走查 ＋ S7 采访后回填</b>，现在不当结论。</div>
+      <div class="body tightbody">
+        <div class="rows">
+          <div class="r"><span class="n">1</span><span class="x">第一次「输入模糊课题 → 拿到判断」是否 <b>低于 10 分钟</b>？若输入过重，老师直接就放弃了</span></div>
+          <div class="r"><span class="n">2</span><span class="x">用户能不能<b>看懂判断依据</b>，而不是只看到「做 / 不做」？—— 「可解释」是入口能不能留住人的关键</span></div>
+          <div class="r"><span class="n">3</span><span class="x">老师 / 企业是否愿意<b>把结果回流给系统</b>？不愿意时，<b>卡在哪一句话</b>？（这决定护城河能不能立）</span></div>
+          <div class="r"><span class="n">4</span><span class="x">学生是否认为结果标签「<b>可带走、可被外面识别</b>」，还是只当课程作业？（这决定 ② 层价值）</span></div>
+        </div>
+        <div class="box">
+          <div class="h">这份件的定位</div>
+          <p>本件是<b>体验地图稿</b>：只出地图与最差节点，<b>走查归 Ferrari 亲自做</b>。四条最差节点与四个走查重点，回填后并入产品判断件的【用户反馈】。用户反馈目前缺（<b>0 条</b>），不伪造。</p>
+        </div>
+      </div>
+    </div>
+    <div class="ghost">旅</div>
+  
+    <a class="backtoc" href="#1">← 返回目录</a></section>
+
+  <!-- ==================== 36–37 · S7 访谈提纲 ==================== -->
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 36 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">产品线 · S7 访谈 · 提纲</div>
+      <h2 class="q">采访谁、怎么问</h2>
+      <div class="lede">四栏口径（来自方法论「用户不会直接告诉你答案」）：<b>说自己想要什么 / 实际怎么做 / 为什么放弃 / 愿意为什么付钱</b> —— 只记原话与行为，不记「问卷答案」。</div>
+      <div class="body tightbody">
+        <div class="h" style="margin-bottom:4px">三位受访者（约人 / 采访归 Mingfei 和 Ferrari，本件只出提纲）</div>
+        <table class="tbl tight" style="table-layout:fixed">
+          <colgroup><col style="width:110px"><col style="width:250px"><col></colgroup>
+          <tr><th>受访者</th><th>已知视角</th><th>侧重</th></tr>
+          <tr><td><b>于聪</b></td><td>四年南科大夏校 TA，清楚课程流程</td><td>课程执行层：学生 / 老师实际怎么走流程、卡在哪、什么时候退出</td></tr>
+          <tr><td><b>尚</b></td><td><span class="chip">待确认</span>（身份未核到）</td><td>先让 Ferrari 补一句身份，再决定用哪套侧重</td></tr>
+          <tr><td><b>魏燕</b></td><td>港大机械系资深讲师，产品设计</td><td>教师与课程设计层：课题怎么开、怎么判、成果怎么被认可</td></tr>
+        </table>
+        <div class="h" style="margin:8px 0 4px">采访前纪律（五条）</div>
+        <div class="rows">
+          <div class="r"><span class="n">1</span><span class="x"><b>先问故事、再问观点</b>：让受访者讲最近一次真实校企合作 / 课程项目，不要先抛产品概念</span></div>
+          <div class="r"><span class="n">2</span><span class="x"><b>不问「你会用吗」</b>：问「上一次遇到这个问题，你实际做了什么」</span></div>
+          <div class="r"><span class="n">3</span><span class="x"><b>追问放弃</b>：任何项目都问「有没有最后没做 / 做砸了 / 退出的」，记真实原因</span></div>
+          <div class="r"><span class="n">4</span><span class="x"><b>付费问题只问行为</b>：不问「你觉得值多少钱」，问「你过去为类似事情付过钱吗 / 为什么没付」</span></div>
+          <div class="r"><span class="n">5</span><span class="x">每句关键原话都<b>落到四栏</b>，不能只写「用户表示需要 X」这种问卷式总结</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="ghost">访</div>
+  </section>
+
+  <section class="stage">
+    <div class="chrome"><div>CRF · 文件总览</div><div class="r">IKB · 2026.10 · 37 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">产品线 · S7 访谈 · 提问 ＋ 回流</div>
+      <h2 class="q">通用提问骨架 ＋ 采访后回流</h2>
+      <div class="body tightbody">
+        <div class="h" style="margin-bottom:4px">通用提问（四栏一一对应）</div>
+        <div class="rows">
+          <div class="r"><span class="n">A</span><span class="x"><b>最近一次真实经历</b> —— 项目是什么、从头到尾讲一遍；谁发起；结果 ＝ 完成 / 烂尾 / 不了了之 / 换形式继续？</span></div>
+          <div class="r"><span class="n">B</span><span class="x"><b>说自己想要什么</b> —— 最想解决什么问题；做得好对你 / 课程 / 企业好在哪；希望工具帮掉哪一步</span></div>
+          <div class="r"><span class="n">C</span><span class="x"><b>实际怎么做</b> —— 实际怎么判「该不该做」；用了哪些工具 / 人 / 表格 / 群聊、花多久；哪一步想做但嫌麻烦没做</span></div>
+          <div class="r"><span class="n">D</span><span class="x"><b>为什么放弃</b> —— 有没有中途停 / 真停；有没有劝过别人别接；给了「不做」的判断会更早停还是不服气</span></div>
+          <div class="r"><span class="n">E</span><span class="x"><b>愿意为什么付钱</b> —— 过去为类似事付过钱吗（自己掏 / 项目预算 / 公司预算）；更可能为「省时间」还是「出事有依据」付；不付还能从哪免费拿</span></div>
+        </div>
+        <div class="box">
+          <div class="h">采访后回流（判据）</div>
+          <p>结果回填产品判断件的【用户反馈】＋ 反面证据节。<b>若三位都说「免费配对就够了」⇒ 判断层入口假设被削弱</b>；<b>若至少一人为「事后整改依据」或「跨项目比较」付过钱 / 明确愿意付 ⇒ 尺子定价假设获得第一块用户证据</b>。</p>
+        </div>
+      </div>
+      <div class="cite">四栏归因表模板 ＋ 单条记录模板已备；「尚」的身份待 Ferrari 补一句。专卷（于聪 / 魏燕）另有单列问题。</div>
+    </div>
+    <div class="ghost">访</div>
+  
+    <a class="backtoc" href="#1">← 返回目录</a></section>
+
+  <!-- ==================== A1 · 附录封面（原有，顺延为 38 / 44） ==================== -->
+  <section class="stage">
+    <div class="chrome"><div>校企合作智能顾问 · 附录 · BP v0.4.2</div><div class="r">IKB · 2026.10 · 38 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">附录 · Appendix</div>
+      <h2 class="q cover">推导、口径与出处</h2>
+      <div class="lede">正文只留<b>结论</b>；算式、口径、矩阵与出处收在这里（附录部分 · 38–44 页）。</div>
+      <div class="body" style="margin-top:34px">
+        <div class="rows">
+          <div class="r"><span class="n">39</span><span class="x"><a href="#39" style="color:inherit;text-decoration:none"><b>§4 口径表</b> · 三个单位不能混用 · FIL 分三层 · 四层市场（L1/L2/L3/首发池）</a></span></div>
+          <div class="r"><span class="n">40</span><span class="x"><a href="#40" style="color:inherit;text-decoration:none"><b>五方矩阵</b> · 380 题的五方 × 四步分布 · 读法与最薄的格子</a></span></div>
+          <div class="r"><span class="n">41</span><span class="x"><a href="#41" style="color:inherit;text-decoration:none"><b>体量试算</b> · 分母三格 · 锚 n=1 · 单课题 ACV · L1 上界试算</a></span></div>
+          <div class="r"><span class="n">42</span><span class="x"><a href="#42" style="color:inherit;text-decoration:none"><b>里程碑细表</b> · P0–P3 与并行线 · 资源用途分解 · RAISe+ 配套</a></span></div>
+          <div class="r"><span class="n">43</span><span class="x"><a href="#43" style="color:inherit;text-decoration:none"><b>数据治理全文</b> · 分层授权 · 知情同意 · 授权范围 · 采购周期 · 两类证据不互冒</a></span></div>
+          <div class="r"><span class="n">44</span><span class="x"><a href="#44" style="color:inherit;text-decoration:none"><b>出处与引用</b> · 每个数字回得去的源 · 待确认与待补</a></span></div>
+        </div>
+        <div class="cite">内容源：《校企合作智能顾问_商业计划书_v0.4.2_2026-10-04》。标注沿用既有约定：<span class="chip">待核</span> ＝ 数字 · <span class="chip">待确认</span> ＝ 决策与人名 · <span class="chip">假设</span> ＝ 我方推定。</div>
+      </div>
+    </div>
+    <div class="ghost">附</div>
+  </section>
+
+  <!-- ==================== A2 · §4 口径表 ==================== -->
+  <section class="stage">
+    <div class="chrome"><div>校企合作智能顾问 · 附录 · BP v0.4.2</div><div class="r">IKB · 2026.10 · 39 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">§4 · 口径表 · Definitions</div>
+      <h2 class="q">三个单位、三层 FIL、四层市场</h2>
+      <div class="body tightbody">
+        <div class="cards c2">
+          <div class="box">
+            <div class="h">① 单位先钉死（三个单位不能混用）</div>
+            <table class="tbl tight" style="table-layout:fixed">
+              <colgroup><col style="width:270px"><col style="width:200px"><col></colgroup>
+              <tr><th>单位</th><th>用于什么</th><th>说明</th></tr>
+              <tr><td><b style="white-space:nowrap">客户单位 ＝ 院系</b></td><td>谁付费、谁互为参考</td><td>beachhead 的单位</td></tr>
+              <tr><td><b style="white-space:nowrap">计价单位 ＝ 课题</b></td><td>一笔钱对应什么</td><td>不是「一门课」—— 一门课可挂 N 个课题（CIVL2114：一门课 49 家）</td></tr>
+              <tr><td><b style="white-space:nowrap">试点单位 ＝ 一门课</b></td><td>灯塔（入口）</td><td>不构成市场，只作样板</td></tr>
+            </table>
+          </div>
+          <div class="box">
+            <div class="h">② FIL 分三层（研究宽口径 / 商业窄口径，各自标注）</div>
+            <table class="tbl tight" style="table-layout:fixed">
+              <colgroup><col style="width:235px"><col style="width:205px"><col style="width:150px"><col></colgroup>
+              <tr><th>层</th><th>是什么</th><th>产品动作</th><th>进不进收入</th></tr>
+              <tr><td><b>接触层</b> · 实习 / Co-op</td><td>企业碰过这门课（0/1）</td><td>无判断需求</td><td>不进 TAM<br>（只作分母 / 标签源）</td></tr>
+              <tr><td><b>判断层</b> · 项目制课</td><td>这套合作该不该成立</td><td><b>主场</b></td><td><b>TAM 只算这一层</b></td></tr>
+              <tr><td><b>变现层</b> · 课题</td><td>项目制课里的一笔合作</td><td>—</td><td>计价单位</td></tr>
+            </table>
+          </div>
+        </div>
+        <div class="box">
+          <div class="h">③ 四层（每格挂三标签：算法 / 出处 / 置信度）</div>
+          <table class="tbl tight">
+            <tr><th style="width:170px">层</th><th>算式 / 定义</th><th style="width:430px">可核性</th></tr>
+            <tr><td><b>L1 TAM</b></td><td>认证<b>学程</b>数 × 每学程<b>项目制课</b>数 × 单<b>课题</b> ACV</td><td>顶层半可核 / 中层半可核 / 底层不可核（<b>是我方定价假设</b>）</td></tr>
+            <tr><td><b>L2 SAM</b></td><td>港校 ＋ 大湾区<b>可触达</b>的认证院系</td><td>可核（公开名单 ＋ 复审年表）</td></tr>
+            <tr><td><b>L3 SOM</b></td><td>3–5 年可达：I-School 灯塔 → 港校 → 湾区，按飞轮机制推导</td><td>推的是「机制成不成立」，不是渗透率；机制前提 <span class="chip">待确认</span></td></tr>
+            <tr><td><b>首发池</b>（beachhead）</td><td>一群互为参考的院系 / 课程（10 个名字）</td><td>名字可列（院系 / 课程 / 负责人 / 企业）</td></tr>
+          </table>
+        </div>
+        <div class="band"><span class="t">纪律</span>研究项目 Firm Involved Learning 用<b>宽口径</b>（含实习）；商业计划书用<b>窄口径</b>（只算需要判断的场景）。<b>不为商业口径方便去改研究定义。</b>　李博士若问「那 49 家企业算不算你的市场」→ <b>算研究对象，不算付费场景。</b></div>
+      </div>
+    </div>
+    <div class="pg-ghost">口</div>
+  </section>
+
+  <!-- ==================== A3 · 五方矩阵 ==================== -->
+  <section class="stage">
+    <div class="chrome"><div>校企合作智能顾问 · 附录 · BP v0.4.2</div><div class="r">IKB · 2026.10 · 40 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">§1.6 · 五方矩阵 · Coverage Matrix</div>
+      <h2 class="q">380 题的五方 × 四步分布</h2>
+      <div class="body">
+        <div class="cards" style="grid-template-columns:1.35fr .65fr">
+          <div class="box">
+            <div class="h">五方 × 四步（380 题版本 · 四步链重映射）</div>
+            <table class="tbl mx">
+              <tr><th></th><th>Incentive</th><th>Alignment</th><th>Efficiency</th><th>Impact</th><th>小计</th></tr>
+              <tr><td>企业</td><td>55</td><td>29</td><td>27</td><td>41</td><td class="sum">152</td></tr>
+              <tr><td>院系</td><td>27</td><td>26</td><td>11</td><td>14</td><td class="sum">78</td></tr>
+              <tr><td>教师</td><td>19</td><td class="hot">3</td><td>32</td><td>24</td><td class="sum">78</td></tr>
+              <tr><td>助教</td><td>9</td><td>10</td><td class="hot">6</td><td>11</td><td class="sum">36</td></tr>
+              <tr><td>学生</td><td>11</td><td class="hot">4</td><td class="hot">5</td><td>16</td><td class="sum">36</td></tr>
+              <tr><td>小计</td><td>121</td><td>72</td><td>81</td><td>106</td><td>380</td></tr>
+            </table>
+            <div class="cite" style="margin-top:10px">来源：<b>四步×五方_覆盖体检报告.md</b>（2026-09-14）。口径 ＝ 380 题 ＋ 四步链重映射；回填 21 题缺口种子后为 401 题 —— 该版本的矩阵 <span class="chip">待核</span>。</div>
+          </div>
+          <div class="box" style="display:flex;flex-direction:column;gap:12px">
+            <div class="h">读法</div>
+            <div class="kv">
+              <dt>最厚</dt><dd><b>企业 152 题</b> ≈ 助教 ＋ 学生 ＋ 教师三格之和 —— 需求侧痛点被问得最透</dd>
+              <dt>最薄</dt><dd><b>教师 × Alignment 只有 3 题</b>，是全矩阵最薄的一格</dd>
+              <dt>说明</dt><dd>那正是本项目核心命题所指：院系的紧迫<b>传导不到教师个体</b></dd>
+            </div>
+            <div class="cite">另：380 题全文扫描 —— 「信息不对称 / 信号 / 筛选」类 <b>30 题</b>；「产权 / 成果 / 数据归属」<b>4 题</b>、「四校 / 跨校差异」4 题、「历史 / 路径依赖」3 题、「AI 双重角色」9 题。<br>→ <b>大家问的是怎么对上信息，很少问动机成不成立、成果归谁。</b></div>
+          </div>
+        </div>
+        <div class="band"><span class="t">出发点</span>最薄的那几格 ＋ 治理卡在 <b>course level</b>（既没下沉到 project level，也没上升到 school level）—— <b>正是产品要补的位置。</b></div>
+      </div>
+    </div>
+    <div class="pg-ghost">阵</div>
+  </section>
+
+  <!-- ==================== A4 · 体量试算 ==================== -->
+  <section class="stage">
+    <div class="chrome"><div>校企合作智能顾问 · 附录 · BP v0.4.2</div><div class="r">IKB · 2026.10 · 41 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">§4.2 · 体量试算 · Sizing</div>
+      <h2 class="q">4,773 × 1 × (5 万 – 20 万)</h2>
+      <div class="body">
+        <div class="cards c2">
+          <div class="box">
+            <div class="h">① 分母：三格，不合成</div>
+            <table class="tbl tight">
+              <tr><th>格</th><th>体系</th><th>数</th></tr>
+              <tr><td style="white-space:nowrap"><b>①-a 工程线</b></td><td>华盛顿协议</td><td>唯一可枚举的一片 ＝ <b>ABET 4,773 学程</b><span class="chip">待核</span></td></tr>
+              <tr><td style="white-space:nowrap"><b>①-b 计算线</b></td><td>首尔协议</td><td>无可枚举清单<span class="chip">待核</span></td></tr>
+              <tr><td style="white-space:nowrap"><b>①-c 不入协议线</b></td><td>新建跨学科机构</td><td>HKU School of Innovation（试点在此格）<span class="chip">待核</span></td></tr>
+              <tr><td style="white-space:nowrap">上界背景</td><td>全球高教机构</td><td>≈ 2.1 万所（WHED，含非本科）<br>只作上界背景，不做主张</td></tr>
+            </table>
+            <div class="cite" style="margin-top:9px">ABET 三委员会分属三个协议：EAC→华盛顿 / ETAC→悉尼 / CAC→首尔 —— <b>不拆开就会把协议混进来</b>。已删「ABET 930 ＋ AACSB 1,021，去重 1,600–1,950」：单位混 / 协议混 / 层级混（<b>它是筛子，不是乘数</b>）。</div>
+          </div>
+          <div class="box">
+            <div class="h">② 锚：现在是什么成色（n = 1）</div>
+            <table class="tbl tight">
+              <tr><th>事实</th><th>数</th></tr>
+              <tr><td style="white-space:nowrap">覆盖单位</td><td><b>8 个</b>：CIVL / COMP·CS / ELEC·ECE / MECH / BMED·SBME / IMSE·DASE / FITE / INTC·i-School</td></tr>
+              <tr><td style="white-space:nowrap">去重课程</td><td><b>664 门</b>（3,816 条记录 · 11 学年）</td></tr>
+              <tr><td style="white-space:nowrap">判定「企业参与课程」</td><td><b>21 门</b><span class="chip">待核</span></td></tr>
+              <tr><td style="white-space:nowrap">其中有公开企业名单</td><td><b>3 门</b>：CIVL2114 49 家 / COMP3410 72 家 / COMP3510 36 家</td></tr>
+            </table>
+            <div class="cite" style="margin-top:9px">「21 门」是<b>被复审过的门数</b>，不是密度也不是下限：① 664 门里只有 66 门带标签；② Engineering Training 每系恰好 1 门 × 5 系 → 类型抽样的签名；③ 该文件仪表板说「排除 Engineering Training 后 21 门」，表内却含那 5 门 → <b>它和自己的口径打架</b>（排除后是 16）。<br>→ 能写的只有 <b>≥ 21 门 / 8 个学系 / 1 所大学</b>，「3.2% 密度」「≈1.9 门/年」两个说法作废。</div>
+          </div>
+        </div>
+        <div class="cards c2">
+          <div class="box">
+            <div class="h">⑤ L1 上界试算（估算 · 上限参考 · 锚 n=1 · 置信度最低档 · 不与可核数混排）</div>
+            <div class="formula" style="margin:6px 0 10px">4,773<span class="op">×</span>1<span class="op">×</span>(HK$5 万 – 20 万)</div>
+            <div style="font-size:26px;font-weight:700;color:var(--ikb)">≈ HK$2.4 亿 – 9.5 亿</div>
+            <div class="cite" style="margin-top:9px">③ 项目制课数 ＝ <b>≥1 门 / 学程</b>（认证准则要求每个工程学程以综合设计 capstone 收束）· 半可核；④ 单课题 ACV ＝ <b>我方定价假设</b>，不是市场数据。</div>
+          </div>
+          <div class="box">
+            <div class="h">三个标注必须一起读</div>
+            <div class="kv">
+              <dt>①</dt><dd>4,773 是<b>认证准则逼出来的下限</b>，不是有企业参与的实际数 —— 真实数<b>远低于</b>它</dd>
+              <dt>②</dt><dd>ACV 是<b>我方定价</b></dd>
+              <dt>③</dt><dd><b>锚 n=1</b>，置信度最低档</dd>
+            </div>
+            <div class="cite" style="margin-top:9px">用途只有一个：告诉李博士「量级在<b>亿级</b>、不是百万级」。<b>不能当 TAM 引用。</b><br>商科线（AACSB）不并入本试算；计算线与不入协议线暂无清单 → 本试算<b>只覆盖工程线的一片</b>。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pg-ghost">量</div>
+  </section>
+
+  <!-- ==================== A5 · 里程碑细表 ==================== -->
+  <section class="stage">
+    <div class="chrome"><div>校企合作智能顾问 · 附录 · BP v0.4.2</div><div class="r">IKB · 2026.10 · 42 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">§9 · §11 · 里程碑与资源 · Roadmap</div>
+      <h2 class="q">P0–P3、并行线，与「要什么」</h2>
+      <div class="body tightbody">
+        <div class="box">
+          <div class="h">① 路线（不倒排 —— 按产品节奏与教学场景走，给窗口与门槛，不给硬日期）</div>
+          <table class="tbl">
+            <tr><th style="width:260px">阶段</th><th>做什么</th><th style="width:320px">状态 / 门槛</th></tr>
+            <tr><td><b>P0 知识底座</b></td><td>401 问题网络 ＋ 课程主表 ＋ 企业名单 ＋ 调研卡</td><td><b>已完成</b></td></tr>
+            <tr><td><b>P1 教学试点</b></td><td>先在 HKU I-School 的一门 FIL 课程跑企业 orientation ＋ 学生沟通训练</td><td>门槛＝首个可公开成效案例</td></tr>
+            <tr><td><b>P2 顾问 MVP</b></td><td>功能 1–3 上线（问答 / 对齐诊断 / 层级定位），接真实企业试用</td><td>待启动 · owner＝产品负责人</td></tr>
+            <tr><td><b>产品站上线</b>（并行）</td><td>把判断能力做成可访问的前端（问答 / 诊断入口）</td><td><b>另建产品站</b>（2026-10-02 定）</td></tr>
+            <tr><td><b>P3 商业化</b></td><td>院系订阅与单课题服务成交；功能 4 上线</td><td>待启动</td></tr>
+          </table>
+        </div>
+        <div class="cards c2">
+          <div class="box">
+            <div class="h">② 要什么（本轮用途分解）</div>
+            <table class="tbl tight">
+              <tr><th>用途</th><th>对应</th><th>形态</th><th>量级</th></tr>
+              <tr><td>顾问 MVP 开发（功能 1–3 上线）</td><td style="white-space:nowrap">P2</td><td>人力（课题组现有开发资源）＋ 云 / 域名</td><td style="white-space:nowrap"><span class="chip">待核</span></td></tr>
+              <tr><td>1 个教学试点的评估设计（I-School 一门 FIL 课）</td><td style="white-space:nowrap">P1</td><td>评估设计工时 ＋ 量表</td><td style="white-space:nowrap"><span class="chip">待核</span></td></tr>
+              <tr><td>材料成本（访谈、量表、被试酬金）</td><td style="white-space:nowrap">P1–P2</td><td>现金</td><td style="white-space:nowrap"><span class="chip">待核</span></td></tr>
+            </table>
+            <div class="cite" style="margin-top:9px">金额区间 <b>HK$ ___ – ___</b><span class="chip">待核</span>；非货币资源 ＝ 场景准入（I-School 课程）＋ 课题组现有开发资源。</div>
+          </div>
+          <div class="box" style="display:flex;flex-direction:column;gap:12px">
+            <div class="h">③ 谁出（RAISe+ 配套）</div>
+            <div class="kv">
+              <dt>结构</dt><dd>政府 : 业界 ＝ <b>2 : 1</b></dd>
+              <dt>硬约束</dt><dd>业界出资 <b>≥50% 须来自独立第三方</b></dd>
+              <dt>出资方</dt><dd><span class="chip">待确认</span>（本轮不写洽谈进展）</dd>
+            </div>
+            <div class="cite">本轮要的是把 <b>P1 教学试点与 P2 顾问 MVP</b> 从「已设计」推到「跑起来」的资源 —— <b>不是一轮融资</b>。</div>
+          </div>
+        </div>
+        <div class="band"><span class="t">纪律</span>本页只答「<b>要多少 / 干什么 / 多久 / 谁出</b>」—— <b>不编 round size / valuation / runway</b>：本项目是 RAISe+ 配套，不是 VC 轮次；BP 里给<b>窗口 ＋ 门槛</b>。</div>
+      </div>
+    </div>
+    <div class="pg-ghost">程</div>
+  </section>
+
+  <!-- ==================== A6 · 数据治理全文 ==================== -->
+  <section class="stage">
+    <div class="chrome"><div>校企合作智能顾问 · 附录 · BP v0.4.2</div><div class="r">IKB · 2026.10 · 43 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">§13 · §8 · §10 · 数据治理全文 · Data Governance</div>
+      <h2 class="q">谁能看什么，先取什么同意</h2>
+      <div class="body">
+        <div class="cards c2">
+          <div class="box">
+            <div class="h">① 分层授权（学校侧数据敏感）</div>
+            <div style="font-size:21px;line-height:1.55;color:var(--sub)">课程、教师、企业名单都是敏感数据 —— <b>对外只出聚合与判断，不暴露原始数据</b>，且<b>不可回溯到单一课程 / 企业</b>。</div>
+          </div>
+          <div class="box">
+            <div class="h">② 知情同意</div>
+            <div style="font-size:21px;line-height:1.55;color:var(--sub)">飞轮要收「结果标签」（成了 / 没成 / 卡在哪）→ <b>收之前先取同意</b>：分层告知用途；学生侧<b>只收与课程相关的、不做个人评价</b>。</div>
+          </div>
+          <div class="box">
+            <div class="h">③ 治理与授权范围</div>
+            <div style="font-size:21px;line-height:1.55;color:var(--sub)">与「分层授权」配套 —— <b>谁能看什么写清</b>：<b>院系看结果 / 我方看结构 / 对外只出聚合与判断</b>（不含原始记录，不可回溯到单一课程 / 企业）；<b>授权范围入院系合同</b>，并写进<b>「我方可将这些数据用于对外提供聚合与衍生产品」</b>（与 §15.1「回填机制」一并定）。</div>
+          </div>
+          <div class="box">
+            <div class="h">④ 高校采购与立项周期</div>
+            <div style="font-size:21px;line-height:1.55;color:var(--sub)">院系订阅走<b>高校采购</b>，决策链比企业长 → <b>首年不把订阅当主现金流</b>（顺序：企业侧先）。</div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="h">⑤ 两条红线：证据不同源，不互相冒充</div>
+          <table class="tbl tight">
+            <tr><th style="width:230px">证据</th><th>看的人</th><th>包含什么</th><th>证明什么</th></tr>
+            <tr><td><b>教学成效证据</b></td><td>教学基金</td><td>orientation 完成率与满意度、学生沟通任务评分与前后对比、对话数据回收量、可复制到其他课程的数量</td><td>「<b>有人用</b>」</td></tr>
+            <tr><td><b>商业验证证据</b></td><td>产业化</td><td>付费客户数、单课题成交额、续约率</td><td>「<b>有人愿意付钱</b>」</td></tr>
+          </table>
+          <div class="cite" style="margin-top:9px">教学成效是商业化的<b>支撑材料</b>，不是市场验证本身。研究口径与商业口径同样不混 —— 见 A2。「≥21 门」这类数不因换口径而变，但「<b>进不进 TAM</b>」会变。</div>
+        </div>
+        <div class="band"><span class="t">为什么放附录</span>飞轮要收结果标签，就直接牵涉<b>企业与院系的敏感数据</b> —— §8 讲了飞轮怎么转，<b>没讲数据怎么合规地拿</b>。这一段是那半页。</div>
+      </div>
+    </div>
+    <div class="pg-ghost">治</div>
+  </section>
+
+  <!-- ==================== A7 · 出处与引用 ==================== -->
+  <section class="stage">
+    <div class="chrome"><div>校企合作智能顾问 · 附录 · BP v0.4.2</div><div class="r">IKB · 2026.10 · 44 / 44</div></div>
+    <div class="rule"></div>
+    <div class="content">
+      <div class="kicker">§14 · §15 · 出处与引用 · Sources</div>
+      <h2 class="q">每个数字回得去的源</h2>
+      <div class="body">
+        <div class="cards c2">
+          <div class="box">
+            <div class="h">§14 附录 · 数据与文件</div>
+            <div class="rows">
+              <div class="r"><span class="n">KB</span><span class="x"><b>401 问题网络核心指标</b>：节点 401 / 边 1607 / 簇 19 / 平均度 8.015 / 模块度 0.6753 <span class="lbl">metrics.json · 截至 2026-09-15</span></span></div>
+              <div class="r"><span class="n">网</span><span class="x"><b>可交互网络</b>：crf.ferrari11.com <span class="lbl">2026-09-27 实测可访问</span></span></div>
+              <div class="r"><span class="n">卡</span><span class="x"><b>调研卡与体检报告</b>：筛子定义卡.md · 缺口种子清单.md · 四步×五方_覆盖体检报告.md <span class="lbl">2026-09-14 前后</span></span></div>
+              <div class="r"><span class="n">114</span><span class="x"><b>114 题出处口径</b>：114题打标_文献vs田野.md <span class="lbl">2026-09-09</span></span></div>
+              <div class="r"><span class="n">案</span><span class="x"><b>案例速查卡 3 张</b>：WiseLaw / Reallm / InfiX <span class="lbl">RAISe+案例速查卡-3张.md</span></span></div>
+              <div class="r"><span class="n">白</span><span class="x"><b>CRF 科研白皮书</b>（内部文件）· <b>创业赛事备忘</b>（已移出正文）</span></div>
+            </div>
+          </div>
+          <div class="box" style="display:flex;flex-direction:column;gap:12px">
+            <div class="h">待确认与待补（§15）</div>
+            <div class="kv">
+              <dt>拍板 1</dt><dd><b>IP 归属</b>：401 网络数据集与方法论文档归港大 / 课题组 / 个人？<span class="chip">待确认</span></dd>
+              <dt>拍板 2</dt><dd><b>回填机制</b>：院系订阅合同里能否写进「结果标签回填」条款？<span class="chip">待确认</span></dd>
+              <dt>拍板 3</dt><dd><b>先收哪边的钱</b>：企业侧（决策快）还是院系侧（年复一年）？<span class="chip">待确认</span></dd>
+            </div>
+            <div class="cite"><b>需李博士提供</b>：首发池 10 个名字的<b>记录者</b>（＝课程负责人）· 单课题 ACV 的部门确认 · 三个数（相关课程数 / 参与企业数 / 历史样例量）· 产品化负责人署名口径。<br><b>我来补</b>：产品界面真实截图（企业输入 → 顾问追问 → 判断输出，三格一屏）。</div>
+            <div class="cite">⚠️ <b>401 网络指标</b>：nodes.json 于 2026-09-16 又更新过 → 对外引用前建议以最新 nodes.json <b>重跑一次</b>。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pg-ghost">源</div>
+  
+    <a class="backtoc" href="#1">← 返回目录</a></section>
+
+</div>
+</div>
+<div class="nav"><a href="#1" style="color:inherit;text-decoration:none">⌂ 目录</a> · ← → 翻本文件</div>
+<script>
+(function(){
+  var deck=document.getElementById('deck');
+  var slides=[].slice.call(deck.querySelectorAll('.stage'));
+  var i=0;
+  function fit(){
+    var vv=window.visualViewport;
+    var w=Math.round((vv&&vv.width)||window.innerWidth);
+    var h=Math.round((vv&&vv.height)||window.innerHeight);
+    var k=Math.min(w/1920, h/1080);
+    var x=(w-1920*k)/2, y=(h-1080*k)/2;
+    deck.style.transform='translate('+x+'px,'+y+'px) scale('+k+')';
+  }
+  function show(n){
+    i=Math.max(0,Math.min(slides.length-1,n));
+    slides.forEach(function(s,k){s.classList.toggle('active',k===i);});
+    try{history.replaceState(null,'','#'+(i+1));}catch(e){}
+  }
+  window.addEventListener('resize',fit);
+  window.addEventListener('orientationchange',fit);
+  window.addEventListener('pageshow',fit);
+  if(window.visualViewport){window.visualViewport.addEventListener('resize',fit);}
+  fit();
+  requestAnimationFrame(fit);
+  setTimeout(fit,120); setTimeout(fit,400);
+  window.addEventListener('hashchange',function(){
+    var h=parseInt((location.hash||'').replace('#',''),10);
+    if(isFinite(h)&&h>0) show(h-1);
+  });
+  var _h=parseInt((location.hash||'').replace('#',''),10);
+  show(isFinite(_h)&&_h>0?_h-1:0);
+  var GROUPS=[[2,5],[6,8],[9,11],[12,13],[14,16],[17,20],[21,24],[25,29],[30,32],[33,35],[36,37],[38,44]];
+  function bounds(n){for(var g=0;g<GROUPS.length;g++){if(n>=GROUPS[g][0]&&n<=GROUPS[g][1])return GROUPS[g];}return [1,1];}
+  function step(d){
+    var cur=i+1, b=bounds(cur);
+    if(cur===1){show(d>0?1:0);return;}          /* 目录：→ 进第一份，← 原地 */
+    if(d>0&&cur>=b[1]){show(0);return;}          /* 文件末 → 回目录 */
+    if(d<0&&cur<=b[0]){show(0);return;}          /* 文件首 → 回目录 */
+    show(cur+d-1);
+  }
+  window.addEventListener('keydown',function(e){
+    if(['ArrowRight','ArrowDown','PageDown',' ','Enter'].indexOf(e.key)>=0){step(1);e.preventDefault();}
+    else if(['ArrowLeft','ArrowUp','PageUp','Backspace'].indexOf(e.key)>=0){step(-1);e.preventDefault();}
+    else if(e.key==='Home'){show(0);} else if(e.key==='End'){show(slides.length-1);}
+  });
+  /* 已移除：点页面翻页（改为末页按钮） */
+})();
+</script>
+
+<script>
+/* ==== 版式自适应层（B）：按每页内容量自动缩放字号/行距 --s，填满但不溢出 ==== */
+(function(){
+  function measure(stage){
+    var body=stage.querySelector(".body"); if(!body) return null;
+    var br=body.getBoundingClientRect(), maxB=br.top;
+    for(var i=0;i<body.children.length;i++){ var r=body.children[i].getBoundingClientRect(); if(r.bottom>maxB)maxB=r.bottom; }
+    return {used:maxB-br.top, avail:br.height};
+  }
+  function fitScale(){
+    var stages=[].slice.call(document.querySelectorAll(".stage"));
+    stages.forEach(function(st){
+      st.style.removeProperty("--s");
+      var m=measure(st); if(!m||m.avail<=0) return;
+      if(m.used/m.avail>=0.90) return;
+      var lo=1, hi=1.4, best=1;
+      for(var it=0; it<6; it++){
+        var mid=(lo+hi)/2;
+        st.style.setProperty("--s", mid.toFixed(3));
+        var mm=measure(st); if(!mm||mm.avail<=0) break;
+        if(mm.used <= mm.avail*0.95){ best=mid; lo=mid; } else { hi=mid; }
+      }
+      st.style.setProperty("--s", best.toFixed(3));
+    });
+  }
+  function run(){ setTimeout(fitScale, 180); }
+  if(document.readyState==="loading") document.addEventListener("DOMContentLoaded", run); else run();
+  window.addEventListener("load", function(){ setTimeout(fitScale, 60); });
+})();
+</script>
+</body>
+</html>
